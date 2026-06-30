@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights on Emerging Markets, Agribusiness and Investment | Nilep Blog</title>
+    <meta name="description" content="Expert insights on agribusiness investment, digital marketing, AI technology, and emerging market opportunities across Africa, MENA, LatAm, and Southeast Asia.">
+    <link rel="canonical" href="https://nilep.xyz/blog/">
+    
+    <!-- Google Fonts: Inter (Body, UI) & Fraunces (Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+
+    <!-- GLOBAL HEADER -->
+    <header class="global-header" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="logo font-serif text-2xl font-bold text-white z-[102]">Nilep</a>
+            
+            <nav class="hidden lg:flex items-center gap-8">
+                <div class="flex gap-8">
+                    <a href="/" class="nav-link" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link" data-path="/solutions/">Solutions</a>
+                    <a href="/contact/" class="nav-link" data-path="/contact/">Contact</a>
+                </div>
+                <a href="/contact/" class="cta-btn-header">Get in Touch</a>
+            </nav>
+
+            <button class="menu-toggle lg:hidden text-white z-[102]" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Overlay Navigation Screen -->
+        <div class="mobile-overlay" id="mobileOverlay">
+            <button class="absolute top-6 right-6 text-white z-[102]" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center text-center">
+                <a href="/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/solutions/">Solutions</a>
+                <a href="/contact/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="cta-btn-header mt-12 w-fit px-8 py-3">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="bg-obsidian relative pt-[180px] pb-24 px-6 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.05]" 
+                 style="background: radial-gradient(circle at 0% 0%, var(--color-green) 0%, transparent 60%);">
+            </div>
+            
+            <div class="max-w-[1280px] mx-auto relative z-10">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Publications & Analysis</span>
+                </div>
+                <h1 class="text-ivory text-[34px] sm:text-[44px] lg:text-[64px] font-bold leading-[1.1] max-w-[880px] mb-6">
+                    Emerging Market Insights and Resources.
+                </h1>
+                <p class="text-border text-base sm:text-lg max-w-[680px] leading-relaxed">
+                    Guides, analysis, and practical knowledge on agribusiness investment, digital marketing, agricultural technology, and the emerging market opportunity.
+                </p>
+            </div>
+        </section>
+
+        <!-- CATEGORY FILTERS -->
+        <section class="bg-ivory pt-12 pb-6 px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="flex items-center overflow-x-auto no-scrollbar gap-2 pb-2">
+                    <button data-category="all" class="filter-tab whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer bg-green-brand text-white">
+                        All
+                    </button>
+                    <button data-category="investment" class="filter-tab whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer bg-white-pure border border-custom-gray text-secondary-custom hover:bg-ivory">
+                        Investment
+                    </button>
+                    <button data-category="agribusiness" class="filter-tab whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer bg-white-pure border border-custom-gray text-secondary-custom hover:bg-ivory">
+                        Agribusiness
+                    </button>
+                    <button data-category="marketing" class="filter-tab whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer bg-white-pure border border-custom-gray text-secondary-custom hover:bg-ivory">
+                        Marketing
+                    </button>
+                    <button data-category="technology" class="filter-tab whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer bg-white-pure border border-custom-gray text-secondary-custom hover:bg-ivory">
+                        Technology
+                    </button>
+                    <button data-category="emerging-markets" class="filter-tab whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer bg-white-pure border border-custom-gray text-secondary-custom hover:bg-ivory">
+                        Emerging Markets
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG POST GRID -->
+        <section class="bg-ivory pb-24 px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blogGrid">
+                    
+                    <!-- Post Card 1 -->
+                    <a href="/blog/investment/what-is-private-market-investing/" data-category="investment" class="blog-card group bg-white-pure rounded-lg border border-custom-gray overflow-hidden flex flex-col hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-200">
+                        <div class="p-7 flex-grow">
+                            <span class="inline-block px-3 py-1 rounded-full bg-green-brand text-white text-[11px] uppercase tracking-[1px] font-semibold mb-4">
+                                Investment
+                            </span>
+                            <h3 class="text-obsidian text-xl font-bold leading-tight mb-3 group-hover:text-green-brand transition-colors duration-200">
+                                What Is Private Market Investing? A Beginner's Guide for Emerging Market Investors
+                            </h3>
+                            <p class="text-secondary-custom text-[15px] leading-relaxed">
+                                Private market investing gives you access to opportunities that never appear on the stock exchange. Here is everything you need to know to get started.
+                            </p>
+                        </div>
+                        <div class="border-t border-custom-gray px-7 py-4 flex justify-between items-center">
+                            <span class="text-green-brand text-[13px] font-medium">8 min read</span>
+                            <span class="text-green-brand text-sm font-semibold inline-flex items-center gap-1.5">
+                                Read Article <span class="group-hover:translate-x-1.5 transition-transform duration-200">&rarr;</span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Post Card 2 -->
+                    <a href="/blog/agribusiness/what-is-a-virtual-farm-gate/" data-category="agribusiness" class="blog-card group bg-white-pure rounded-lg border border-custom-gray overflow-hidden flex flex-col hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-200">
+                        <div class="p-7 flex-grow">
+                            <span class="inline-block px-3 py-1 rounded-full bg-green-brand text-white text-[11px] uppercase tracking-[1px] font-semibold mb-4">
+                                Agribusiness
+                            </span>
+                            <h3 class="text-obsidian text-xl font-bold leading-tight mb-3 group-hover:text-green-brand transition-colors duration-200">
+                                What Is a Virtual Farm Gate and How Does It Work?
+                            </h3>
+                            <p class="text-secondary-custom text-[15px] leading-relaxed">
+                                A virtual farm gate is a technology-enabled marketplace that connects farmers directly to buyers, cutting out middlemen and ensuring farmers receive fair value for their produce.
+                            </p>
+                        </div>
+                        <div class="border-t border-custom-gray px-7 py-4 flex justify-between items-center">
+                            <span class="text-green-brand text-[13px] font-medium">6 min read</span>
+                            <span class="text-green-brand text-sm font-semibold inline-flex items-center gap-1.5">
+                                Read Article <span class="group-hover:translate-x-1.5 transition-transform duration-200">&rarr;</span>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Post Card 3 -->
+                    <a href="/blog/marketing/what-is-performance-marketing/" data-category="marketing" class="blog-card group bg-white-pure rounded-lg border border-custom-gray overflow-hidden flex flex-col hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-200">
+                        <div class="p-7 flex-grow">
+                            <span class="inline-block px-3 py-1 rounded-full bg-green-brand text-white text-[11px] uppercase tracking-[1px] font-semibold mb-4">
+                                Marketing
+                            </span>
+                            <h3 class="text-obsidian text-xl font-bold leading-tight mb-3 group-hover:text-green-brand transition-colors duration-200">
+                                What Is Performance Marketing and Why Do African Businesses Need It?
+                            </h3>
+                            <p class="text-secondary-custom text-[15px] leading-relaxed">
+                                Performance marketing ties every naira spent to a measurable outcome. For SMEs and startups in Africa where marketing budgets are precious, this approach is essential.
+                            </p>
+                        </div>
+                        <div class="border-t border-custom-gray px-7 py-4 flex justify-between items-center">
+                            <span class="text-green-brand text-[13px] font-medium">8 min read</span>
+                            <span class="text-green-brand text-sm font-semibold inline-flex items-center gap-1.5">
+                                Read Article <span class="group-hover:translate-x-1.5 transition-transform duration-200">&rarr;</span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER SIGN-UP -->
+        <section class="bg-obsidian py-24 px-6 text-center">
+            <div class="max-w-[1280px] mx-auto flex flex-col items-center">
+                <h2 class="text-white text-[28px] sm:text-[34px] lg:text-[48px] font-bold mb-4 leading-tight">
+                    Get Insights Delivered.
+                </h2>
+                <p class="text-border text-base sm:text-lg max-w-[560px] leading-relaxed mb-10">
+                    Subscribe to the Nilep newsletter for emerging market insights, agribusiness updates, blockchain and marketing intelligence delivered to your inbox.
+                </p>
+                
+                <!-- Substack Embed form wrapper with custom target styling -->
+                <div class="newsletter-embed w-full max-w-[480px] mx-auto overflow-hidden rounded-lg bg-[#141414] p-2 border border-[#222]">
+                    <!-- Subscribe embed code -->
+<div data-supascribe-embed-id="948948990496" data-supascribe-subscribe></div>
+
+
+<!-- Supascribe Script -->
+<script src="https://js.supascribe.com/v1/loader/2RaNyAM618f4RPutvGPrN6zpgJf2.js" async></script>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-obsidian pt-16 pb-12 px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-[#2C2C2C]">
+                
+                <!-- Column 1 - Brand -->
+                <div class="flex flex-col gap-4">
+                    <a href="/" class="font-serif text-white text-2xl font-bold">Nilep</a>
+                    <p class="text-ivory text-[15px] leading-[1.7]">
+                        Nilep is a diversified group with solutions for various sectors in emerging markets.
+                    </p>
+                    <div class="flex flex-col gap-3 mt-2 text-border text-[14px]">
+                        <div class="flex items-center gap-2">
+                            <span>📍</span> Victoria Island, Lagos, Nigeria
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>✉️</span> <a href="mailto:info@nilep.xyz" class="hover:text-green-brand transition-colors">info@nilep.xyz</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>📞</span> <a href="tel:+2349123694650" class="hover:text-green-brand transition-colors">+234-912-369-4650</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 - Explore -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Explore</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/" class="hover:text-green-brand transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-green-brand transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-green-brand transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-green-brand transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-green-brand transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-green-brand transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-green-brand transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-green-brand transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 - Solutions -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Solutions</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-green-brand transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-green-brand transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-green-brand transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-green-brand transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-green-brand transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-green-brand transition-colors font-semibold text-white">Palm Oil Syndicate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 gap-4 text-[13px] text-border">
+                <p>2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-2 text-[12px]">
+                    <a href="/privacy-policy/" class="hover:text-green-brand transition-colors">Privacy Policy</a>
+                    <span class="text-border">|</span>
+                    <a href="/terms/" class="hover:text-green-brand transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY HEADER, OVERLAY, AND FILTER TAB SCRIPTS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('globalHeader');
+            const handleScroll = () => {
+                if (window.scrollY > 80) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const openOverlay = () => {
+                mobileOverlay.classList.add('open');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeOverlay = () => {
+                mobileOverlay.classList.remove('open');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            menuToggle.addEventListener('click', openOverlay);
+            closeMenu.addEventListener('click', closeOverlay);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeOverlay);
+            });
+
+            const desktopLinks = document.querySelectorAll('.nav-link');
+            desktopLinks.forEach(el => el.classList.remove('active'));
+
+            // Interactive Category Filter Logic
+            const tabs = document.querySelectorAll('.filter-tab');
+            const cards = document.querySelectorAll('.blog-card');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Update active tab style classes
+                    tabs.forEach(t => {
+                        t.classList.remove('bg-green-brand', 'text-white');
+                        t.classList.add('bg-white-pure', 'border', 'border-custom-gray', 'text-secondary-custom');
+                    });
+                    tab.classList.remove('bg-white-pure', 'border', 'border-custom-gray', 'text-secondary-custom');
+                    tab.classList.add('bg-green-brand', 'text-white');
+
+                    // Filter cards
+                    const category = tab.getAttribute('data-category');
+                    cards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
