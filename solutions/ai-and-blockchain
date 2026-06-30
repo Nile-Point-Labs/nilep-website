@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI and Blockchain Solutions for Agriculture and Emerging Markets | Nilep</title>
+    <meta name="description" content="Smart farming, yield forecasting, blockchain traceability, and AI-driven investment tools for agribusinesses and entrepreneurs across emerging markets.">
+    <link rel="canonical" href="https://nilep.xyz/solutions/ai-and-blockchain/">
+    
+    <!-- Google Fonts: Inter (Body, UI, H2-H6 Headings) & Fraunces (H1 Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Schema.org Service Metadata -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "AI and Blockchain Solutions for Agriculture",
+      "provider": {
+        "@type": "Organization",
+        "name": "Nilep",
+        "url": "https://nilep.xyz"
+      },
+      "areaServed": [
+        "Africa",
+        "Middle East",
+        "Latin America",
+        "Southeast Asia",
+        "Eastern Europe"
+      ],
+      "description": "Smart farming, yield forecasting, blockchain traceability, and AI-driven investment tools for agribusinesses and entrepreneurs across emerging markets."
+    }
+    </script>
+</head>
+<body>
+
+    <!-- GLOBAL REUSABLE HEADER -->
+    <header class="global-header" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="logo font-serif text-2xl font-bold text-white z-[102]">Nilep</a>
+            
+            <nav class="hidden lg:flex items-center gap-8">
+                <div class="flex gap-8">
+                    <a href="/" class="nav-link" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link" data-path="/solutions/">Solutions</a>
+                    <a href="/contact/" class="nav-link" data-path="/contact/">Contact</a>
+                </div>
+                <a href="/contact/" class="cta-btn-header">Get in Touch</a>
+            </nav>
+
+            <button class="menu-toggle lg:hidden text-white z-[102]" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Overlay Navigation Screen -->
+        <div class="mobile-overlay" id="mobileOverlay">
+            <button class="absolute top-6 right-6 text-white z-[102]" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center text-center">
+                <a href="/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/solutions/">Solutions</a>
+                <a href="/contact/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="cta-btn-header mt-12 w-fit px-8 py-3">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="bg-obsidian relative pt-[180px] pb-24 px-6 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.05]" 
+                 style="background: radial-gradient(circle at 0% 0%, var(--color-green) 0%, transparent 60%);">
+            </div>
+            
+            <div class="max-w-[1280px] mx-auto relative z-10">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">AI and Blockchain</span>
+                </div>
+                <h1 class="text-ivory text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] max-w-[900px] mb-6">
+                    AI and Blockchain Technology for Emerging Markets.
+                </h1>
+                <p class="text-border text-base sm:text-lg max-w-[680px] leading-relaxed">
+                    From smart farming and yield forecasting to supply chain traceability and AI-driven investment decisions, we deploy technology that makes agricultural systems more productive, transparent, and trustworthy.
+                </p>
+            </div>
+        </section>
+
+        <!-- AI SOLUTIONS SECTION -->
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Artificial Intelligence</span>
+                </div>
+                <h2 class="text-obsidian text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight">
+                    AI-Powered Agricultural Intelligence.
+                </h2>
+
+                <!-- Definition Box -->
+                <div class="bg-[rgba(26,107,60,0.06)] border-l-4 border-brand p-6 md:py-6 md:px-8 rounded-r-lg max-w-[760px] mb-10">
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        Agricultural AI uses machine learning and data analysis to optimize farming decisions, from planting to harvest, by processing real-time inputs including soil conditions, weather patterns, and historical yield data.
+                    </p>
+                </div>
+
+                <p class="text-secondary-custom text-base sm:text-lg max-w-[720px] leading-[1.8] mb-12">
+                    Our AI solutions are deployed across our agricultural operations to improve productivity, reduce risk, and support better decision-making at every level of the agricultural value chain.
+                </p>
+
+                <!-- AI Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white-pure p-9 rounded-lg border border-custom-gray flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-3 leading-tight">Smart Farming and Precision Agriculture</h3>
+                            <p class="text-secondary-custom text-sm leading-relaxed">
+                                AI analysis of soil, weather, and crop data to optimise input application. The right fertilizer, water, and treatment at the right time and place, reducing waste and improving yield.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white-pure p-9 rounded-lg border border-custom-gray flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-3 leading-tight">Yield Forecasting</h3>
+                            <p class="text-secondary-custom text-sm leading-relaxed">
+                                Machine learning models that predict harvest output based on real-time field conditions, historical performance data, and climate inputs, enabling better planning for farmers, buyers, and investors.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white-pure p-9 rounded-lg border border-custom-gray flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-3 leading-tight">Climate Risk Analysis</h3>
+                            <p class="text-secondary-custom text-sm leading-relaxed">
+                                AI tools that analyse climate data to identify risk patterns, recommend crop variety selection, and support early intervention before weather events affect production.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white-pure p-9 rounded-lg border border-custom-gray flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-3 leading-tight">Investment and Portfolio Optimisation</h3>
+                            <p class="text-secondary-custom text-sm leading-relaxed">
+                                Data-driven analysis supporting investment decisions in agricultural assets, simulating performance scenarios, assessing risk profiles, and optimising capital allocation across agribusiness portfolios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCKCHAIN SOLUTIONS SECTION -->
+        <section class="bg-obsidian custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Blockchain Technology</span>
+                </div>
+                <h2 class="text-ivory text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight">
+                    Transparent, Traceable, Trustworthy Supply Chains.
+                </h2>
+                <p class="text-border text-base sm:text-lg max-w-[720px] leading-[1.8] mb-12">
+                    Our blockchain systems create tamper-proof, shared records of every transaction and movement in the agricultural supply chain, from farm to final consumer, providing verifiable traceability that builds trust across all participants.
+                </p>
+
+                <!-- Blockchain Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-secondary-custom p-9 rounded-lg flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-ivory text-lg font-bold mb-3 leading-tight">Farm-to-Table Traceability</h3>
+                            <p class="text-border text-sm leading-relaxed">
+                                Every movement of produce, from farm to aggregator to processor to retailer, recorded on a distributed ledger that any authorised participant can verify but no single party can alter.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-secondary-custom p-9 rounded-lg flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-ivory text-lg font-bold mb-3 leading-tight">Digital Certification</h3>
+                            <p class="text-border text-sm leading-relaxed">
+                                Verified quality certifications and production records stored on blockchain, providing farmers with documented proof of their practices and giving buyers confidence in the produce they source.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-secondary-custom p-9 rounded-lg flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-ivory text-lg font-bold mb-3 leading-tight">Smart Contracts</h3>
+                            <p class="text-border text-sm leading-relaxed">
+                                Self-executing payment contracts triggered automatically when defined delivery and quality conditions are verified, eliminating payment delays and disputes in agricultural transactions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-secondary-custom p-9 rounded-lg flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-ivory text-lg font-bold mb-3 leading-tight">Supply Chain Verification</h3>
+                            <p class="text-border text-sm leading-relaxed">
+                                Independent verification of supply chain claims, confirming the origin, handling, and condition of produce without relying on self-reported information from any single party.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMBINED POWER SECTION -->
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <h2 class="text-obsidian text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight">
+                    AI and Blockchain - Better Together.
+                </h2>
+                <p class="text-secondary-custom text-base sm:text-lg max-w-[760px] leading-[1.8]">
+                    AI and blockchain address different parts of the agricultural transparency challenge. AI optimises what happens in the field and in the supply chain, improving decisions, predicting outcomes, and flagging risks. Blockchain records what happened in a form that cannot be disputed or altered, creating the trusted data layer on which trade, investment, and regulatory compliance can be built. Together, they create agricultural ecosystems that are simultaneously more productive and more trustworthy.
+                </p>
+            </div>
+        </section>
+
+        <!-- CLOSING CTA SECTION -->
+        <section class="bg-green-brand custom-section-padding px-6 text-center">
+            <div class="max-w-[1280px] mx-auto flex flex-col items-center">
+                <h2 class="text-white text-3xl sm:text-4xl lg:text-[48px] font-bold mb-10 leading-tight">
+                    Don't Be Shy, Say Hello.
+                </h2>
+                <a href="/contact/" class="inline-flex bg-white-pure text-green-brand hover:bg-ivory font-semibold rounded px-8 py-4 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- GLOBAL REUSABLE FOOTER -->
+    <footer class="bg-obsidian pt-16 pb-12 px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-[#2C2C2C]">
+                <!-- Column 1 - Brand -->
+                <div class="flex flex-col gap-4">
+                    <a href="/" class="font-serif text-white text-2xl font-bold">Nilep</a>
+                    <p class="text-ivory text-[15px] leading-[1.7]">
+                        Nilep is a diversified group with solutions for various sectors in emerging markets.
+                    </p>
+                    <div class="flex flex-col gap-3 mt-2 text-border text-[14px]">
+                        <div class="flex items-center gap-2">
+                            <span>📍</span> Victoria Island, Lagos, Nigeria
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>✉️</span> <a href="mailto:info@nilep.xyz" class="hover:text-green-brand transition-colors">info@nilep.xyz</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>📞</span> <a href="tel:+2349123694650" class="hover:text-green-brand transition-colors">+234-912-369-4650</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 - Explore -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Explore</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/" class="hover:text-green-brand transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-green-brand transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-green-brand transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-green-brand transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-green-brand transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-green-brand transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-green-brand transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-green-brand transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 - Solutions -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Solutions</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-green-brand transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-green-brand transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-green-brand transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-green-brand transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-green-brand transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-green-brand transition-colors">Palm Oil Syndicate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 gap-4 text-[13px] text-border">
+                <p>2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-2 text-[12px]">
+                    <a href="/privacy-policy/" class="hover:text-green-brand transition-colors">Privacy Policy</a>
+                    <span class="text-border">|</span>
+                    <a href="/terms/" class="hover:text-green-brand transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Reusable sticky global header scroll logic
+            const header = document.getElementById('globalHeader');
+            const handleScroll = () => {
+                if (window.scrollY > 80) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Trigger instantly on layout paint
+
+            // Full-screen overlay setup for tablets and mobile devices
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const openOverlay = () => {
+                mobileOverlay.classList.add('open');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeOverlay = () => {
+                mobileOverlay.classList.remove('open');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            menuToggle.addEventListener('click', openOverlay);
+            closeMenu.addEventListener('click', closeOverlay);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeOverlay);
+            });
+
+            // Dynamic nav-link active state checking
+            const desktopLinks = document.querySelectorAll('.nav-link');
+            const mobileLinksElem = document.querySelectorAll('.mobile-nav-link');
+
+            // Force solutions parent category as active for solutions sub-pages
+            desktopLinks.forEach(el => {
+                if (el.getAttribute('data-path') === '/solutions/') {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            });
+
+            mobileLinksElem.forEach(el => {
+                if (el.getAttribute('data-path') === '/solutions/') {
+                    el.style.color = 'var(--color-green)';
+                    el.style.fontWeight = '600';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
