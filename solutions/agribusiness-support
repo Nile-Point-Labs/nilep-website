@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agribusiness Support Services for Farmers and Entrepreneurs | Nilep</title>
+    <meta name="description" content="Professional agribusiness support covering farm development, land acquisition, livestock management, and operational management across emerging markets.">
+    <link rel="canonical" href="https://nilep.xyz/solutions/agribusiness-support/">
+    
+    <!-- Google Fonts: Inter & Fraunces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2 family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+
+    <!-- GLOBAL HEADER -->
+    <header class="global-header" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="font-serif text-2xl font-bold text-white z-[102]" aria-label="Nilep Home">Nilep</a>
+            
+            <nav class="hidden lg:flex items-center gap-8">
+                <div class="flex gap-8">
+                    <a href="/" class="nav-link" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link" data-path="/solutions/">Solutions</a>
+                    <a href="/contact/" class="nav-link" data-path="/contact/">Contact</a>
+                </div>
+                <a href="/contact/" class="cta-btn-header">Get in Touch</a>
+            </nav>
+
+            <button class="menu-toggle lg:hidden text-white z-[102]" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Full Screen Overlay -->
+        <div class="mobile-overlay" id="mobileOverlay">
+            <button class="absolute top-6 right-6 text-white z-[102]" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center text-center">
+                <a href="/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/solutions/">Solutions</a>
+                <a href="/contact/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="cta-btn-header mt-12 w-fit px-8 py-3">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="bg-obsidian relative pt-[180px] pb-24 px-6 overflow-hidden">
+        <!-- Radial green gradient overlay in top-left -->
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.05]" 
+             style="background: radial-gradient(circle at 0% 0%, var(--color-green) 0%, transparent 60%);">
+        </div>
+        
+        <div class="max-w-[1280px] mx-auto relative z-10">
+            <div class="mb-4">
+                <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Agribusiness Support</span>
+            </div>
+            <h1 class="text-ivory text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] max-w-[900px] mb-6">
+                Professional Agribusiness Support Across Emerging Markets.
+            </h1>
+            <p class="text-border text-base sm:text-lg max-w-[680px] leading-relaxed">
+                From farm development and land acquisition to crop management, livestock operations, and sustainable farming practices, we provide the professional support that makes agribusiness work.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="bg-ivory py-24 px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <h2 class="text-obsidian text-3xl sm:text-4xl lg:text-[48px] font-bold mb-14 leading-tight">
+                What We Provide.
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="service-card bg-white-pure p-8 md:p-10 rounded-lg border border-custom-gray shadow-[0_2px_8px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+                    <div>
+                        <!-- Agriculture Icon -->
+                        <div class="w-12 h-12 rounded-full bg-[#1A6B3C]/10 flex items-center justify-center text-green-brand mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.963 15.25H.5m11.463 0a1.5 1.5 0 001.5-1.5V11.25m-1.5 4v1.5a1.5 1.5 0 01-1.5 1.5H1.5a1.5 1.5 0 01-1.5-1.5V5.25a1.5 1.5 0 011.5-1.5h9.75a1.5 1.5 0 011.5 1.5V10m-.25 5.25h11.5m0 0a1.5 1.5 0 001.5-1.5V3.75a1.5 1.5 0 00-1.5-1.5H12a1.5 1.5 0 00-1.5 1.5v1.5m11.5 10v1.5a1.5 1.5 0 01-1.5 1.5h-9.75a1.5 1.5 0 01-1.5-1.5V12.75" />
+                            </svg>
+                        </div>
+                        <h3 class="text-obsidian text-xl font-bold mb-4">
+                            Farm Development and Land Acquisition
+                        </h3>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            Site assessment, land identification, soil testing, water resource evaluation, and farm design for new agricultural operations across West Africa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card bg-white-pure p-8 md:p-10 rounded-lg border border-custom-gray shadow-[0_2px_8px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+                    <div>
+                        <!-- Crop Icon -->
+                        <div class="w-12 h-12 rounded-full bg-[#1A6B3C]/10 flex items-center justify-center text-green-brand mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m0-18l4 4m-4-4L8 7m4 14l4-4m-4 4l-4-4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-obsidian text-xl font-bold mb-4">
+                            Crop Management
+                        </h3>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            Agronomic planning, variety selection, planting schedules, input management, and crop monitoring for commercial crop production across our supported farm network.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card bg-white-pure p-8 md:p-10 rounded-lg border border-custom-gray shadow-[0_2px_8px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+                    <div>
+                        <!-- Livestock Icon -->
+                        <div class="w-12 h-12 rounded-full bg-[#1A6B3C]/10 flex items-center justify-center text-green-brand mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-obsidian text-xl font-bold mb-4">
+                            Livestock Management
+                        </h3>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            Professional management of poultry, aquaculture, and other livestock operations, covering stocking, feeding, health management, and harvest cycles.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card bg-white-pure p-8 md:p-10 rounded-lg border border-custom-gray shadow-[0_2px_8px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+                    <div>
+                        <!-- Eco Icon -->
+                        <div class="w-12 h-12 rounded-full bg-[#1A6B3C]/10 flex items-center justify-center text-green-brand mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l-.707.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-obsidian text-xl font-bold mb-4">
+                            Sustainable Farming Practices
+                        </h3>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            Integration of environmentally responsible practices including soil health management, water conservation, responsible input use, and community engagement across all operations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 5 (Centred visual placement in row 2 on both lg & md viewports) -->
+                <div class="service-card bg-white-pure p-8 md:p-10 rounded-lg border border-custom-gray shadow-[0_2px_8px_rgba(0,0,0,0.03)] flex flex-col justify-between md:col-span-2 lg:col-span-1 lg:col-start-2 md:max-w-md md:mx-auto lg:max-w-none lg:mx-0">
+                    <div>
+                        <!-- Support Icon -->
+                        <div class="w-12 h-12 rounded-full bg-[#1A6B3C]/10 flex items-center justify-center text-green-brand mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94-3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-obsidian text-xl font-bold mb-4">
+                            Individual and Institutional Investor Support
+                        </h3>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            Operational support for individuals and institutions who have invested in agricultural assets and need professional management to ensure performance delivery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLOSING CTA -->
+    <section class="bg-green-brand py-24 px-6 text-center">
+        <div class="max-w-[1280px] mx-auto flex flex-col items-center">
+            <h2 class="text-white text-3xl sm:text-4xl lg:text-[48px] font-bold mb-10 leading-tight">
+                Don't Be Shy, Say Hello.
+            </h2>
+            <a href="/contact/" class="inline-flex bg-white text-green-brand hover:bg-ivory font-semibold rounded px-8 py-4 transition-colors">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-obsidian pt-16 pb-12 px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-[#2C2C2C]">
+                <!-- Column 1 -->
+                <div class="flex flex-col gap-4">
+                    <a href="/" class="font-serif text-white text-2xl font-bold">Nilep</a>
+                    <p class="text-ivory text-[15px] leading-[1.7]">
+                        Nilep is a diversified group with solutions for various sectors in emerging markets.
+                    </p>
+                    <div class="flex flex-col gap-3 mt-2 text-border text-[14px]">
+                        <div class="flex items-center gap-2 text-border text-[14px]">
+                            <span>📍</span> Victoria Island, Lagos, Nigeria
+                        </div>
+                        <div class="flex items-center gap-2 text-border text-[14px]">
+                            <span>✉️</span> <a href="mailto:info@nilep.xyz" class="hover:text-green-brand transition-colors">info@nilep.xyz</a>
+                        </div>
+                        <div class="flex items-center gap-2 text-border text-[14px]">
+                            <span>📞</span> <a href="tel:+2349123694650" class="hover:text-green-brand transition-colors">+234-912-369-4650</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Explore</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/" class="hover:text-green-brand transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-green-brand transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-green-brand transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-green-brand transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-green-brand transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-green-brand transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-green-brand transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-green-brand transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Solutions</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-green-brand transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-green-brand transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-green-brand transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-green-brand transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-green-brand transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-green-brand transition-colors">Palm Oil Syndicate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 gap-4 text-[13px] text-border">
+                <p>2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-2 text-[12px]">
+                    <a href="/privacy-policy/" class="hover:text-green-brand transition-colors text-white font-medium">Privacy Policy</a>
+                    <span class="text-border">|</span>
+                    <a href="/terms/" class="hover:text-green-brand transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Header Scroll behavior (adds scrolling class to header elements)
+            const header = document.getElementById('globalHeader');
+            const handleScroll = () => {
+                if (window.scrollY > 80) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+
+            // Mobile Navigation Overlay Toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const openMobileNav = () => {
+                mobileOverlay.classList.add('open');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeMobileNav = () => {
+                mobileOverlay.classList.remove('open');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            menuToggle.addEventListener('click', openMobileNav);
+            closeMenu.addEventListener('click', closeMobileNav);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeMobileNav);
+            });
+
+            // Set active page menu link underline logic
+            const currentPath = window.location.pathname;
+            const desktopLinks = document.querySelectorAll('.nav-link');
+            const mobileLinksElem = document.querySelectorAll('.mobile-nav-link');
+
+            const determineActive = (elem) => {
+                const linkPath = elem.getAttribute('data-path');
+                if (linkPath === currentPath) {
+                    elem.classList.add('active');
+                } else if (linkPath !== '/' && currentPath.startsWith(linkPath)) {
+                    elem.classList.add('active');
+                }
+            };
+
+            desktopLinks.forEach(determineActive);
+            mobileLinksElem.forEach(determineActive);
+
+            // Force fallback selection highlighting because this page relates to /solutions/
+            desktopLinks.forEach(el => {
+                if (el.getAttribute('data-path') === '/solutions/') {
+                    el.classList.add('active');
+                } else if (el.getAttribute('data-path') === '/') {
+                    el.classList.remove('active');
+                }
+            });
+
+            mobileLinksElem.forEach(el => {
+                if (el.getAttribute('data-path') === '/solutions/') {
+                    el.style.color = 'var(--color-green)';
+                    el.style.fontWeight = '600';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
