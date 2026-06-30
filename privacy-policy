@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Nilep</title>
+    <meta name="description" content="Nilep's privacy policy covering how we collect, use, and protect your personal data.">
+    <link rel="canonical" href="https://nilep.xyz/privacy-policy/">
+    
+    <!-- Google Fonts: Inter (Body, UI, Headings) & Fraunces (H1 Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+
+    <!-- GLOBAL HEADER -->
+    <header class="global-header scrolled" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="font-serif text-2xl font-bold text-white z-[102]">Nilep</a>
+            
+            <nav class="hidden lg:flex items-center gap-8">
+                <div class="flex gap-8">
+                    <a href="/" class="nav-link" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link" data-path="/solutions/">Solutions</a>
+                    <a href="/contact/" class="nav-link" data-path="/contact/">Contact</a>
+                </div>
+                <a href="/contact/" class="cta-btn-header">Get in Touch</a>
+            </nav>
+
+            <button class="menu-toggle lg:hidden text-white z-[102]" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Full Screen Overlay -->
+        <div class="mobile-overlay" id="mobileOverlay">
+            <button class="absolute top-6 right-6 text-white z-[102]" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center text-center">
+                <a href="/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/solutions/">Solutions</a>
+                <a href="/contact/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="cta-btn-header mt-12 w-fit px-8 py-3">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT AREA -->
+    <main class="bg-ivory pt-[140px] pb-24 px-6 md:pt-[180px] md:pb-24">
+        <article class="max-w-[760px] mx-auto">
+            <h1 class="text-obsidian text-4xl sm:text-5xl font-bold leading-[1.1] mb-2">Privacy Policy</h1>
+            <p class="text-secondary-custom text-sm mb-12">Last updated: June 2026.</p>
+
+            <div class="space-y-10">
+                <section>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Nilep, operated by Nile Point Limited and accessible at nilep.xyz, is committed to protecting the personal information of everyone who visits our website, contacts our team, or engages with our services. This Privacy Policy explains what personal data we collect, why we collect it, how we use and protect it, and what rights you have in relation to it.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">By using nilep.xyz, you acknowledge that you have read and understood this policy. If you do not agree with any part of this policy, please do not use our website or submit your personal information through our contact form.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">This policy applies to all personal data collected through nilep.xyz and through any direct communications you have with Nilep via email or phone. It does not apply to third-party platforms linked from our site, including Corre, our regulated investment partner platform, or our yield calculator hosted at nilepfractional.netlify.app. We encourage you to read the privacy policies of those platforms before submitting your personal information to them.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Who We Are</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Nilep is a diversified integrated group providing marketing, agribusiness, technology, and investment solutions across emerging markets. Our operations are managed by Nile Point Limited, headquartered at Victoria Island, Lagos, Nigeria.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-2">If you have any questions about this Privacy Policy or how we handle your personal data, you can contact us at:</p>
+                    <ul class="list-none ml-0 space-y-1 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li><strong>Email:</strong> <a href="mailto:info@nilep.xyz" class="text-green-brand hover:underline">info@nilep.xyz</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:+2349123694650" class="text-green-brand hover:underline">+234-912-369-4650</a></li>
+                        <li><strong>Address:</strong> Victoria Island, Lagos, Nigeria</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">What Personal Data We Collect</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">We collect personal data in the following ways:</p>
+                    
+                    <h3 class="text-obsidian text-lg font-bold mt-6 mb-2">Through our contact form</h3>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">When you submit an enquiry through the contact form at nilep.xyz/contact/, we collect the following information: Your full name, your email address, your phone number if you choose to provide it, the name of your organisation or company if you choose to provide it, the role you have selected from our dropdown (investor, business, farmer, or other), the subject of your enquiry, and the content of your message.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">This information is submitted voluntarily by you. You are not required to provide your phone number or organisation name and these fields are clearly marked as optional.</p>
+
+                    <h3 class="text-obsidian text-lg font-bold mt-6 mb-2">Through Google Analytics</h3>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">We use Google Analytics to understand how visitors interact with our website. Google Analytics collects anonymised data about your visit including the pages you view, the time you spend on each page, the device and browser type you are using, your approximate geographic location at the country or city level, and how you arrived at our website (for example through a search engine, a direct link, or a referral from another site).</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">This data does not identify you personally. It is aggregated and used to understand site performance and visitor behaviour in order to improve our content and user experience.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Google Analytics uses cookies to collect this data. You can opt out of Google Analytics tracking at any time using the Google Analytics Opt-out Browser Add-on available at tools.google.com/dlpage/gaoptout.</p>
+
+                    <h3 class="text-obsidian text-lg font-bold mt-6 mb-2">Through direct email and phone communications</h3>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">When you email us at info@nilep.xyz or call us directly, we may retain the content of that communication and any personal information you share within it for the purpose of responding to your enquiry and maintaining a record of our correspondence.</p>
+
+                    <h3 class="text-obsidian text-lg font-bold mt-6 mb-2">Data we do not collect</h3>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">We do not collect payment information through our website. Any investment-related payment or financial data is handled exclusively through Corre, our regulated digital investment partner, on their own platform and under their own data policies.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">We do not collect sensitive personal data such as national identity numbers, passport numbers, or financial account details through nilep.xyz.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">How We Use Your Personal Data</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">We use the personal data we collect for the following purposes:</p>
+                    <ul class="list-disc list-outside ml-6 mb-6 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li><strong>To respond to your enquiry:</strong> The primary reason we collect your contact form submission is to respond to the question, request, or interest you have expressed. We will use your name, email address, and phone number where provided to contact you with our response.</li>
+                        <li><strong>To understand your needs before we respond:</strong> The role you selected in the contact form (investor, business, farmer, or other) and the subject and content of your message help us route your enquiry to the right member of our team and tailor our response to your specific situation.</li>
+                        <li><strong>To improve our website and services:</strong> Anonymised analytics data from Google Analytics helps us understand which pages are most useful to visitors, where visitors drop off, and how we can improve the content, structure, and performance of nilep.xyz.</li>
+                        <li><strong>To maintain records of communications:</strong> We may retain a record of communications with enquirers and clients to maintain a professional record of our interactions and to ensure continuity in any ongoing relationship.</li>
+                    </ul>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">We do not use your personal data for the following purposes:</p>
+                    <ul class="list-disc list-outside ml-6 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li>We do not sell your personal data to any third party.</li>
+                        <li>We do not share your personal data with third-party advertisers or marketing companies.</li>
+                        <li>We do not use your personal data to build advertising profiles or to serve you targeted advertising.</li>
+                        <li>We do not use your data for any automated decision-making processes that would produce legal or similarly significant effects on you.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Legal Basis for Processing Your Personal Data</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Nilep processes your personal data on the following legal bases:</p>
+                    <ul class="list-disc list-outside ml-6 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li><strong>Legitimate interests:</strong> We process contact form submissions and direct communications on the basis of our legitimate interest in responding to enquiries from individuals and organisations who have chosen to contact us. We have assessed that this interest does not override your rights and freedoms as an individual.</li>
+                        <li><strong>Consent:</strong> We process Google Analytics data on the basis of your implied consent to analytics cookies when you use our website. You can withdraw this consent at any time by using the Google Analytics opt-out tool referenced above.</li>
+                        <li><strong>Contractual necessity:</strong> Where you enter into a relationship with Nilep involving a specific service or investment product, we will process the personal data necessary to fulfil our obligations under that relationship.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">How Long We Keep Your Personal Data</h2>
+                    <ul class="list-disc list-outside ml-6 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li><strong>Contact form submissions:</strong> We retain contact form submission data for as long as is reasonably necessary to respond to your enquiry and to maintain a record of our correspondence. We review retained communications periodically and delete data that is no longer necessary.</li>
+                        <li><strong>Analytics data:</strong> Google Analytics data is retained according to Google's standard data retention settings, which you can review in Google's own privacy documentation. We do not independently store analytics data outside of the Google Analytics platform.</li>
+                        <li><strong>Direct communications:</strong> Email and other direct communications are retained for as long as is reasonably necessary for the purpose for which they were sent, and in accordance with standard business record-keeping practices.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">How We Protect Your Personal Data</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">We take reasonable and appropriate technical and organisational measures to protect your personal data against unauthorised access, accidental loss, alteration, or disclosure.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Our website is served entirely over HTTPS, which encrypts all data transmitted between your browser and our site. Contact form submissions are processed through Netlify Forms, which applies its own security measures to form data in transit and at rest.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">We limit access to personal data to members of our team who have a legitimate need to access it in order to respond to your enquiry or provide our services.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">While we take these precautions, no website or internet transmission is completely secure. We cannot guarantee absolute security of data transmitted to or from our site and you provide your personal information at your own risk.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Sharing Your Personal Data</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">We do not sell, rent, trade, or otherwise transfer your personal data to outside parties, with the following limited exceptions:</p>
+                    <ul class="list-disc list-outside ml-6 mb-4 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li><strong>Service providers:</strong> We use Netlify to host our website and process contact form submissions. Netlify acts as a data processor on our behalf and is bound by appropriate data protection obligations. You can review Netlify's privacy policy at netlify.com/privacy.</li>
+                        <li><strong>Analytics providers:</strong> We share anonymised, aggregated usage data with Google through the Google Analytics service. This data does not identify you personally. You can review Google's privacy policy at policies.google.com/privacy.</li>
+                        <li><strong>Legal obligations:</strong> We may disclose your personal data if required to do so by applicable law, regulation, or a valid legal request from a government authority or court.</li>
+                        <li><strong>Business transfers:</strong> In the event of a merger, acquisition, or sale of all or part of Nile Point Limited's business, your personal data may be transferred to the relevant successor entity. We would notify you of any such transfer and any choices you may have in relation to it.</li>
+                    </ul>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">We will never share your personal data with third parties for their own marketing purposes.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Cookies</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Nilep.xyz uses cookies to provide and improve our service.</p>
+                    
+                    <h3 class="text-obsidian text-lg font-bold mt-6 mb-2">What are cookies?</h3>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Cookies are small text files placed on your device by websites you visit. They are widely used to make websites work efficiently and to provide reporting information to website owners.</p>
+
+                    <h3 class="text-obsidian text-lg font-bold mt-6 mb-2">The cookies we use:</h3>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Google Analytics cookies: These are set by Google Analytics to collect anonymised data about how visitors use our site. The main cookies used are _ga, which distinguishes unique users and expires after 2 years, and _gid, which distinguishes users and expires after 24 hours.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">We do not use advertising cookies, social media tracking cookies, or any cookies that track your activity across other websites for commercial purposes.</p>
+
+                    <h3 class="text-obsidian text-lg font-bold mt-6 mb-2">Managing cookies:</h3>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">You can control and delete cookies through your browser settings. Most browsers allow you to refuse cookies entirely or to be notified when a cookie is set. Please note that if you disable all cookies, some features of the site may not function as expected.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">You can also opt out of Google Analytics specifically using the Google Analytics Opt-out Browser Add-on at tools.google.com/dlpage/gaoptout.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Third-Party Links and Platforms</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Our website contains links to third-party platforms that are not operated by Nilep. These include:</p>
+                    <ul class="list-disc list-outside ml-6 mb-4 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li>Corre, our digital investment partner, at corre.bond. If you click through to Corre to invest in any of our syndicate products, you will be subject to Corre's own terms and privacy policy. We have no control over how Corre collects or uses your data on their platform.</li>
+                        <li>Our yield calculator at nilepfractional.netlify.app. This tool is operated separately from nilep.xyz and has its own data handling practices.</li>
+                        <li>External blog or news sources we may link to from our blog content.</li>
+                    </ul>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">We recommend that you read the privacy policies of any third-party platforms before submitting your personal information to them. Nilep is not responsible for the privacy practices or content of any third-party platforms.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Your Rights</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Depending on your location and applicable data protection laws, you may have some or all of the following rights in relation to your personal data:</p>
+                    <ul class="list-disc list-outside ml-6 mb-4 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li><strong>The right to access:</strong> You have the right to request a copy of the personal data we hold about you.</li>
+                        <li><strong>The right to rectification:</strong> You have the right to ask us to correct any personal data we hold about you that is inaccurate or incomplete.</li>
+                        <li><strong>The right to erasure:</strong> You have the right to ask us to delete personal data we hold about you, subject to certain exceptions where we are legally required to retain it.</li>
+                        <li><strong>The right to restrict processing:</strong> You have the right to ask us to restrict how we process your personal data in certain circumstances.</li>
+                        <li><strong>The right to data portability:</strong> Where processing is based on your consent or on a contract, you have the right to receive your personal data in a structured, commonly used, and machine-readable format.</li>
+                        <li><strong>The right to object:</strong> You have the right to object to our processing of your personal data where that processing is based on our legitimate interests.</li>
+                        <li><strong>The right to withdraw consent:</strong> Where processing is based on your consent, you have the right to withdraw that consent at any time. This does not affect the lawfulness of processing that took place before the withdrawal.</li>
+                    </ul>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">To exercise any of these rights, please contact us at info@nilep.xyz. We will respond to your request within a reasonable timeframe and in accordance with applicable law. We may need to verify your identity before processing certain requests.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">If you are not satisfied with how we have handled your personal data, you have the right to lodge a complaint with the relevant data protection authority in your jurisdiction.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Children's Privacy</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">Our website is not directed at children under the age of 18 and we do not knowingly collect personal data from anyone under 18. If you believe we have inadvertently collected personal data from a child, please contact us at info@nilep.xyz and we will take steps to delete it promptly.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">International Data Transfers</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Nilep is based in Nigeria and our primary operations are in West Africa. If you are accessing our website from outside Nigeria, your personal data may be transferred to and processed in Nigeria or in the countries where our service providers (including Netlify and Google) operate their infrastructure.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">We take steps to ensure that any international transfers of personal data are handled in accordance with applicable data protection requirements and that appropriate safeguards are in place to protect your personal data.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Changes to This Privacy Policy</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">We may update this Privacy Policy from time to time to reflect changes in our data practices, in the services we provide, or in applicable law. When we make material changes, we will update the "Last updated" date at the top of this page.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">We encourage you to review this policy periodically to stay informed about how we are protecting your personal data. Your continued use of nilep.xyz after any changes to this policy constitutes your acceptance of those changes.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Contact Us</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">If you have any questions, concerns, or requests relating to this Privacy Policy or to how Nilep handles your personal data, please contact us:</p>
+                    <ul class="list-none ml-0 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li><strong>Email:</strong> <a href="mailto:info@nilep.xyz" class="text-green-brand hover:underline">info@nilep.xyz</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:+2349123694650" class="text-green-brand hover:underline">+234-912-369-4650</a></li>
+                        <li><strong>Address:</strong> Victoria Island, Lagos, Nigeria</li>
+                    </ul>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mt-4">We aim to respond to all privacy-related enquiries within 5 business days.</p>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-obsidian pt-16 pb-12 px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-[#2C2C2C]">
+                <!-- Column 1 -->
+                <div class="flex flex-col gap-4">
+                    <a href="/" class="font-serif text-white text-2xl font-bold">Nilep</a>
+                    <p class="text-ivory text-[15px] leading-[1.7]">
+                        Nilep is a diversified group with solutions for various sectors in emerging markets.
+                    </p>
+                    <div class="flex flex-col gap-3 mt-2 text-border text-[14px]">
+                        <div class="flex items-center gap-2 text-border text-[14px]">
+                            <span>📍</span> Victoria Island, Lagos, Nigeria
+                        </div>
+                        <div class="flex items-center gap-2 text-border text-[14px]">
+                            <span>✉️</span> <a href="mailto:info@nilep.xyz" class="hover:text-green-brand transition-colors">info@nilep.xyz</a>
+                        </div>
+                        <div class="flex items-center gap-2 text-border text-[14px]">
+                            <span>📞</span> <a href="tel:+2349123694650" class="hover:text-green-brand transition-colors">+234-912-369-4650</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Explore</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/" class="hover:text-green-brand transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-green-brand transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-green-brand transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-green-brand transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-green-brand transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-green-brand transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-green-brand transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-green-brand transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Solutions</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-green-brand transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-green-brand transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-green-brand transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-green-brand transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-green-brand transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-green-brand transition-colors">Palm Oil Syndicate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 gap-4 text-[13px] text-border">
+                <p>2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-2 text-[12px]">
+                    <a href="/privacy-policy/" class="hover:text-green-brand transition-colors text-white font-medium">Privacy Policy</a>
+                    <span class="text-border">|</span>
+                    <a href="/terms/" class="hover:text-green-brand transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Header Scroll behavior (locked as scrolled for static content read views)
+            const header = document.getElementById('globalHeader');
+            const handleScroll = () => {
+                if (window.scrollY > 40) {
+                    header.classList.add('scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+
+            // Mobile Navigation Overlay Toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const openMobileNav = () => {
+                mobileOverlay.classList.add('open');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeMobileNav = () => {
+                mobileOverlay.classList.remove('open');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            menuToggle.addEventListener('click', openMobileNav);
+            closeMenu.addEventListener('click', closeMobileNav);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeMobileNav);
+            });
+
+            // Set active page menu link underline logic
+            const currentPath = window.location.pathname;
+            const desktopLinks = document.querySelectorAll('.nav-link');
+            const mobileLinksElem = document.querySelectorAll('.mobile-nav-link');
+
+            const determineActive = (elem) => {
+                const linkPath = elem.getAttribute('data-path');
+                if (linkPath === currentPath) {
+                    elem.classList.add('active');
+                } else if (linkPath !== '/' && currentPath.startsWith(linkPath)) {
+                    elem.classList.add('active');
+                }
+            };
+
+            desktopLinks.forEach(determineActive);
+            mobileLinksElem.forEach(determineActive);
+        });
+    </script>
+</body>
+</html>
