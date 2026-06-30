@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Management Solutions for Agribusiness in Africa | Nilep</title>
+    <meta name="description" content="End-to-end supply chain solutions for agribusinesses in emerging markets including logistics, cold storage, distribution, and farm-to-market access.">
+    <link rel="canonical" href="https://nilep.xyz/solutions/supply-chain-management/">
+    
+    <!-- Google Fonts: Inter & Fraunces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Schema.org Service Metadata -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Supply Chain Management Solutions",
+      "provider": {
+        "@type": "Organization",
+        "name": "Nilep",
+        "url": "https://nilep.xyz"
+      },
+      "areaServed": [
+        "Africa",
+        "Middle East",
+        "Latin America",
+        "Southeast Asia"
+      ],
+      "description": "End-to-end supply chain solutions for agribusinesses in emerging markets including logistics, cold storage, distribution, and farm-to-market access."
+    }
+    </script>
+</head>
+<body>
+
+    <!-- GLOBAL REUSABLE HEADER -->
+    <header class="global-header" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="logo font-serif text-2xl font-bold text-white z-[102]">Nilep</a>
+            
+            <nav class="hidden lg:flex items-center gap-8">
+                <div class="flex gap-8">
+                    <a href="/" class="nav-link" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link" data-path="/solutions/">Solutions</a>
+                    <a href="/contact/" class="nav-link" data-path="/contact/">Contact</a>
+                </div>
+                <a href="/contact/" class="cta-btn-header">Get in Touch</a>
+            </nav>
+
+            <button class="menu-toggle lg:hidden text-white z-[102]" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Overlay Navigation Screen -->
+        <div class="mobile-overlay" id="mobileOverlay">
+            <button class="absolute top-6 right-6 text-white z-[102]" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center text-center">
+                <a href="/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/solutions/">Solutions</a>
+                <a href="/contact/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="cta-btn-header mt-12 w-fit px-8 py-3">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="bg-obsidian relative pt-[180px] pb-24 px-6 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.05]" 
+                 style="background: radial-gradient(circle at 0% 0%, var(--color-green) 0%, transparent 60%);">
+            </div>
+            
+            <div class="max-w-[1280px] mx-auto relative z-10">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Supply Chain Management</span>
+                </div>
+                <h1 class="text-ivory text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] max-w-[900px] mb-6">
+                    Supply Chain Management for Emerging Market Agribusiness.
+                </h1>
+                <p class="text-border text-base sm:text-lg max-w-[680px] leading-relaxed">
+                    End-to-end logistics, cold chain, storage, and distribution solutions keeping agricultural produce moving efficiently from farm to final market.
+                </p>
+            </div>
+        </section>
+
+        <!-- OVERVIEW AND SERVICES -->
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <h2 class="text-obsidian text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight">
+                    What We Manage.
+                </h2>
+
+                <!-- Styled Definition Box -->
+                <div class="bg-[rgba(26,107,60,0.06)] border-l-4 border-brand p-6 md:py-6 md:px-8 rounded-r-lg max-w-[760px] mb-10">
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        Agricultural supply chain management covers the coordination of every step between farm production and final market sale, including logistics, storage, processing, and distribution, to reduce post-harvest loss and improve efficiency.
+                    </p>
+                </div>
+
+                <p class="text-secondary-custom text-base sm:text-lg max-w-[760px] leading-[1.8] mb-12">
+                    Supply chain inefficiency is one of the biggest sources of value destruction in African agriculture. Post-harvest losses, delayed logistics, inadequate storage, and fragmented distribution networks cost farmers, food businesses, and ultimately consumers enormous amounts of money every year. Nilep's supply chain management solutions address these gaps systematically, providing the logistics coordination, storage infrastructure, distribution management, and supply chain technology that allows agricultural produce to move from farm to market efficiently, safely, and profitably.
+                </p>
+
+                <!-- Services Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white-pure p-9 rounded-lg border border-custom-gray flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-3 leading-tight">Farm-to-Market Logistics</h3>
+                            <p class="text-secondary-custom text-sm leading-relaxed">
+                                Coordinated transport from farm to aggregation point to processor to end buyer, with route optimisation, vehicle coordination, and real-time tracking.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white-pure p-9 rounded-lg border border-custom-gray flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-3 leading-tight">Cold Chain and Storage</h3>
+                            <p class="text-secondary-custom text-sm leading-relaxed">
+                                Temperature-controlled storage and cold chain logistics for perishable produce, reducing post-harvest loss and extending the window for market access.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white-pure p-9 rounded-lg border border-custom-gray flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-3 leading-tight">Off-Taker Agreement Management</h3>
+                            <p class="text-secondary-custom text-sm leading-relaxed">
+                                Supporting the development, formalisation, and management of off-taker agreements between farmers and buyers, providing price certainty and market reliability for both sides.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white-pure p-9 rounded-lg border border-custom-gray flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-3 leading-tight">Distribution Network Management</h3>
+                            <p class="text-secondary-custom text-sm leading-relaxed">
+                                Managing the distribution of processed and packaged agricultural products to retailers, food businesses, and institutional buyers, including our direct dealer network for palm oil distribution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLOSING CTA -->
+        <section class="bg-green-brand custom-section-padding px-6 text-center">
+            <div class="max-w-[1280px] mx-auto flex flex-col items-center">
+                <h2 class="text-white text-3xl sm:text-4xl lg:text-[48px] font-bold mb-10 leading-tight">
+                    Need Supply Chain Support?
+                </h2>
+                <a href="/contact/" class="inline-flex bg-white-pure text-green-brand hover:bg-ivory font-semibold rounded px-8 py-4 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- GLOBAL REUSABLE FOOTER -->
+    <footer class="bg-obsidian pt-16 pb-12 px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-[#2C2C2C]">
+                <!-- Column 1 - Brand -->
+                <div class="flex flex-col gap-4">
+                    <a href="/" class="font-serif text-white text-2xl font-bold">Nilep</a>
+                    <p class="text-ivory text-[15px] leading-[1.7]">
+                        Nilep is a diversified group with solutions for various sectors in emerging markets.
+                    </p>
+                    <div class="flex flex-col gap-3 mt-2 text-border text-[14px]">
+                        <div class="flex items-center gap-2">
+                            <span>桃</span> Victoria Island, Lagos, Nigeria
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>笨会ｸ/span> <a href="mailto:info@nilep.xyz" class="hover:text-green-brand transition-colors">info@nilep.xyz</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>到</span> <a href="tel:+2349123694650" class="hover:text-green-brand transition-colors">+234-912-369-4650</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 - Explore -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Explore</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/" class="hover:text-green-brand transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-green-brand transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-green-brand transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-green-brand transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-green-brand transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-green-brand transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-green-brand transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-green-brand transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 - Solutions -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Solutions</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-green-brand transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-green-brand transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-green-brand transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-green-brand transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-green-brand transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-green-brand transition-colors">Palm Oil Syndicate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 gap-4 text-[13px] text-border">
+                <p>2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-2 text-[12px]">
+                    <a href="/privacy-policy/" class="hover:text-green-brand transition-colors">Privacy Policy</a>
+                    <span class="text-border">|</span>
+                    <a href="/terms/" class="hover:text-green-brand transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Reusable sticky global header scroll logic
+            const header = document.getElementById('globalHeader');
+            const handleScroll = () => {
+                if (window.scrollY > 80) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Trigger instantly on layout paint
+
+            // Full-screen overlay setup for tablets and mobile devices
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const openOverlay = () => {
+                mobileOverlay.classList.add('open');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeOverlay = () => {
+                mobileOverlay.classList.remove('open');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            menuToggle.addEventListener('click', openOverlay);
+            closeMenu.addEventListener('click', closeOverlay);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeOverlay);
+            });
+
+            // Dynamic nav-link active state checking
+            const desktopLinks = document.querySelectorAll('.nav-link');
+            const mobileLinksElem = document.querySelectorAll('.mobile-nav-link');
+
+            // Force solutions parent category as active for solutions sub-pages
+            desktopLinks.forEach(el => {
+                if (el.getAttribute('data-path') === '/solutions/') {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            });
+
+            mobileLinksElem.forEach(el => {
+                if (el.getAttribute('data-path') === '/solutions/') {
+                    el.style.color = 'var(--color-green)';
+                    el.style.fontWeight = '600';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
