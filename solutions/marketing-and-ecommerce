@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Marketing and E-Commerce Solutions for Emerging Markets | Nilep</title>
+    <meta name="description" content="Full-funnel digital marketing, technical SEO, marketing automation, and e-commerce development for startups and SMEs across Africa and emerging markets.">
+    <link rel="canonical" href="https://nilep.xyz/solutions/marketing-and-ecommerce/">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Performance Marketing and E-Commerce Solutions",
+      "provider": {
+        "@type": "Organization",
+        "name": "Nilep",
+        "url": "https://nilep.xyz"
+      },
+      "areaServed": [
+        "Africa",
+        "Middle East",
+        "Latin America",
+        "Southeast Asia"
+      ],
+      "description": "Full-funnel digital marketing, technical SEO, marketing automation, and e-commerce development for startups and SMEs across Africa and emerging markets."
+    }
+    </script>
+</head>
+<body>
+
+    <header class="global-header" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="logo font-serif text-2xl font-bold text-white z-[102]">Nilep</a>
+            
+            <nav class="hidden lg:flex items-center gap-8">
+                <div class="flex gap-8">
+                    <a href="/" class="nav-link" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link" data-path="/solutions/">Solutions</a>
+                    <a href="/contact/" class="nav-link" data-path="/contact/">Contact</a>
+                </div>
+                <a href="/contact/" class="cta-btn-header">Get in Touch</a>
+            </nav>
+
+            <button class="menu-toggle lg:hidden text-white z-[102]" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-overlay" id="mobileOverlay">
+            <button class="absolute top-6 right-6 text-white z-[102]" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center text-center">
+                <a href="/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/solutions/">Solutions</a>
+                <a href="/contact/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="cta-btn-header mt-12 w-fit px-8 py-3">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-obsidian relative pt-[180px] pb-24 px-6 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.05]" 
+                 style="background: radial-gradient(circle at 0% 0%, var(--color-green) 0%, transparent 60%);">
+            </div>
+            
+            <div class="max-w-[1280px] mx-auto relative z-10">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Marketing and E-Commerce</span>
+                </div>
+                <h1 class="text-ivory text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] max-w-[900px] mb-6">
+                    Performance Marketing and E-Commerce Solutions That Drive Real Growth.
+                </h1>
+                <p class="text-border text-base sm:text-lg max-w-[680px] leading-relaxed">
+                    Data-driven, full-funnel marketing and digital commerce for startups, SMEs, and agribusinesses across Africa and emerging markets.
+                </p>
+            </div>
+        </section>
+
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Marketing Solutions</span>
+                </div>
+                <h2 class="text-obsidian text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight">
+                    Full-Funnel and Integrated Marketing.
+                </h2>
+                <p class="text-secondary-custom text-base sm:text-lg max-w-[720px] leading-[1.8] mb-12">
+                    We deliver data-driven, full-funnel marketing solutions tailored for startups, SMEs, and agribusinesses covering awareness, consideration, acquisition, conversion, and retention. We combine marketing expertise with digital advertising, brand development, market intelligence, and customer engagement strategies to help businesses increase visibility, demand, and long-term profitability.
+                </p>
+                
+                <!-- 5-Stage Funnel Block -->
+                <div class="flex flex-col md:flex-row md:items-start items-center justify-between gap-4 md:gap-2">
+                    
+                    <!-- Stage 1 -->
+                    <div class="w-full max-w-[200px] flex flex-col items-center">
+                        <div class="funnel-stage-box w-full text-center py-4 px-5 rounded-md font-semibold text-sm">
+                            Awareness
+                        </div>
+                        <div class="mt-3 text-center">
+                            <span class="block text-secondary-custom text-[12px] font-medium leading-tight">Brand Ads</span>
+                            <span class="block text-secondary-custom text-[12px] font-medium leading-tight">SEO Content</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Connector 1 -->
+                    <div class="flex items-center justify-center py-2 md:py-4">
+                        <svg class="w-6 h-6 text-border transform rotate-90 md:rotate-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <!-- Stage 2 -->
+                    <div class="w-full max-w-[200px] flex flex-col items-center">
+                        <div class="funnel-stage-box w-full text-center py-4 px-5 rounded-md font-semibold text-sm">
+                            Consideration
+                        </div>
+                        <div class="mt-3 text-center">
+                            <span class="block text-secondary-custom text-[12px] font-medium leading-tight">Thought Leadership</span>
+                            <span class="block text-secondary-custom text-[12px] font-medium leading-tight">Case Studies</span>
+                        </div>
+                    </div>
+
+                    <!-- Connector 2 -->
+                    <div class="flex items-center justify-center py-2 md:py-4">
+                        <svg class="w-6 h-6 text-border transform rotate-90 md:rotate-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <!-- Stage 3 -->
+                    <div class="w-full max-w-[200px] flex flex-col items-center">
+                        <div class="funnel-stage-box w-full text-center py-4 px-5 rounded-md font-semibold text-sm">
+                            Acquisition
+                        </div>
+                        <div class="mt-3 text-center">
+                            <span class="block text-secondary-custom text-[12px] font-medium leading-tight">Lead Gen</span>
+                            <span class="block text-secondary-custom text-[12px] font-medium leading-tight">Paid Search</span>
+                        </div>
+                    </div>
+
+                    <!-- Connector 3 -->
+                    <div class="flex items-center justify-center py-2 md:py-4">
+                        <svg class="w-6 h-6 text-border transform rotate-90 md:rotate-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <!-- Stage 4 -->
+                    <div class="w-full max-w-[200px] flex flex-col items-center">
+                        <div class="funnel-stage-box w-full text-center py-4 px-5 rounded-md font-semibold text-sm">
+                            Conversion
+                        </div>
+                        <div class="mt-3 text-center">
+                            <span class="block text-secondary-custom text-[12px] font-medium leading-tight">Landing Pages</span>
+                            <span class="block text-secondary-custom text-[12px] font-medium leading-tight">Email</span>
+                        </div>
+                    </div>
+
+                    <!-- Connector 4 -->
+                    <div class="flex items-center justify-center py-2 md:py-4">
+                        <svg class="w-6 h-6 text-border transform rotate-90 md:rotate-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <!-- Stage 5 -->
+                    <div class="w-full max-w-[200px] flex flex-col items-center">
+                        <div class="funnel-stage-box w-full text-center py-4 px-5 rounded-md font-semibold text-sm">
+                            Retention
+                        </div>
+                        <div class="mt-3 text-center">
+                            <span class="block text-secondary-custom text-[12px] font-medium leading-tight">Automation</span>
+                            <span class="block text-secondary-custom text-[12px] font-medium leading-tight">Loyalty</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-obsidian custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Our Services</span>
+                </div>
+                <h2 class="text-ivory text-3xl sm:text-4xl lg:text-[48px] font-bold mb-14 leading-tight">
+                    What We Deliver.
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-secondary-custom p-9 rounded-lg border border-transparent hover:border-brand transition-all">
+                        <h3 class="text-ivory text-xl font-semibold mb-3">Performance Marketing</h3>
+                        <p class="text-border text-[15px] leading-[1.7]">
+                            Paid search, paid social, programmatic display, and affiliate marketing campaigns tied to measurable outcomes. Every naira spent is tracked to a result.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="bg-secondary-custom p-9 rounded-lg border border-transparent hover:border-brand transition-all">
+                        <h3 class="text-ivory text-xl font-semibold mb-3">Technical SEO</h3>
+                        <p class="text-border text-[15px] leading-[1.7]">
+                            Site architecture, Core Web Vitals, structured data, crawlability, and on-page optimisation ensuring your website is built to rank and built to last.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="bg-secondary-custom p-9 rounded-lg border border-transparent hover:border-brand transition-all">
+                        <h3 class="text-ivory text-xl font-semibold mb-3">Brand Development</h3>
+                        <p class="text-border text-[15px] leading-[1.7]">
+                            Visual identity, messaging frameworks, brand guidelines, and creative systems that give businesses a competitive, professional presence in their markets.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="bg-secondary-custom p-9 rounded-lg border border-transparent hover:border-brand transition-all">
+                        <h3 class="text-ivory text-xl font-semibold mb-3">Content and Social Media Management</h3>
+                        <p class="text-border text-[15px] leading-[1.7]">
+                            Strategic content that builds audiences, earns organic search visibility, and keeps your brand relevant and active across the platforms your customers use.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="bg-secondary-custom p-9 rounded-lg border border-transparent hover:border-brand transition-all">
+                        <h3 class="text-ivory text-xl font-semibold mb-3">Marketing Automation</h3>
+                        <p class="text-border text-[15px] leading-[1.7]">
+                            Lead scoring, email sequences, behavioural triggers, and CRM integration ensuring every lead is nurtured intelligently without manual effort.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="bg-secondary-custom p-9 rounded-lg border border-transparent hover:border-brand transition-all">
+                        <h3 class="text-ivory text-xl font-semibold mb-3">Website and Mobile App Development</h3>
+                        <p class="text-border text-[15px] leading-[1.7]">
+                            Scalable, conversion-optimised digital products built for African market performance. Fast, mobile-first, and integrated with local payment infrastructure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">E-Commerce Solutions</span>
+                </div>
+                <h2 class="text-obsidian text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight">
+                    Marketplace and Digital Platforms.
+                </h2>
+                <p class="text-secondary-custom text-base sm:text-lg max-w-[720px] leading-[1.8] mb-12">
+                    We provide end-to-end e-commerce marketplace support enabling businesses across retail and agribusiness to sell directly to consumers through secure, scalable digital platforms. Our solutions include marketplace development, payment integration, logistics coordination, order management, and customer experience optimisation, ensuring seamless transactions and sustained revenue growth.
+                </p>
+                
+                <!-- Process Flow Horizontal/Vertical Diagram -->
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 md:gap-4 max-w-[840px] mb-10">
+                    
+                    <!-- Step 1 -->
+                    <div class="flex-1">
+                        <span class="block text-green-brand text-[11px] font-semibold uppercase tracking-[1px] mb-1">01</span>
+                        <h3 class="text-obsidian text-lg font-bold">Build</h3>
+                    </div>
+
+                    <!-- Chevron -->
+                    <div class="hidden md:block">
+                        <svg class="w-5 h-5 text-border" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex-1">
+                        <span class="block text-green-brand text-[11px] font-semibold uppercase tracking-[1px] mb-1">02</span>
+                        <h3 class="text-obsidian text-lg font-bold">Integrate</h3>
+                    </div>
+
+                    <!-- Chevron -->
+                    <div class="hidden md:block">
+                        <svg class="w-5 h-5 text-border" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex-1">
+                        <span class="block text-green-brand text-[11px] font-semibold uppercase tracking-[1px] mb-1">03</span>
+                        <h3 class="text-obsidian text-lg font-bold">Launch</h3>
+                    </div>
+
+                    <!-- Chevron -->
+                    <div class="hidden md:block">
+                        <svg class="w-5 h-5 text-border" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="flex-1">
+                        <span class="block text-green-brand text-[11px] font-semibold uppercase tracking-[1px] mb-1">04</span>
+                        <h3 class="text-obsidian text-lg font-bold">Optimise</h3>
+                    </div>
+
+                </div>
+
+                <div class="mt-10">
+                    <button class="bg-custom-gray text-secondary-custom text-base font-semibold px-8 py-4 rounded cursor-not-allowed border border-custom-gray" style="background-color: var(--color-border);" disabled>
+                        Coming Soon
+                    </button>
+                    <span class="block text-secondary-custom text-[13px] mt-3">E-commerce marketplace launching soon.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-obsidian custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <h2 class="text-ivory text-3xl sm:text-4xl lg:text-[48px] font-bold mb-14 leading-tight">
+                    Who We Work With.
+                </h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                    <!-- Target Col 1 -->
+                    <div>
+                        <h3 class="text-ivory text-xl font-semibold mb-3">Startups</h3>
+                        <p class="text-border text-base leading-[1.7]">
+                            Early-stage businesses that need marketing infrastructure built from the ground up, from brand identity to digital acquisition.
+                        </p>
+                    </div>
+
+                    <!-- Target Col 2 -->
+                    <div>
+                        <h3 class="text-ivory text-xl font-semibold mb-3">SMEs</h3>
+                        <p class="text-border text-base leading-[1.7]">
+                            Established businesses scaling their digital presence, customer acquisition, and marketing efficiency across African markets.
+                        </p>
+                    </div>
+
+                    <!-- Target Col 3 -->
+                    <div>
+                        <h3 class="text-ivory text-xl font-semibold mb-3">Agribusinesses</h3>
+                        <p class="text-border text-base leading-[1.7]">
+                            Farms, food brands, and agricultural businesses connecting production to market through digital channels and performance marketing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-green-brand custom-section-padding px-6 text-center">
+            <div class="max-w-[1280px] mx-auto flex flex-col items-center">
+                <h2 class="text-white text-3xl sm:text-4xl lg:text-[48px] font-bold mb-4 leading-tight">
+                    Ready to Grow Your Business?
+                </h2>
+                <p class="text-ivory text-base sm:text-lg max-w-[640px] leading-relaxed mb-10">
+                    Tell us about your marketing challenge and we will show you what is possible.
+                </p>
+                <a href="/contact/" class="inline-flex bg-white text-green-brand hover:bg-ivory font-semibold rounded px-8 py-4 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-obsidian pt-16 pb-12 px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-[#2C2C2C]">
+                <!-- Column 1 -->
+                <div class="flex flex-col gap-4">
+                    <a href="/" class="font-serif text-white text-2xl font-bold">Nilep</a>
+                    <p class="text-ivory text-[15px] leading-[1.7]">
+                        Nilep is a diversified group with solutions for various sectors in emerging markets.
+                    </p>
+                    <div class="flex flex-col gap-3 mt-2 text-border text-[14px]">
+                        <div class="flex items-center gap-2">
+                            <span>桃</span> Victoria Island, Lagos, Nigeria
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>笨会ｸ/span> <a href="mailto:info@nilep.xyz" class="hover:text-green-brand transition-colors">info@nilep.xyz</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>到</span> <a href="tel:+2349123694650" class="hover:text-green-brand transition-colors">+234-912-369-4650</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Explore</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/" class="hover:text-green-brand transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-green-brand transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-green-brand transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-green-brand transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-green-brand transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-green-brand transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-green-brand transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-green-brand transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Solutions</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-green-brand transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-green-brand transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-green-brand transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-green-brand transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-green-brand transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-green-brand transition-colors">Palm Oil Syndicate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 gap-4 text-[13px] text-border">
+                <p>2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-2 text-[12px]">
+                    <a href="/privacy-policy/" class="hover:text-green-brand transition-colors">Privacy Policy</a>
+                    <span class="text-border">|</span>
+                    <a href="/terms/" class="hover:text-green-brand transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Header Scroll transition handling
+            const header = document.getElementById('globalHeader');
+            const handleScroll = () => {
+                if (window.scrollY > 80) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Check immediately on startup
+
+            // Mobile Navigation Toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const openMobileNav = () => {
+                mobileOverlay.classList.add('open');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeMobileNav = () => {
+                mobileOverlay.classList.remove('open');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            menuToggle.addEventListener('click', openMobileNav);
+            closeMenu.addEventListener('click', closeMobileNav);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeMobileNav);
+            });
+
+            // Set active page menu link underline logic
+            const desktopLinks = document.querySelectorAll('.nav-link');
+            const mobileLinksElem = document.querySelectorAll('.mobile-nav-link');
+
+            // Force parent Solutions link to active status since this is a sub-page of /solutions/
+            desktopLinks.forEach(el => {
+                if (el.getAttribute('data-path') === '/solutions/') {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            });
+
+            mobileLinksElem.forEach(el => {
+                if (el.getAttribute('data-path') === '/solutions/') {
+                    el.style.color = 'var(--color-green)';
+                    el.style.fontWeight = '600';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
