@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest in Palm Oil in Nigeria — High-Yield Agricultural Syndicate | Nilep</title>
+    <meta name="description" content="Invest in Nigeria's booming palm oil market through Nilep's quarterly agricultural syndicate. Up to 15% ROI per cycle, backed by verified milling operations in Cross River State.">
+    <link rel="canonical" href="https://nilep.xyz/invest/palm-oil-syndicate/">
+    
+    <!-- Google Fonts: Inter (Body, UI) & Fraunces (Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Schema.org FinancialService Metadata -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Nilep Palm Oil Production Syndicate",
+      "url": "https://nilep.xyz/invest/palm-oil-syndicate/",
+      "provider": {
+        "@type": "Organization",
+        "name": "Nilep",
+        "url": "https://nilep.xyz"
+      },
+      "areaServed": [
+        "Africa",
+        "Middle East",
+        "Latin America",
+        "Southeast Asia"
+      ],
+      "description": "High-yield agro-processing investment backed by verified weekly milling operations in Cross River State. Up to 15% ROI per quarterly cycle.",
+      "feesAndCommissionsSpecification": "No hidden management fees. Stated returns are net of operational costs."
+    }
+    </script>
+
+</head>
+<body>
+
+    <!-- REUSABLE HEADER -->
+    <header class="global-header" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="logo font-serif text-2xl font-bold text-white z-[102]">Nilep</a>
+            
+            <nav class="hidden lg:flex items-center gap-8">
+                <div class="flex gap-8">
+                    <a href="/" class="nav-link" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link" data-path="/solutions/">Solutions</a>
+                    <a href="/contact/" class="nav-link" data-path="/contact/">Contact</a>
+                </div>
+                <a href="/contact/" class="cta-btn-header">Get in Touch</a>
+            </nav>
+
+            <button class="menu-toggle lg:hidden text-white z-[102]" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Overlay Navigation Screen -->
+        <div class="mobile-overlay" id="mobileOverlay">
+            <button class="absolute top-6 right-6 text-white z-[102]" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center text-center">
+                <a href="/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/solutions/">Solutions</a>
+                <a href="/contact/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="cta-btn-header mt-12 w-fit px-8 py-3">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="bg-obsidian relative pt-[180px] pb-24 px-6 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.05]" 
+                 style="background: radial-gradient(circle at 0% 0%, var(--color-green) 0%, transparent 60%);">
+            </div>
+            
+            <div class="max-w-[1280px] mx-auto relative z-10 text-center lg:text-left">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Nilep Agricultural Syndicates</span>
+                </div>
+                <h1 class="text-ivory text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] max-w-[880px] mb-6 mx-auto lg:mx-0">
+                    Invest in Palm Oil. Earn Up to 15% Every Quarter.
+                </h1>
+                <p class="text-border text-base sm:text-lg max-w-[680px] leading-relaxed mb-12 mx-auto lg:mx-0">
+                    Nigeria's domestic demand for palm oil consistently outpaces local supply. Nilep puts your capital to work inside that gap through professionally managed milling operations in Cross River State, with verified returns paid every quarter.
+                </p>
+
+                <!-- 3-Stat Row -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 border-t border-[rgba(232,226,214,0.1)] pt-12 max-w-[1000px] mx-auto lg:mx-0">
+                    <!-- Stat 1 -->
+                    <div class="text-center px-4">
+                        <div class="font-serif text-gold text-[44px] md:text-[52px] font-bold leading-none">Up to 15%</div>
+                        <div class="text-border text-[11px] md:text-[12px] tracking-[1px] uppercase font-medium mt-3">Target ROI Per Cycle</div>
+                    </div>
+                    <!-- Stat 2 -->
+                    <div class="text-center px-4 border-y md:border-y-0 md:border-x border-[rgba(232,226,214,0.1)] py-6 md:py-0">
+                        <div class="font-serif text-gold text-[44px] md:text-[52px] font-bold leading-none">3 Months</div>
+                        <div class="text-border text-[11px] md:text-[12px] tracking-[1px] uppercase font-medium mt-3">Quarterly Cycle Tenor</div>
+                    </div>
+                    <!-- Stat 3 -->
+                    <div class="text-center px-4">
+                        <div class="font-serif text-gold text-[44px] md:text-[52px] font-bold leading-none">5 Cycles</div>
+                        <div class="text-border text-[11px] md:text-[12px] tracking-[1px] uppercase font-medium mt-3">Consecutively Paid Out</div>
+                    </div>
+                </div>
+
+                <!-- CTA Row -->
+                <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start max-w-[550px] mx-auto lg:mx-0">
+                    <a href="https://nilepfractional.netlify.app" target="_blank" rel="noopener noreferrer" 
+                       class="inline-block bg-green-brand text-white hover:bg-green-dark text-center font-semibold rounded px-8 py-4 transition-colors">
+                        Calculate My Returns
+                    </a>
+                    <a href="https://corre.bond/r/CGBSZ9YK" target="_blank" rel="noopener noreferrer" 
+                       class="inline-block border-2 border-brand text-green-brand hover:bg-green-brand hover:text-white text-center font-semibold rounded px-8 py-4 transition-colors">
+                        Start Investing via Corre
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY THIS WORKS -->
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Why This Works</span>
+                </div>
+                <h2 class="text-obsidian text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight max-w-[800px]">
+                    Palm Oil Is One of Nigeria's Most Resilient Investment Opportunities.
+                </h2>
+
+                <!-- Styled Definition Box -->
+                <div class="bg-[rgba(26,107,60,0.06)] border-l-4 border-brand p-6 md:py-6 md:px-8 rounded-r-lg max-w-[760px] mb-8">
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        Palm oil is the most widely consumed vegetable oil in the world, present in an estimated 50% of everyday consumer products. In Nigeria, domestic demand for palm oil consistently exceeds local supply, creating a structural market gap that does not disappear with economic downturns. Nilep's syndicate puts investor capital to work inside this gap through active, verified milling operations.
+                    </p>
+                </div>
+
+                <p class="text-secondary-custom text-base sm:text-lg max-w-[760px] leading-[1.8] mb-14">
+                    Nigeria produces palm oil but not enough of it. The country imports significant volumes annually despite having the climate, soil, and agricultural conditions to produce world-class palm oil at home. This supply-demand gap is the investment thesis. When you invest in the Nilep Palm Oil Production Syndicate, your capital goes into buying fresh fruit bunches, processing them at our milling facilities in Cross River State, and selling the refined output to a pre-verified network of commercial dealers on a weekly cycle.
+                </p>
+
+                <!-- 4-Column Reason Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white-pure p-8 rounded-lg border border-custom-gray flex flex-col">
+                        <h3 class="text-obsidian text-lg font-bold mb-3 leading-tight">Constant Demand, No Seasonality</h3>
+                        <p class="text-secondary-custom text-sm leading-relaxed">
+                            Palm oil is used daily in Nigerian homes, restaurants, food processing, and manufacturing. This is not a cyclical product. Demand does not slow down.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white-pure p-8 rounded-lg border border-custom-gray flex flex-col">
+                        <h3 class="text-obsidian text-lg font-bold mb-3 leading-tight">Inflation-Linked Value</h3>
+                        <p class="text-secondary-custom text-sm leading-relaxed">
+                            As the cost of goods rises, so does the value of physical agricultural commodities. Your investment tracks real economic activity, not a speculative market.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white-pure p-8 rounded-lg border border-custom-gray flex flex-col">
+                        <h3 class="text-obsidian text-lg font-bold mb-3 leading-tight">Local Processing Advantage</h3>
+                        <p class="text-secondary-custom text-sm leading-relaxed">
+                            Our milling facilities in Akamkpa and Akpabuyo, Cross River State, sit close to our fresh fruit bunch supply networks. This proximity keeps costs down and margins healthy.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white-pure p-8 rounded-lg border border-custom-gray flex flex-col">
+                        <h3 class="text-obsidian text-lg font-bold mb-3 leading-tight">Verified Offtake, Not Speculation</h3>
+                        <p class="text-secondary-custom text-sm leading-relaxed">
+                            Before a cycle begins, we have confirmed buyers for the output. Our commercial dealer network takes delivery weekly. Revenue is locked in before your capital goes to work.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW TO INVEST IN PALM OIL -->
+        <section class="bg-obsidian custom-section-padding px-6 text-center lg:text-left">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">How It Works</span>
+                </div>
+                <h2 class="text-ivory text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight">
+                    How to Invest in Palm Oil Through Nilep.
+                </h2>
+                <p class="text-border text-base sm:text-lg max-w-[720px] leading-[1.7] mb-14 mx-auto lg:mx-0">
+                    Getting started is straightforward. You do not need to understand palm oil farming or milling. You provide the capital. We run the operation. You receive the returns.
+                </p>
+
+                <!-- 3-Step Journey -->
+                <div class="relative step-line">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 relative z-10 text-left">
+                        <!-- Step 1 -->
+                        <div>
+                            <span class="font-serif text-gold text-[48px] font-bold block mb-4">01</span>
+                            <h3 class="text-ivory text-xl font-semibold mb-3">Choose Your Tier and Calculate Your Returns</h3>
+                            <p class="text-border text-[15px] leading-[1.7]">
+                                Use the yield calculator to see exactly what your capital will generate at Tier 1 (up to 10% per cycle) or Tier 2 (up to 15% per cycle). No commitment required to run the numbers.
+                            </p>
+                            <a href="https://nilepfractional.netlify.app" target="_blank" rel="noopener noreferrer" 
+                               class="inline-block text-green-brand font-semibold text-sm mt-4 hover:underline">
+                                Launch Yield Calculator
+                            </a>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div>
+                            <span class="font-serif text-gold text-[48px] font-bold block mb-4">02</span>
+                            <h3 class="text-ivory text-xl font-semibold mb-3">Set Up Your Investment via Corre</h3>
+                            <p class="text-border text-[15px] leading-[1.7]">
+                                Your investment is managed through Corre, our regulated digital investment partner. Onboarding takes minutes. You select your cycle duration of 3, 6, 9, or 12 months and commit your allocation before the cycle lock date.
+                            </p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div>
+                            <span class="font-serif text-gold text-[48px] font-bold block mb-4">03</span>
+                            <h3 class="text-ivory text-xl font-semibold mb-3">Receive Your Returns Each Quarter</h3>
+                            <p class="text-border text-[15px] leading-[1.7]">
+                                Once your cycle completes, your returns are distributed through the Corre platform. You can then roll into the next cycle or withdraw. Five consecutive cycles have been paid in full.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT HAPPENS WITH YOUR CAPITAL -->
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Inside the Syndicate</span>
+                </div>
+                <h2 class="text-obsidian text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight">
+                    What Happens With Your Capital.
+                </h2>
+                <p class="text-secondary-custom text-base sm:text-lg max-w-[720px] leading-[1.7] mb-12">
+                    You do not need to understand every step of the palm oil production process to invest in it. But here is what your capital actually does during a cycle.
+                </p>
+
+                <!-- 4 Operational Steps Stacked Vertically -->
+                <div class="flex flex-col mb-12">
+                    <!-- Step A -->
+                    <div class="border-l-2 border-brand pl-6 pb-8 max-w-[760px]">
+                        <span class="block text-green-brand text-[11px] uppercase tracking-[2px] font-semibold mb-2">Your Capital</span>
+                        <h3 class="text-obsidian text-xl font-semibold mb-2">Goes into the Active Cycle</h3>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            Your allocation is locked in on the final day of the month before the cycle begins. It is deployed into purchasing fresh fruit bunches and covering processing operations.
+                        </p>
+                    </div>
+
+                    <!-- Step B -->
+                    <div class="border-l-2 border-brand pl-6 pb-8 max-w-[760px]">
+                        <span class="block text-green-brand text-[11px] uppercase tracking-[2px] font-semibold mb-2">Our Team</span>
+                        <h3 class="text-obsidian text-xl font-semibold mb-2">Sources and Processes of the Fruit</h3>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            We source premium fresh fruit bunches from established harvest networks in Cross River State and process them at our facilities in Akamkpa and Akpabuyo LGAs into high-grade Crude Palm Oil and consumable palm oil.
+                        </p>
+                    </div>
+
+                    <!-- Step C -->
+                    <div class="border-l-2 border-brand pl-6 pb-8 max-w-[760px]">
+                        <span class="block text-green-brand text-[11px] uppercase tracking-[2px] font-semibold mb-2">The Output</span>
+                        <h3 class="text-obsidian text-xl font-semibold mb-2">Is Sold to Verified Buyers Weekly</h3>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            Finished palm oil is distributed on a weekly cadence to our pre-verified network of commercial dealers and open market wholesalers. Revenue is generated and tracked every week of your cycle.
+                        </p>
+                    </div>
+
+                    <!-- Step D -->
+                    <div class="border-l-2 border-brand pl-6 pb-2 max-w-[760px]">
+                        <span class="block text-green-brand text-[11px] uppercase tracking-[2px] font-semibold mb-2">Your Return</span>
+                        <h3 class="text-obsidian text-xl font-semibold mb-2">Is Paid When the Cycle Closes</h3>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            At the end of your elected cycle, your capital plus your contracted return is distributed through the Corre platform. Five cycles have been paid in full with no missed payments.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Active Cultivation Support Info -->
+                <div class="bg-[rgba(26,107,60,0.06)] border-l-4 border-brand p-6 md:py-6 md:px-8 rounded-r-lg max-w-[760px]">
+                    <p class="text-secondary-custom text-sm md:text-[15px] leading-[1.7]">
+                        Nilep also manages 3 hectares of active cultivation for Cucumber, Cassava, and Plantain across Cross River State, adding operational breadth and diversification to the land-backed model behind this syndicate.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PALM OIL PRICE AND MARKET CONTEXT -->
+        <section class="bg-obsidian custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Market Context</span>
+                </div>
+                <h2 class="text-ivory text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight">
+                    Palm Oil Pricing and What It Means for Your Investment.
+                </h2>
+                <p class="text-border text-base sm:text-lg max-w-[720px] leading-[1.7] mb-12">
+                    Palm oil is a globally traded commodity and its price moves with international supply and demand dynamics. However, the Nilep syndicate is structured to reduce your exposure to global price volatility through a combination of domestic market focus and pre-verified offtake arrangements.
+                </p>
+
+                <!-- Explanation Blocks Stacked Vertically -->
+                <div class="flex flex-col">
+                    <!-- Block 1 -->
+                    <div class="border-b border-[#2C2C2C] py-7 max-w-[760px]">
+                        <h3 class="text-ivory text-lg font-semibold mb-3">Why Domestic Demand Insulates This Investment</h3>
+                        <p class="text-border text-[15px] leading-[1.7]">
+                            Global palm oil prices are influenced by production in Malaysia and Indonesia and by competing vegetable oil markets. However, Nigeria's domestic palm oil market is driven primarily by local consumption demand, which is structural and consistent. Even when global prices dip, Nigerians still cook with palm oil every day.
+                        </p>
+                    </div>
+
+                    <!-- Block 2 -->
+                    <div class="border-b border-[#2C2C2C] py-7 max-w-[760px]">
+                        <h3 class="text-ivory text-lg font-semibold mb-3">How the Offtake Structure Protects Your Returns</h3>
+                        <p class="text-border text-[15px] leading-[1.7]">
+                            Before each cycle begins, Nilep has confirmed buyers for the cycle's output. This means revenue is not dependent on spot market pricing at the time of sale. Your returns are tied to the operational performance of the cycle, not to commodity price movements on the day of harvest.
+                        </p>
+                    </div>
+
+                    <!-- Block 3 -->
+                    <div class="border-b border-[#2C2C2C] py-7 max-w-[760px]">
+                        <h3 class="text-ivory text-lg font-semibold mb-3">Inflation as a Tailwind, Not a Risk</h3>
+                        <p class="text-border text-[15px] leading-[1.7]">
+                            As general price levels rise in Nigeria, so does the value of physical agricultural commodities including palm oil. This means your investment in a physical production asset naturally tracks inflation, which is a meaningful advantage over cash deposits or fixed income instruments in a high-inflation environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONSUMABLE PALM OIL & OPEN MARKET SUPPLY -->
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Beyond Crude Palm Oil</span>
+                </div>
+                <h2 class="text-obsidian text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight">
+                    Supplying Consumable Palm Oil to Wholesalers and Retailers.
+                </h2>
+                <p class="text-secondary-custom text-base sm:text-lg max-w-[760px] leading-[1.8] mb-12">
+                    Nilep's operations produce more than Crude Palm Oil for industrial buyers. We refine and distribute consumable palm oil, ready-to-use cooking oil, directly to open market wholesalers, retailers, and food service operators across Nigeria. Consumable palm oil is one of the most consistently demanded cooking oils in Nigerian households and food service operations. It is used daily in homes, restaurants, market kitchens, and street food operations across every demographic and every region. This demand is structural, not cyclical. It does not contract with economic conditions in the way that premium or discretionary food products do.
+                </p>
+
+                <h3 class="text-obsidian text-2xl lg:text-3xl font-bold mb-8">
+                    The Route from Our Mill to the Open Market.
+                </h3>
+
+                <!-- Sub-sections Stacked Vertically -->
+                <div class="flex flex-col gap-8 max-w-[760px]">
+                    <!-- Sub 1 -->
+                    <div>
+                        <h4 class="text-obsidian text-lg font-semibold mb-2">Milling to Refined Cooking Oil</h4>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            Fresh fruit bunches from our Cross River State harvest networks are processed at our Akamkpa and Akpabuyo facilities. Crude Palm Oil is refined and packaged as consumable-grade cooking oil in formats suited to different buyer segments, from bulk drums for wholesale buyers to retail containers for market traders.
+                        </p>
+                    </div>
+
+                    <!-- Sub 2 -->
+                    <div>
+                        <h4 class="text-obsidian text-lg font-semibold mb-2">Quality Grading Before Distribution</h4>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            All output is graded before packaging. Consumable grades meeting retail standards are packaged in clearly labelled containers. Bulk grades are supplied in drums or jerry cans to wholesale buyers.
+                        </p>
+                    </div>
+
+                    <!-- Sub 3 -->
+                    <div>
+                        <h4 class="text-obsidian text-lg font-semibold mb-2">Wholesale Distribution to Open Market Traders</h4>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            Finished consumable palm oil moves through our pre-verified dealer network to open market wholesalers in major food commodity markets across Cross River State, South-South, and South-East Nigeria. Our dealer verification ensures supply reaches buyers with reliable volume capacity and consistent demand.
+                        </p>
+                    </div>
+
+                    <!-- Sub 4 -->
+                    <div>
+                        <h4 class="text-obsidian text-lg font-semibold mb-2">Retail and Food Service Access</h4>
+                        <p class="text-secondary-custom text-[15px] leading-[1.7]">
+                            We supply independent provision shops, grocery stores, supermarkets, caterers, institutional kitchens, and restaurants. Retailers who require product certification and consistent supply can access our consumable palm oil through our dealer network.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-14 border-t border-custom-gray pt-10">
+                    <h3 class="text-obsidian text-2xl lg:text-3xl font-bold mb-4">
+                        If You Are a Palm Oil Buyer.
+                    </h3>
+                    <p class="text-secondary-custom text-base sm:text-lg max-w-[760px] leading-[1.8] mb-8">
+                        If you are a wholesaler, market trader, retailer, or food service operator looking for a consistent, quality-verified supply of consumable palm oil in Nigeria, contact the Nilep supply team. We supply in volume to verified buyers with weekly output from our Cross River State operations.
+                    </p>
+                    <a href="/contact/" class="inline-flex bg-green-brand hover:bg-green-dark text-white font-semibold rounded px-8 py-4 transition-colors">
+                        Enquire About Palm Oil Supply
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAPITAL TIERS AND RETURNS -->
+        <section class="bg-obsidian custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-green-brand text-xs font-semibold tracking-[2px] uppercase">Investment Options</span>
+                </div>
+                <h2 class="text-ivory text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight">
+                    Choose Your Investment Tier.
+                </h2>
+                <p class="text-border text-base sm:text-lg max-w-[720px] leading-[1.7] mb-10">
+                    Two entry positions are available. Both follow the same quarterly cycle structure and the same physical asset backing. The difference is in the return rate and the entry level.
+                </p>
+
+                <!-- Returns Table -->
+                <div class="w-full overflow-x-auto rounded-lg shadow-lg mb-14">
+                    <table class="w-full text-left border-collapse min-w-[600px]">
+                        <thead>
+                            <tr class="bg-green-brand text-white text-[13px] uppercase tracking-[1px] font-semibold">
+                                <th class="py-5 px-6">Capital Tier</th>
+                                <th class="py-5 px-6">Entry Position</th>
+                                <th class="py-5 px-6">Return Per Cycle</th>
+                                <th class="py-5 px-6">Cycle Duration Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1 -->
+                            <tr class="bg-secondary-custom text-ivory text-[15px] border-b border-[#1E1E1E]">
+                                <td class="py-5 px-6 font-semibold">Tier 1</td>
+                                <td class="py-5 px-6">Standard Entry</td>
+                                <td class="py-5 px-6 text-gold font-semibold">Up to 10% per cycle</td>
+                                <td class="py-5 px-6">3, 6, 9, or 12 months</td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr class="bg-[rgba(255,255,255,0.04)] text-ivory text-[15px]">
+                                <td class="py-5 px-6 font-semibold">Tier 2</td>
+                                <td class="py-5 px-6">Enhanced Entry</td>
+                                <td class="py-5 px-6 text-gold font-semibold">Up to 15% per cycle</td>
+                                <td class="py-5 px-6">3, 6, 9, or 12 months</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 4 Trust Badges Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Badge 1 -->
+                    <div class="bg-secondary-custom p-6 rounded-lg border border-brand flex items-start gap-4">
+                        <span class="text-2xl">✅</span>
+                        <div>
+                            <h4 class="text-ivory text-sm font-semibold mb-1">5 Consecutive Cycles Fully Paid</h4>
+                            <p class="text-border text-[13px]">No missed payments on record.</p>
+                        </div>
+                    </div>
+
+                    <!-- Badge 2 -->
+                    <div class="bg-secondary-custom p-6 rounded-lg border border-brand flex items-start gap-4">
+                        <span class="text-2xl">🔒</span>
+                        <div>
+                            <h4 class="text-ivory text-sm font-semibold mb-1">Capital Locked for Cycle Duration</h4>
+                            <p class="text-border text-[13px]">Committed for your elected period.</p>
+                        </div>
+                    </div>
+
+                    <!-- Badge 3 -->
+                    <div class="bg-secondary-custom p-6 rounded-lg border border-brand flex items-start gap-4">
+                        <span class="text-2xl">📅</span>
+                        <div>
+                            <h4 class="text-ivory text-sm font-semibold mb-1">Quarterly Deployment Windows</h4>
+                            <p class="text-border text-[13px]">Aligned with production cycles.</p>
+                        </div>
+                    </div>
+
+                    <!-- Badge 4 -->
+                    <div class="bg-secondary-custom p-6 rounded-lg border border-brand flex items-start gap-4">
+                        <span class="text-2xl">📦</span>
+                        <div>
+                            <h4 class="text-ivory text-sm font-semibold mb-1">Physical Production Asset Backing</h4>
+                            <p class="text-border text-[13px]">Active milling infrastructure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TWO STEPS TO START -->
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <h2 class="text-obsidian text-3xl sm:text-4xl lg:text-[48px] font-bold mb-4 leading-tight">
+                    Ready to Invest in Palm Oil?
+                </h2>
+                <p class="text-secondary-custom text-base sm:text-lg max-w-[720px] leading-[1.7] mb-14">
+                    Two steps and you are in. Run your numbers first. Then commit your position through our regulated partner platform.
+                </p>
+
+                <!-- 2-Column layout -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                    <!-- Column 1 -->
+                    <div>
+                        <h3 class="text-obsidian text-xl sm:text-2xl font-bold mb-4">Step 1 - Run Your Projections</h3>
+                        <p class="text-secondary-custom text-base leading-[1.7] mb-8">
+                            See exactly what your capital generates at Tier 1 or Tier 2 before making any commitment. The calculator shows your return across all cycle duration options.
+                        </p>
+                        <a href="https://nilepfractional.netlify.app" target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex justify-center bg-green-brand hover:bg-green-dark text-white font-semibold rounded px-8 py-4 w-full text-center transition-colors">
+                            Launch Yield Calculator
+                        </a>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div>
+                        <h3 class="text-obsidian text-xl sm:text-2xl font-bold mb-4">Step 2 - Open Your Position on Corre</h3>
+                        <p class="text-secondary-custom text-base leading-[1.7] mb-8">
+                            Your investment is managed through Corre, our regulated digital investment partner. Onboarding is fast. Select your tier, choose your cycle duration, and confirm your allocation.
+                        </p>
+                        <a href="https://corre.bond/r/CGBSZ9YK" target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex justify-center bg-green-brand hover:bg-green-dark text-white font-semibold rounded px-8 py-4 w-full text-center transition-colors">
+                            Invest via Corre Platform
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISCLAIMER SECTION -->
+        <section class="bg-ivory py-12 px-6 border-t border-custom-gray">
+            <div class="max-w-[760px] mx-auto text-center">
+                <p class="text-secondary-custom text-[13px] leading-[1.8] italic">
+                    Your capital is guaranteed across all syndicate cycles. Returns are contractual obligations tied to each cycle's operational performance, backed by physical production assets and verified offtake. Capital is secured for the full duration of your elected cycle. Nilep syndicates are managed via the Corre digital platform for full transparency and investor protection. Investment involves risk. Past performance does not guarantee future returns. Please review all terms before investing.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- REUSABLE FOOTER -->
+    <footer class="bg-obsidian pt-16 pb-12 px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-[#2C2C2C]">
+                
+                <!-- Column 1 - Brand -->
+                <div class="flex flex-col gap-4">
+                    <a href="/" class="font-serif text-white text-2xl font-bold">Nilep</a>
+                    <p class="text-ivory text-[15px] leading-[1.7]">
+                        Nilep is a diversified group with solutions for various sectors in emerging markets.
+                    </p>
+                    <div class="flex flex-col gap-3 mt-2 text-border text-[14px]">
+                        <div class="flex items-center gap-2">
+                            <span>📍</span> Victoria Island, Lagos, Nigeria
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>✉️</span> <a href="mailto:info@nilep.xyz" class="hover:text-green-brand transition-colors">info@nilep.xyz</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>📞</span> <a href="tel:+2349123694650" class="hover:text-green-brand transition-colors">+234-912-369-4650</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 - Explore -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Explore</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/" class="hover:text-green-brand transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-green-brand transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-green-brand transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-green-brand transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-green-brand transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-green-brand transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-green-brand transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-green-brand transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 - Solutions -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Solutions</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-green-brand transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-green-brand transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-green-brand transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-green-brand transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-green-brand transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-green-brand transition-colors font-semibold text-white">Palm Oil Syndicate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 gap-4 text-[13px] text-border">
+                <p>2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-2 text-[12px]">
+                    <a href="/privacy-policy/" class="hover:text-green-brand transition-colors">Privacy Policy</a>
+                    <span class="text-border">|</span>
+                    <a href="/terms/" class="hover:text-green-brand transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Reusable sticky global header scroll logic
+            const header = document.getElementById('globalHeader');
+            const handleScroll = () => {
+                if (window.scrollY > 80) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Trigger instantly on layout paint
+
+            // Full-screen overlay setup for tablets and mobile devices
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const openOverlay = () => {
+                mobileOverlay.classList.add('open');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeOverlay = () => {
+                mobileOverlay.classList.remove('open');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            menuToggle.addEventListener('click', openOverlay);
+            closeMenu.addEventListener('click', closeOverlay);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeOverlay);
+            });
+
+            // Dynamic nav-link active state checking
+            const desktopLinks = document.querySelectorAll('.nav-link');
+            const mobileLinksElem = document.querySelectorAll('.mobile-nav-link');
+
+            // Do not force solutions or any navigation link to active as this syndicate landing page is deep within /invest/ pathways.
+            desktopLinks.forEach(el => el.classList.remove('active'));
+            mobileLinksElem.forEach(el => {
+                el.style.color = '';
+                el.style.fontWeight = '';
+            });
+        });
+    </script>
+</body>
+</html>
