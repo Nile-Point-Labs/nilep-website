@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Nilep</title>
+    <meta name="description" content="The page you are looking for does not exist or has been moved.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Google Fonts: Inter (Body, UI, Headings) & Fraunces (H1 & 404 Text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        :root {
+            --color-obsidian: #0A0A0A;
+            --color-ivory: #F5F0E8;
+            --color-green: #1A6B3C;
+            --color-green-dark: #145730;
+            --color-text-secondary: #2C2C2C;
+            --color-border: #E8E2D6;
+            --color-white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-obsidian);
+            color: var(--color-ivory);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, .font-serif {
+            font-family: 'Fraunces', serif;
+        }
+
+        /* Color abstractions */
+        .bg-obsidian { background-color: var(--color-obsidian); }
+        .bg-ivory { background-color: var(--color-ivory); }
+        .bg-green-brand { background-color: var(--color-green); }
+        .bg-green-dark { background-color: var(--color-green-dark); }
+        .text-obsidian { color: var(--color-obsidian); }
+        .text-ivory { color: var(--color-ivory); }
+        .text-green-brand { color: var(--color-green); }
+        .text-border { color: var(--color-border); }
+        .text-secondary-custom { color: var(--color-text-secondary); }
+        .border-brand { border-color: var(--color-green); }
+
+        /* Dynamic Sticky Header styles */
+        .global-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+            padding: 24px 0;
+            background-color: transparent;
+        }
+
+        .global-header.scrolled {
+            background-color: var(--color-obsidian);
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+            padding: 16px 0;
+        }
+
+        /* Navigation Links styling */
+        .nav-link {
+            color: var(--color-ivory);
+            font-size: 15px;
+            transition: color 0.2s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--color-green);
+        }
+
+        .nav-link.active {
+            font-weight: 600;
+            color: var(--color-white);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-green);
+        }
+
+        /* Mobile Menu Navigation Overlay */
+        .mobile-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--color-obsidian);
+            z-index: 105;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .mobile-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Button classes */
+        .cta-btn-header {
+            background-color: var(--color-green);
+            color: var(--color-white);
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background-color 0.2s ease;
+        }
+
+        .cta-btn-header:hover {
+            background-color: var(--color-green-dark);
+        }
+    </style>
+</head>
+<body class="bg-obsidian">
+
+    <!-- GLOBAL HEADER -->
+    <header class="global-header scrolled" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="font-serif text-2xl font-bold text-white z-[102]" aria-label="Nilep Home">Nilep</a>
+            
+            <nav class="hidden lg:flex items-center gap-8">
+                <div class="flex gap-8">
+                    <a href="/" class="nav-link" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link" data-path="/solutions/">Solutions</a>
+                    <a href="/contact/" class="nav-link" data-path="/contact/">Contact</a>
+                </div>
+                <a href="/contact/" class="cta-btn-header">Get in Touch</a>
+            </nav>
+
+            <button class="menu-toggle lg:hidden text-white z-[102]" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Full Screen Overlay -->
+        <div class="mobile-overlay" id="mobileOverlay">
+            <button class="absolute top-6 right-6 text-white z-[102]" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center text-center">
+                <a href="/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/solutions/">Solutions</a>
+                <a href="/contact/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="cta-btn-header mt-12 w-fit px-8 py-3">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT AREA -->
+    <main class="min-h-[80vh] flex flex-col items-center justify-center text-center px-12 pt-[140px] pb-16 md:pt-[180px]">
+        <div class="flex flex-col items-center justify-center max-w-[600px] w-full">
+            
+            <!-- Large "404" background text element -->
+            <div class="font-serif text-green-brand text-[80px] md:text-[140px] font-bold opacity-20 leading-none -mb-4 md:-mb-[40px] relative z-0 select-none">
+                404
+            </div>
+
+            <!-- Visual Title -->
+            <h1 class="font-serif text-ivory text-3xl md:text-[48px] font-bold mb-4 relative z-10 select-none">
+                Page Not Found.
+            </h1>
+
+            <!-- Description -->
+            <p class="text-border text-base sm:text-lg max-w-[480px] leading-[1.7] mb-10 relative z-10">
+                The page you are looking for does not exist or may have moved. Use the navigation above to find what you need, or contact us directly.
+            </p>
+
+            <!-- Actions container -->
+            <div class="flex flex-col sm:flex-row gap-4 w-full justify-center relative z-10 max-w-[400px] sm:max-w-none">
+                
+                <!-- CTA Button 1 -->
+                <a href="/" class="bg-green-brand text-white text-base font-semibold py-3.5 px-7 rounded-[4px] shadow-sm hover:bg-green-dark transition-colors duration-200 text-center">
+                    Return to Home
+                </a>
+
+                <!-- CTA Button 2 -->
+                <a href="/contact/" class="bg-transparent border-2 border-brand text-green-brand text-base font-semibold py-[12px] px-[26px] rounded-[4px] hover:bg-green-brand hover:text-white transition-all duration-200 text-center">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-obsidian pt-16 pb-12 px-6 border-t border-[#1C1C1C]">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-[#2C2C2C]">
+                
+                <!-- Column 1 -->
+                <div class="flex flex-col gap-4">
+                    <a href="/" class="font-serif text-white text-2xl font-bold">Nilep</a>
+                    <p class="text-ivory text-[15px] leading-[1.7]">
+                        Nilep is a diversified group with solutions for various sectors in emerging markets.
+                    </p>
+                    <div class="flex flex-col gap-3 mt-2 text-border text-[14px]">
+                        <div class="flex items-center gap-2 text-border text-[14px]">
+                            <span>📍</span> Victoria Island, Lagos, Nigeria
+                        </div>
+                        <div class="flex items-center gap-2 text-border text-[14px]">
+                            <span>✉️</span> <a href="mailto:info@nilep.xyz" class="hover:text-green-brand transition-colors">info@nilep.xyz</a>
+                        </div>
+                        <div class="flex items-center gap-2 text-border text-[14px]">
+                            <span>📞</span> <a href="tel:+2349123694650" class="hover:text-green-brand transition-colors">+234-912-369-4650</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Explore</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/" class="hover:text-green-brand transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-green-brand transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-green-brand transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-green-brand transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-green-brand transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-green-brand transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-green-brand transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-green-brand transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Solutions</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-green-brand transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-green-brand transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-green-brand transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-green-brand transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-green-brand transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-green-brand transition-colors">Palm Oil Syndicate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 gap-4 text-[13px] text-border">
+                <p>2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-2 text-[12px]">
+                    <a href="/privacy-policy/" class="hover:text-green-brand transition-colors">Privacy Policy</a>
+                    <span class="text-border">|</span>
+                    <a href="/terms/" class="hover:text-green-brand transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Header Scroll behavior (locked as scrolled for static content read views)
+            const header = document.getElementById('globalHeader');
+            const handleScroll = () => {
+                if (window.scrollY > 40) {
+                    header.classList.add('scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+
+            // Mobile Navigation Overlay Toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const openMobileNav = () => {
+                mobileOverlay.classList.add('open');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeMobileNav = () => {
+                mobileOverlay.classList.remove('open');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            menuToggle.addEventListener('click', openMobileNav);
+            closeMenu.addEventListener('click', closeMobileNav);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeMobileNav);
+            });
+
+            // Set active page menu link underline logic
+            const currentPath = window.location.pathname;
+            const desktopLinks = document.querySelectorAll('.nav-link');
+            const mobileLinksElem = document.querySelectorAll('.mobile-nav-link');
+
+            const determineActive = (elem) => {
+                const linkPath = elem.getAttribute('data-path');
+                if (linkPath === currentPath) {
+                    elem.classList.add('active');
+                } else if (linkPath !== '/' && currentPath.startsWith(linkPath)) {
+                    elem.classList.add('active');
+                }
+            };
+
+            desktopLinks.forEach(determineActive);
+            mobileLinksElem.forEach(determineActive);
+        });
+    </script>
+</body>
+</html>
