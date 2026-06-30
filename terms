@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use | Nilep</title>
+    <meta name="description" content="Nilep's terms of use governing access to and use of the nilep.xyz website.">
+    <link rel="canonical" href="https://nilep.xyz/terms/">
+    
+    <!-- Google Fonts: Inter (Body, UI, Headings) & Fraunces (H1 Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- GLOBAL HEADER -->
+    <header class="global-header scrolled" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="font-serif text-2xl font-bold text-white z-[102]">Nilep</a>
+            
+            <nav class="hidden lg:flex items-center gap-8">
+                <div class="flex gap-8">
+                    <a href="/" class="nav-link" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link" data-path="/solutions/">Solutions</a>
+                    <a href="/contact/" class="nav-link" data-path="/contact/">Contact</a>
+                </div>
+                <a href="/contact/" class="cta-btn-header">Get in Touch</a>
+            </nav>
+
+            <button class="menu-toggle lg:hidden text-white z-[102]" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Full Screen Overlay -->
+        <div class="mobile-overlay" id="mobileOverlay">
+            <button class="absolute top-6 right-6 text-white z-[102]" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center text-center">
+                <a href="/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/solutions/">Solutions</a>
+                <a href="/contact/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="cta-btn-header mt-12 w-fit px-8 py-3">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT AREA -->
+    <main class="bg-ivory pt-[140px] pb-24 px-6 md:pt-[180px] md:pb-24">
+        <article class="max-w-[760px] mx-auto">
+            <h1 class="text-obsidian text-4xl sm:text-5xl font-bold leading-[1.1] mb-2">Terms of Use</h1>
+            <p class="text-secondary-custom text-sm mb-12">Last updated: June 2026.</p>
+
+            <div class="space-y-10">
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Introduction and Acceptance</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">These Terms of Use govern your access to and use of nilep.xyz, the website of Nilep, operated by Nile Point Limited, a company headquartered at Victoria Island, Lagos, Nigeria. By accessing or using nilep.xyz, you agree to be bound by these Terms of Use in full. If you do not agree with any part of these terms, you must not use this website.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">These terms apply to all visitors, users, and others who access or use the website, including those who browse content, submit enquiries through the contact form, access blog content, or navigate to third-party platforms linked from this site.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">Nilep reserves the right to update or modify these terms at any time. The most current version will always be available at nilep.xyz/terms/ and will display the date on which it was last updated. Your continued use of the website after any changes are posted constitutes your acceptance of the updated terms.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">About Nilep and This Website</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Nilep is a diversified integrated group operating across marketing and e-commerce, agriculture and food systems, artificial intelligence and blockchain technology, and supply chain management in Africa and broader emerging markets.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">The nilep.xyz website serves as an informational and contact platform for Nilep's services, including its marketing solutions, agribusiness operations, and investment syndicate products. Content on this website is intended to provide general information about Nilep's capabilities, solutions, and investment offerings. It is not intended as and does not constitute professional financial, investment, legal, or agricultural advice.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Permitted Use of This Website</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">You may access and use nilep.xyz for lawful, personal, and non-commercial purposes, including:</p>
+                    <ul class="list-disc list-outside ml-6 mb-6 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li>Browsing information about Nilep's solutions and services.</li>
+                        <li>Reading blog content published on nilep.xyz/blog/.</li>
+                        <li>Submitting a genuine enquiry through our contact form.</li>
+                        <li>Navigating to linked third-party platforms for the purposes those platforms are designed to serve.</li>
+                    </ul>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">You must not use this website:</p>
+                    <ul class="list-disc list-outside ml-6 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li>In any way that violates applicable local, national, or international law or regulation.</li>
+                        <li>In any way that is fraudulent, dishonest, or deceptive.</li>
+                        <li>To transmit unsolicited commercial communications (spam).</li>
+                        <li>To attempt to gain unauthorised access to any part of our website, our servers, or any database or system connected to our website.</li>
+                        <li>To upload or transmit any content that is defamatory, offensive, obscene, or otherwise objectionable.</li>
+                        <li>To impersonate any person or entity or misrepresent your affiliation with any person or entity.</li>
+                        <li>To engage in any data scraping, web crawling, or automated collection of content from this website without our prior written permission.</li>
+                        <li>To reproduce, distribute, modify, or create derivative works from any content on this website without our prior written permission, except as permitted under these terms or applicable copyright law.</li>
+                        <li>In any way that could damage, disable, overburden, or impair the website or interfere with any other party's use of it.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Informational Nature of Content</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">All content on nilep.xyz is provided for general informational purposes only. Nothing on this website constitutes or should be construed as:</p>
+                    <ul class="list-disc list-outside ml-6 mb-6 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li>Financial advice, investment advice, or a recommendation to invest in any product or asset.</li>
+                        <li>Legal advice or guidance.</li>
+                        <li>Agricultural or agronomic advice specific to your situation.</li>
+                        <li>An offer or solicitation to buy or sell any investment product or financial instrument.</li>
+                    </ul>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">Nilep does not hold itself out as a licensed financial adviser, investment manager, or regulated financial institution in connection with the informational content of this website. If you require financial, investment, legal, or professional advice, you should consult a qualified professional who is appropriately licensed and regulated in your jurisdiction.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Investment Product Information</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-6">Nilep's website describes investment products, including the Palm Oil Production Syndicate, which is managed through Corre, a regulated digital investment platform. The following important notices apply to all investment-related content on this site:</p>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-1">Past performance does not guarantee future results.</h3>
+                            <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">References to previously paid investment cycles, including the five consecutive paid cycles of the Palm Oil Production Syndicate, are historical facts about past operational performance. They do not represent a guarantee, warranty, or assurance of future performance or returns.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-1">Investment involves risk.</h3>
+                            <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">The value of investments and the income from them can go down as well as up. You may receive back less than you invest. Agricultural investments are subject to production risk, commodity price risk, climate risk, operational risk, and regulatory risk, among others. You should carefully consider whether any investment is appropriate for your financial situation, objectives, and risk tolerance before committing capital.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-1">Target returns are not guaranteed.</h3>
+                            <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">References to target ROI figures, including up to 10% and up to 15% per cycle, represent targets based on operational projections and historical performance. They are not guaranteed returns. Actual returns may be lower than target figures.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-1">Investment decisions are your responsibility.</h3>
+                            <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">Any decision to invest in a Nilep product is your own decision, made on your own account and at your own risk. Nilep provides information to help you understand our products. We strongly encourage you to read all available product documentation, consult independent professional advice, and conduct your own due diligence before investing.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-obsidian text-lg font-bold mb-1">Regulation</h3>
+                            <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">Investment products described on nilep.xyz are managed through Corre, our regulated digital investment partner. The regulatory framework applicable to your investment will depend on your jurisdiction and the specific product terms. Information about the regulatory status of investment products is available through Corre's platform and documentation.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Intellectual Property</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">All content on nilep.xyz is protected by intellectual property rights owned by Nile Point Limited or licensed to it by third parties. This includes, without limitation:</p>
+                    <ul class="list-disc list-outside ml-6 mb-6 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li>The Nilep brand name, logo, wordmark, and visual identity.</li>
+                        <li>All text, articles, blog posts, descriptions, and written content on the site.</li>
+                        <li>All graphic elements, icons, illustrations, and images created for or commissioned by Nilep.</li>
+                        <li>The structure, layout, design, and architecture of the website itself.</li>
+                        <li>All meta content, schema markup, and SEO-related intellectual work embedded in the site.</li>
+                    </ul>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">You are permitted to view and access content on nilep.xyz for personal, non-commercial purposes. You may share links to pages on nilep.xyz. You may quote brief passages from our blog content for non-commercial purposes, provided you attribute the content clearly to Nilep and link back to the original page.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">You are not permitted to:</p>
+                    <ul class="list-disc list-outside ml-6 mb-6 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li>Reproduce, copy, or republish any substantial portion of content from nilep.xyz without our prior written permission.</li>
+                        <li>Use our brand name, logo, or visual identity in any way that suggests endorsement, affiliation, or association with Nilep without our prior written permission.</li>
+                        <li>Scrape, crawl, or systematically extract content from our website for any purpose, including training machine learning models, without our prior written permission.</li>
+                        <li>Use any content from nilep.xyz in a way that is misleading, defamatory, or damaging to the Nilep brand.</li>
+                    </ul>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">To request permission to use any content from nilep.xyz beyond what is permitted above, contact us at info@nilep.xyz.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Third-Party Links and Platforms</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">nilep.xyz contains links to third-party websites and platforms. These include Corre at corre.bond, our yield calculator at nilepfractional.netlify.app, and any external sources linked in our blog content or elsewhere on the site.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">These third-party platforms are operated independently of Nilep and have their own terms of use, privacy policies, and legal frameworks. Nilep does not control, endorse, or accept responsibility for the content, practices, or availability of any third-party platform.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">When you follow a link from nilep.xyz to a third-party platform, you leave Nilep's website and these Terms of Use no longer apply. You interact with third-party platforms at your own risk and subject to their own terms. We strongly encourage you to read the terms and privacy policies of any third-party platform before submitting personal or financial information to them.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">The inclusion of a link to a third-party platform on nilep.xyz does not imply endorsement of that platform, its content, or its services.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Disclaimer of Warranties</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">To the fullest extent permitted by applicable law, nilep.xyz and all content on it is provided on an "as is" and "as available" basis without any warranty of any kind, either express or implied.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Nilep does not warrant that:</p>
+                    <ul class="list-disc list-outside ml-6 mb-6 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li>The website will be available at all times or will be uninterrupted, timely, secure, or error-free.</li>
+                        <li>The information on the website is accurate, complete, current, or free of errors or omissions.</li>
+                        <li>The website will be free from viruses, malware, or other harmful components.</li>
+                        <li>Any defects in the operation of the website will be corrected.</li>
+                    </ul>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">While we make every reasonable effort to ensure the accuracy of information on nilep.xyz, we make no representations or warranties about the completeness, reliability, or suitability of any information for any particular purpose.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Limitation of Liability</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">To the fullest extent permitted by applicable law, Nilep and Nile Point Limited, including its directors, employees, agents, and partners, shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from:</p>
+                    <ul class="list-disc list-outside ml-6 mb-6 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li>Your access to or use of nilep.xyz or your inability to access or use it.</li>
+                        <li>Any reliance on information contained on nilep.xyz.</li>
+                        <li>Any investment decision made in connection with information or products described on nilep.xyz.</li>
+                        <li>Any unauthorised access to or alteration of your data transmitted to or from the website.</li>
+                        <li>Any interruption or cessation of transmission to or from the website.</li>
+                        <li>Any errors, inaccuracies, or omissions in any content on the website.</li>
+                        <li>Any matter beyond our reasonable control.</li>
+                    </ul>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">This limitation of liability applies regardless of the legal theory under which a claim is made, including contract, tort, negligence, strict liability, or otherwise, and even if Nilep has been advised of the possibility of such damages.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">Some jurisdictions do not allow the exclusion or limitation of certain warranties or liabilities, so some of the above limitations may not apply to you. In such jurisdictions, our liability will be limited to the greatest extent permitted by law.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Indemnification</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">You agree to defend, indemnify, and hold harmless Nilep and Nile Point Limited, including its directors, employees, agents, and partners, from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable legal fees) arising from:</p>
+                    <ul class="list-disc list-outside ml-6 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li>Your violation of these Terms of Use.</li>
+                        <li>Your violation of any third-party right, including any intellectual property right.</li>
+                        <li>Your use of any content from nilep.xyz in a manner not authorised by these terms.</li>
+                        <li>Any claim made by a third party in connection with your use of this website.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Privacy</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">Your use of nilep.xyz is also governed by our Privacy Policy, available at nilep.xyz/privacy-policy/. The Privacy Policy is incorporated into these Terms of Use by reference. By using this website, you also agree to the terms of our Privacy Policy.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Availability and Maintenance</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">Nilep reserves the right to modify, suspend, or discontinue any aspect of nilep.xyz at any time, with or without notice. We may take the website offline for maintenance, updates, or improvements at any time.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">We do not guarantee that the website will always be available. Access to the website may be suspended temporarily without notice in the event of a system failure, maintenance, or circumstances beyond our reasonable control.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Governing Law and Jurisdiction</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">These Terms of Use are governed by and construed in accordance with the laws of the Federal Republic of Nigeria. Any disputes arising from or in connection with these terms or your use of nilep.xyz will be subject to the exclusive jurisdiction of the courts of Lagos State, Nigeria.</p>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">If you are accessing nilep.xyz from outside Nigeria, you acknowledge that your use of the website is subject to Nigerian law and that you are responsible for compliance with any local laws that apply to your use of the site.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Severability</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">If any provision of these Terms of Use is found to be unlawful, void, or unenforceable for any reason, that provision will be considered severable from these terms. The severance of that provision will not affect the validity and enforceability of the remaining provisions, which will continue in full force and effect.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Entire Agreement</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">These Terms of Use, together with our Privacy Policy, constitute the entire agreement between you and Nilep with respect to your use of nilep.xyz and supersede all prior agreements, understandings, representations, and warranties, whether oral or written, relating to that subject matter.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Waiver</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8]">No failure or delay by Nilep in exercising any right under these Terms of Use will operate as a waiver of that right. No waiver of any breach of these terms will constitute a waiver of any subsequent breach.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-obsidian text-2xl font-bold mb-3 mt-10">Contact Us</h2>
+                    <p class="text-secondary-custom text-base sm:text-[17px] leading-[1.8] mb-4">If you have any questions about these Terms of Use, please contact us:</p>
+                    <ul class="list-none ml-0 space-y-2 text-secondary-custom text-base sm:text-[17px] leading-[1.8]">
+                        <li><strong>Email:</strong> <a href="mailto:info@nilep.xyz" class="text-green-brand hover:underline">info@nilep.xyz</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:+2349123694650" class="text-green-brand hover:underline">+234-912-369-4650</a></li>
+                        <li><strong>Address:</strong> Victoria Island, Lagos, Nigeria</li>
+                    </ul>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-obsidian pt-16 pb-12 px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-[#2C2C2C]">
+                <!-- Column 1 -->
+                <div class="flex flex-col gap-4">
+                    <a href="/" class="font-serif text-white text-2xl font-bold">Nilep</a>
+                    <p class="text-ivory text-[15px] leading-[1.7]">
+                        Nilep is a diversified group with solutions for various sectors in emerging markets.
+                    </p>
+                    <div class="flex flex-col gap-3 mt-2 text-border text-[14px]">
+                        <div class="flex items-center gap-2 text-border text-[14px]">
+                            <span>桃</span> Victoria Island, Lagos, Nigeria
+                        </div>
+                        <div class="flex items-center gap-2 text-border text-[14px]">
+                            <span>笨会ｸ/span> <a href="mailto:info@nilep.xyz" class="hover:text-green-brand transition-colors">info@nilep.xyz</a>
+                        </div>
+                        <div class="flex items-center gap-2 text-border text-[14px]">
+                            <span>到</span> <a href="tel:+2349123694650" class="hover:text-green-brand transition-colors">+234-912-369-4650</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Explore</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/" class="hover:text-green-brand transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-green-brand transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-green-brand transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-green-brand transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-green-brand transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-green-brand transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-green-brand transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-green-brand transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-green-brand text-[11px] font-semibold tracking-[2px] uppercase mb-5">Solutions</h4>
+                    <ul class="flex flex-col gap-3 text-ivory text-[15px]">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-green-brand transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-green-brand transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-green-brand transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-green-brand transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-green-brand transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-green-brand transition-colors">Palm Oil Syndicate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-6 gap-4 text-[13px] text-border">
+                <p>2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-2 text-[12px]">
+                    <a href="/privacy-policy/" class="hover:text-green-brand transition-colors">Privacy Policy</a>
+                    <span class="text-border">|</span>
+                    <a href="/terms/" class="hover:text-green-brand transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Header Scroll behavior (locked as scrolled for static content read views)
+            const header = document.getElementById('globalHeader');
+            const handleScroll = () => {
+                if (window.scrollY > 40) {
+                    header.classList.add('scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+
+            // Mobile Navigation Overlay Toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const openMobileNav = () => {
+                mobileOverlay.classList.add('open');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeMobileNav = () => {
+                mobileOverlay.classList.remove('open');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            menuToggle.addEventListener('click', openMobileNav);
+            closeMenu.addEventListener('click', closeMobileNav);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeMobileNav);
+            });
+
+            // Set active page menu link underline logic
+            const currentPath = window.location.pathname;
+            const desktopLinks = document.querySelectorAll('.nav-link');
+            const mobileLinksElem = document.querySelectorAll('.mobile-nav-link');
+
+            const determineActive = (elem) => {
+                const linkPath = elem.getAttribute('data-path');
+                if (linkPath === currentPath) {
+                    elem.classList.add('active');
+                } else if (linkPath !== '/' && currentPath.startsWith(linkPath)) {
+                    elem.classList.add('active');
+                }
+            };
+
+            desktopLinks.forEach(determineActive);
+            mobileLinksElem.forEach(determineActive);
+        });
+    </script>
+</body>
+</html>
