@@ -266,13 +266,13 @@
                     </p>
                     <div class="flex flex-col gap-3 mt-2 text-border text-[14px]">
                         <div class="flex items-center gap-2 text-border text-[14px]">
-                            <span>桃</span> Victoria Island, Lagos, Nigeria
+                            <span>📍</span> Victoria Island, Lagos, Nigeria
                         </div>
                         <div class="flex items-center gap-2 text-border text-[14px]">
-                            <span>笨会ｸ/span> <a href="mailto:info@nilep.xyz" class="hover:text-green-brand transition-colors">info@nilep.xyz</a>
+                            <span>✉️</span> <a href="mailto:info@nilep.xyz" class="hover:text-green-brand transition-colors">info@nilep.xyz</a>
                         </div>
                         <div class="flex items-center gap-2 text-border text-[14px]">
-                            <span>到</span> <a href="tel:+2349123694650" class="hover:text-green-brand transition-colors">+234-912-369-4650</a>
+                            <span>📞</span> <a href="tel:+2349123694650" class="hover:text-green-brand transition-colors">+234-912-369-4650</a>
                         </div>
                     </div>
                 </div>
