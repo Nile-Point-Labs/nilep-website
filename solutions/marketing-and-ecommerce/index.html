@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Marketing and E-Commerce Solutions for Emerging Markets | Nilep</title>
+    <meta name="description" content="Full-funnel digital marketing, technical SEO, marketing automation, and e-commerce development for startups and SMEs across Africa and emerging markets.">
+    <link rel="canonical" href="https://nilep.xyz/solutions/marketing-and-ecommerce/">
+    
+    <!-- Google Fonts: Inter & Fraunces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+
+        <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0B0F0D',
+                        ivory: '#FAF9F6',
+                        emerald: '#10B981',
+                        gold: '#D4A843',
+                        'gray-border': '#E5E7EB',
+                        'dark-border': '#222624',
+                    },
+                    fontFamily: {
+                        serif: ['Fraunces', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Performance Marketing and E-Commerce Solutions",
+      "provider": {
+        "@type": "Organization",
+        "name": "Nilep",
+        "url": "https://nilep.xyz"
+      },
+      "areaServed": [
+        "Africa",
+        "Middle East",
+        "Latin America",
+        "Southeast Asia"
+      ],
+      "description": "Full-funnel digital marketing, technical SEO, marketing automation, and e-commerce development for startups and SMEs across Africa and emerging markets."
+    }
+    </script>
+
+    <style>
+        .custom-section-padding {
+            padding-top: 5.5rem;
+            padding-bottom: 5.5rem;
+        }
+        .hero-radial-gradient {
+            background: radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.08) 0%, transparent 65%);
+        }
+        header.scrolled {
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            background-color: rgba(11, 15, 13, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .mobile-overlay {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .mobile-overlay.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #10B981;
+            transition: width 0.3s ease;
+        }
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+        .nav-link.active {
+            color: #10B981;
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        /* === Visual Enhancement Layer === */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1);
+        }
+        .reveal.is-visible { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+            .fade-in-up { animation: none !important; }
+            .blob { animation: none !important; }
+        }
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(70px);
+            pointer-events: none;
+            z-index: 0;
+            animation: blobFloat 14s ease-in-out infinite;
+        }
+        @keyframes blobFloat {
+            0%, 100% { transform: translate(0,0) scale(1); }
+            50% { transform: translate(24px,-26px) scale(1.08); }
+        }
+        .enhanced-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s ease, border-color 0.3s ease;
+        }
+        .enhanced-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #10B981, #D4A843);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s cubic-bezier(0.16,1,0.3,1);
+        }
+        .enhanced-card:hover::before { transform: scaleX(1); }
+        .enhanced-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -14px rgba(11,15,13,0.14);
+        }
+        .dark-card.enhanced-card:hover {
+            box-shadow: 0 20px 40px -14px rgba(16,185,129,0.18);
+        }
+        .icon-box { transition: transform 0.45s cubic-bezier(0.34,1.56,0.64,1), background-color 0.3s ease; }
+        .enhanced-card:hover .icon-box { transform: scale(1.1) rotate(-4deg); background-color: rgba(16,185,129,0.18); }
+        .btn-glow { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .btn-glow:hover { transform: translateY(-2px); box-shadow: 0 12px 26px -8px rgba(16,185,129,0.45); }
+        .dot-grid {
+            background-image: radial-gradient(rgba(255,255,255,0.09) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .dot-grid-light {
+            background-image: radial-gradient(rgba(11,15,13,0.07) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .num-chip {
+            transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), color 0.3s ease;
+        }
+        .enhanced-card:hover .num-chip { transform: scale(1.15); }
+
+    </style>
+</head>
+<body class="bg-ivory font-sans text-obsidian antialiased selection:bg-emerald selection:text-white">
+
+    <!-- GLOBAL HEADER -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="logo font-serif text-2xl font-bold text-white tracking-tight z-[102]">Nilep</a>
+            
+            <nav class="hidden lg:flex items-center gap-10">
+                <div class="flex gap-8 text-sm font-medium">
+                    <a href="/" class="nav-link text-white/80 hover:text-white" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link text-white/80 hover:text-white" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link text-white/80 hover:text-white" data-path="/solutions/">Solutions</a>
+                    <a href="/contact/" class="nav-link text-white/80 hover:text-white" data-path="/contact/">Contact</a>
+                </div>
+                <a href="/contact/" class="cta-btn-header bg-emerald hover:bg-emerald/90 text-obsidian font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded-md transition-colors btn-glow">Get in Touch</a>
+            </nav>
+
+            <button class="menu-toggle lg:hidden text-white hover:text-emerald transition-colors z-[102]" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-overlay fixed inset-0 bg-obsidian z-[101] flex flex-col items-center justify-center" id="mobileOverlay">
+            <button class="absolute top-6 right-6 text-white hover:text-emerald transition-colors" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center space-y-6 text-center">
+                <a href="/" class="mobile-nav-link text-white text-2xl font-serif hover:text-emerald transition-colors" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white text-2xl font-serif hover:text-emerald transition-colors" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white text-2xl font-serif hover:text-emerald transition-colors" data-path="/solutions/">Solutions</a>
+                <a href="/contact/" class="mobile-nav-link text-white text-2xl font-serif hover:text-emerald transition-colors" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="bg-emerald hover:bg-emerald/90 text-obsidian font-semibold px-8 py-3.5 rounded mt-6 transition-colors">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="bg-obsidian relative pt-[180px] pb-24 px-6 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none hero-radial-gradient"></div>
+            <div class="blob w-[420px] h-[420px] bg-emerald/10 -top-24 -right-24"></div>
+            <div class="blob w-[260px] h-[260px] bg-gold/10 bottom-0 left-1/4" style="animation-delay: -5s;"></div>
+            <div class="absolute inset-0 dot-grid opacity-40 pointer-events-none"></div>
+
+            <div class="max-w-[1280px] mx-auto relative z-10 fade-in-up">
+                <div class="mb-4">
+                    <span class="text-emerald text-xs font-semibold tracking-[2px] uppercase">Marketing and E-Commerce</span>
+                </div>
+                <h1 class="text-white font-serif text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.1] max-w-[950px] mb-8 tracking-tight">
+                    Performance Marketing and E-Commerce Solutions That Drive Real Growth.
+                </h1>
+                <p class="text-white/70 text-base sm:text-lg max-w-[680px] leading-relaxed">
+                    Data-driven, full-funnel marketing and digital commerce for startups, SMEs, and agribusinesses across Africa and emerging markets.
+                </p>
+            </div>
+        </section>
+
+        <!-- MARKETING SOLUTIONS -->
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-emerald text-xs font-semibold tracking-[2px] uppercase">Marketing Solutions</span>
+                </div>
+                <h2 class="text-obsidian font-serif text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 tracking-tight reveal">
+                    Full-Funnel and Integrated Marketing.
+                </h2>
+                <p class="text-obsidian/70 text-base sm:text-lg max-w-[760px] leading-[1.8] mb-16 font-light">
+                    We deliver data-driven, full-funnel marketing solutions tailored for startups, SMEs, and agribusinesses covering awareness, consideration, acquisition, conversion, and retention. We combine marketing expertise with digital advertising, brand development, market intelligence, and customer engagement strategies to help businesses increase visibility, demand, and long-term profitability.
+                </p>
+                
+                <!-- 5-Stage Funnel Block -->
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-4 max-w-5xl mx-auto">
+                    <!-- Stage 1 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-border flex flex-col items-center justify-between text-center transition-all duration-300 hover:border-emerald/40 enhanced-card reveal" style="transition-delay:0.00s">
+                        <span class="text-emerald font-serif text-2xl font-bold mb-2 num-chip">01</span>
+                        <h4 class="text-obsidian font-serif text-base font-semibold mb-2">Awareness</h4>
+                        <div class="text-obsidian/60 text-[12px] font-medium leading-relaxed">
+                            <span class="block">Brand Ads</span>
+                            <span class="block">SEO Content</span>
+                        </div>
+                    </div>
+
+                    <!-- Stage 2 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-border flex flex-col items-center justify-between text-center transition-all duration-300 hover:border-emerald/40 enhanced-card reveal" style="transition-delay:0.08s">
+                        <span class="text-emerald font-serif text-2xl font-bold mb-2 num-chip">02</span>
+                        <h4 class="text-obsidian font-serif text-base font-semibold mb-2">Consideration</h4>
+                        <div class="text-obsidian/60 text-[12px] font-medium leading-relaxed">
+                            <span class="block">Thought Leadership</span>
+                            <span class="block">Case Studies</span>
+                        </div>
+                    </div>
+
+                    <!-- Stage 3 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-border flex flex-col items-center justify-between text-center transition-all duration-300 hover:border-emerald/40 enhanced-card reveal" style="transition-delay:0.16s">
+                        <span class="text-emerald font-serif text-2xl font-bold mb-2 num-chip">03</span>
+                        <h4 class="text-obsidian font-serif text-base font-semibold mb-2">Acquisition</h4>
+                        <div class="text-obsidian/60 text-[12px] font-medium leading-relaxed">
+                            <span class="block">Lead Gen</span>
+                            <span class="block">Paid Search</span>
+                        </div>
+                    </div>
+
+                    <!-- Stage 4 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-border flex flex-col items-center justify-between text-center transition-all duration-300 hover:border-emerald/40 enhanced-card reveal" style="transition-delay:0.24s">
+                        <span class="text-emerald font-serif text-2xl font-bold mb-2 num-chip">04</span>
+                        <h4 class="text-obsidian font-serif text-base font-semibold mb-2">Conversion</h4>
+                        <div class="text-obsidian/60 text-[12px] font-medium leading-relaxed">
+                            <span class="block">Landing Pages</span>
+                            <span class="block">Email</span>
+                        </div>
+                    </div>
+
+                    <!-- Stage 5 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-border flex flex-col items-center justify-between text-center transition-all duration-300 hover:border-emerald/40 enhanced-card reveal" style="transition-delay:0.32s">
+                        <span class="text-emerald font-serif text-2xl font-bold mb-2 num-chip">05</span>
+                        <h4 class="text-obsidian font-serif text-base font-semibold mb-2">Retention</h4>
+                        <div class="text-obsidian/60 text-[12px] font-medium leading-relaxed">
+                            <span class="block">Automation</span>
+                            <span class="block">Loyalty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES DELIVERED -->
+        <section class="bg-obsidian custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-emerald text-xs font-semibold tracking-[2px] uppercase">Our Services</span>
+                </div>
+                <h2 class="text-white font-serif text-3xl sm:text-4xl lg:text-5xl font-bold mb-16 tracking-tight reveal">
+                    What We Deliver.
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-obsidian p-9 rounded-xl border border-white/10 hover:border-emerald transition-all duration-300 enhanced-card reveal" style="transition-delay:0.00s"><div class="w-11 h-11 rounded-lg bg-emerald/15 flex items-center justify-center text-emerald mb-6 icon-box"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.306a11.95 11.95 0 015.814-5.518l2.74-1.22m0 0l-5.94-2.281m5.94 2.28l-2.28 5.941" /></svg></div><h3 class="text-white font-serif text-xl font-semibold mb-4">Performance Marketing</h3>
+                        <p class="text-white/70 text-[15px] leading-[1.7]">
+                            Paid search, paid social, programmatic display, and affiliate marketing campaigns tied to measurable outcomes. Every naira spent is tracked to a result.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="bg-obsidian p-9 rounded-xl border border-white/10 hover:border-emerald transition-all duration-300 enhanced-card reveal" style="transition-delay:0.08s"><div class="w-11 h-11 rounded-lg bg-emerald/15 flex items-center justify-center text-emerald mb-6 icon-box"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m-3-3h6" /></svg></div><h3 class="text-white font-serif text-xl font-semibold mb-4">Technical SEO</h3>
+                        <p class="text-white/70 text-[15px] leading-[1.7]">
+                            Site architecture, Core Web Vitals, structured data, crawlability, and on-page optimisation ensuring your website is built to rank and built to last.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="bg-obsidian p-9 rounded-xl border border-white/10 hover:border-emerald transition-all duration-300 enhanced-card reveal" style="transition-delay:0.16s"><div class="w-11 h-11 rounded-lg bg-emerald/15 flex items-center justify-center text-emerald mb-6 icon-box"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" /></svg></div><h3 class="text-white font-serif text-xl font-semibold mb-4">Brand Development</h3>
+                        <p class="text-white/70 text-[15px] leading-[1.7]">
+                            Visual identity, messaging frameworks, brand guidelines, and creative systems that give businesses a competitive, professional presence in their markets.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="bg-obsidian p-9 rounded-xl border border-white/10 hover:border-emerald transition-all duration-300 enhanced-card reveal" style="transition-delay:0.24s"><div class="w-11 h-11 rounded-lg bg-emerald/15 flex items-center justify-center text-emerald mb-6 icon-box"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.226V6.741c0-1.6-1.123-2.994-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.747 2.25 5.14 2.25 6.741v6.018z" /></svg></div><h3 class="text-white font-serif text-xl font-semibold mb-4">Content and Social Media Management</h3>
+                        <p class="text-white/70 text-[15px] leading-[1.7]">
+                            Strategic content that builds audiences, earns organic search visibility, and keeps your brand relevant and active across the platforms your customers use.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="bg-obsidian p-9 rounded-xl border border-white/10 hover:border-emerald transition-all duration-300 enhanced-card reveal" style="transition-delay:0.32s"><div class="w-11 h-11 rounded-lg bg-emerald/15 flex items-center justify-center text-emerald mb-6 icon-box"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.28z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div><h3 class="text-white font-serif text-xl font-semibold mb-4">Marketing Automation</h3>
+                        <p class="text-white/70 text-[15px] leading-[1.7]">
+                            Lead scoring, email sequences, behavioural triggers, and CRM integration ensuring every lead is nurtured intelligently without manual effort.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="bg-obsidian p-9 rounded-xl border border-white/10 hover:border-emerald transition-all duration-300 enhanced-card reveal" style="transition-delay:0.40s"><div class="w-11 h-11 rounded-lg bg-emerald/15 flex items-center justify-center text-emerald mb-6 icon-box"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" /></svg></div><h3 class="text-white font-serif text-xl font-semibold mb-4">Website and Mobile App Development</h3>
+                        <p class="text-white/70 text-[15px] leading-[1.7]">
+                            Scalable, conversion-optimised digital products built for African market performance. Fast, mobile-first, and integrated with local payment infrastructure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- E-COMMERCE SOLUTIONS -->
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="mb-4">
+                    <span class="text-emerald text-xs font-semibold tracking-[2px] uppercase">E-Commerce Solutions</span>
+                </div>
+                <h2 class="text-obsidian font-serif text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 tracking-tight reveal">
+                    Marketplace and Digital Platforms.
+                </h2>
+                <p class="text-obsidian/70 text-base sm:text-lg max-w-[720px] leading-[1.8] mb-16 font-light">
+                    We provide end-to-end e-commerce marketplace support enabling businesses across retail and agribusiness to sell directly to consumers through secure, scalable digital platforms. Our solutions include marketplace development, payment integration, logistics coordination, order management, and customer experience optimisation, ensuring seamless transactions and sustained revenue growth.
+                </p>
+                
+                <!-- Process Flow Horizontal/Vertical Diagram -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-[840px] mb-12">
+                    <!-- Step 1 -->
+                    <div class="border-l-2 border-emerald/30 pl-4 reveal" style="transition-delay:0.00s">
+                        <span class="block text-emerald font-serif text-[13px] font-semibold uppercase tracking-[1px] mb-2">01</span>
+                        <h3 class="text-obsidian font-serif text-xl font-bold">Build</h3>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="border-l-2 border-emerald/30 pl-4 reveal" style="transition-delay:0.10s">
+                        <span class="block text-emerald font-serif text-[13px] font-semibold uppercase tracking-[1px] mb-2">02</span>
+                        <h3 class="text-obsidian font-serif text-xl font-bold">Integrate</h3>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="border-l-2 border-emerald/30 pl-4 reveal" style="transition-delay:0.20s">
+                        <span class="block text-emerald font-serif text-[13px] font-semibold uppercase tracking-[1px] mb-2">03</span>
+                        <h3 class="text-obsidian font-serif text-xl font-bold">Launch</h3>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="border-l-2 border-emerald/30 pl-4 reveal" style="transition-delay:0.30s">
+                        <span class="block text-emerald font-serif text-[13px] font-semibold uppercase tracking-[1px] mb-2">04</span>
+                        <h3 class="text-obsidian font-serif text-xl font-bold">Optimise</h3>
+                    </div>
+                </div>
+
+                <div class="mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <button class="bg-gray-200 text-obsidian/40 text-base font-semibold px-8 py-4 rounded-md cursor-not-allowed border border-gray-200" disabled>
+                        Coming Soon
+                    </button>
+                    <span class="text-obsidian/60 text-sm">E-commerce marketplace launching soon.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- TARGET CLIENTS -->
+        <section class="bg-obsidian custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <h2 class="text-white font-serif text-3xl sm:text-4xl lg:text-5xl font-bold mb-16 tracking-tight reveal">
+                    Who We Work With.
+                </h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <!-- Target Col 1 -->
+                    <div class="border-t border-white/10 pt-8 reveal">
+                        <h3 class="text-white font-serif text-2xl font-semibold mb-4">Startups</h3>
+                        <p class="text-white/70 text-base leading-[1.7]">
+                            Early-stage businesses that need marketing infrastructure built from the ground up, from brand identity to digital acquisition.
+                        </p>
+                    </div>
+
+                    <!-- Target Col 2 -->
+                    <div class="border-t border-white/10 pt-8 reveal">
+                        <h3 class="text-white font-serif text-2xl font-semibold mb-4">SMEs</h3>
+                        <p class="text-white/70 text-base leading-[1.7]">
+                            Established businesses scaling their digital presence, customer acquisition, and marketing efficiency across African markets.
+                        </p>
+                    </div>
+
+                    <!-- Target Col 3 -->
+                    <div class="border-t border-white/10 pt-8 reveal">
+                        <h3 class="text-white font-serif text-2xl font-semibold mb-4">Agribusinesses</h3>
+                        <p class="text-white/70 text-base leading-[1.7]">
+                            Farms, food brands, and agricultural businesses connecting production to market through digital channels and performance marketing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-emerald custom-section-padding px-6 text-center relative overflow-hidden">
+            <div class="absolute -top-16 -left-16 w-64 h-64 rounded-full border border-obsidian/10 pointer-events-none"></div>
+            <div class="absolute -bottom-20 -right-20 w-72 h-72 rounded-full border border-obsidian/10 pointer-events-none"></div>
+            <div class="max-w-[1280px] mx-auto flex flex-col items-center relative z-10 reveal">
+                <h2 class="text-obsidian font-serif text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 tracking-tight">
+                    Ready to Grow Your Business?
+                </h2>
+                <p class="text-obsidian/85 text-base sm:text-lg max-w-[640px] leading-relaxed mb-10">
+                    Tell us about your marketing challenge and we will show you what is possible.
+                </p>
+                <a href="/contact/" class="inline-flex bg-obsidian hover:bg-obsidian/90 text-white font-semibold rounded px-8 py-4 transition-colors btn-glow">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-obsidian pt-20 pb-12 px-6 border-t border-dark-border">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-16 border-b border-dark-border">
+                <!-- Column 1 -->
+                <div class="flex flex-col gap-6">
+                    <a href="/" class="font-serif text-white text-2xl font-bold tracking-tight">Nilep</a>
+                    <p class="text-white/70 text-[15px] leading-[1.7] max-w-sm">
+                        Nilep is a diversified group with solutions for various sectors in emerging markets.
+                    </p>
+                    <div class="flex flex-col gap-3.5 mt-2 text-white/60 text-[14px]">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            <span>Victoria Island, Lagos, Nigeria</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            <a href="mailto:info@nilep.xyz" class="hover:text-emerald transition-colors">info@nilep.xyz</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            <a href="tel:+2349123694650" class="hover:text-emerald transition-colors">+234-912-369-4650</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="text-emerald text-[11px] font-semibold tracking-[2px] uppercase mb-6">Explore</h4>
+                    <ul class="flex flex-col gap-3.5 text-white/80 text-[15px]">
+                        <li><a href="/" class="hover:text-emerald transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-emerald transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-emerald transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-emerald transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-emerald transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-emerald transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-emerald transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-emerald transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="text-emerald text-[11px] font-semibold tracking-[2px] uppercase mb-6">Solutions</h4>
+                    <ul class="flex flex-col gap-3.5 text-white/80 text-[15px]">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-emerald transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-emerald transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-emerald transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-emerald transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-emerald transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-emerald transition-colors">Palm Oil Syndicate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 gap-4 text-[13px] text-white/40">
+                <p>&copy; 2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-4 text-[12px]">
+                    <a href="/privacy-policy/" class="hover:text-emerald transition-colors">Privacy Policy</a>
+                    <span class="text-white/20">|</span>
+                    <a href="/terms/" class="hover:text-emerald transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Header Scroll transition handling
+            const header = document.getElementById('globalHeader');
+            const handleScroll = () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+
+            // Mobile Navigation Toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const openMobileNav = () => {
+                mobileOverlay.classList.add('open');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeMobileNav = () => {
+                mobileOverlay.classList.remove('open');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            menuToggle.addEventListener('click', openMobileNav);
+            closeMenu.addEventListener('click', closeMobileNav);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeMobileNav);
+            });
+
+            // Active header link
+            const desktopLinks = document.querySelectorAll('.nav-link');
+            const mobileLinksElem = document.querySelectorAll('.mobile-nav-link');
+
+            desktopLinks.forEach(el => {
+                if (el.getAttribute('data-path') === '/solutions/') {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            });
+
+            mobileLinksElem.forEach(el => {
+                if (el.getAttribute('data-path') === '/solutions/') {
+                    el.style.color = '#10B981';
+                    el.style.fontWeight = '600';
+                }
+            });
+                    // Scroll-triggered reveal animations
+            const revealEls = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window && revealEls.length) {
+                const io = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            io.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+                revealEls.forEach(el => io.observe(el));
+            } else {
+                revealEls.forEach(el => el.classList.add('is-visible'));
+            }
+
+        });
+    </script>
+</body>
+</html>
