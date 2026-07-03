@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Partners — Brands That Trust Nilep | Nilep</title>
+    <meta name="description" content="Nilep works with leading brands across food, beverage, technology, and consumer goods in emerging markets.">
+    <link rel="canonical" href="https://nilep.xyz/partners/">
+    
+    <!-- Google Fonts: Inter & Fraunces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0B0F0D',
+                        ivory: '#FAF9F6',
+                        emerald: '#10B981',
+                        gold: '#D4A843',
+                        'gray-border': '#E5E7EB',
+                        'dark-border': '#222624',
+                    },
+                    fontFamily: {
+                        serif: ['Fraunces', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema.org JSON-LD Metadata -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "Nilep Partners",
+      "url": "https://nilep.xyz/partners/",
+      "description": "Nilep works with leading brands across food, beverage, technology, and consumer goods in emerging markets.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nilep",
+        "url": "https://nilep.xyz"
+      }
+    }
+    </script>
+
+    <style>
+        .custom-section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        .hero-radial-gradient {
+            background: radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.05) 0%, transparent 60%);
+        }
+        header.scrolled {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            background-color: rgba(11, 15, 13, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .mobile-overlay {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .mobile-overlay.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #10B981;
+            transition: width 0.3s ease;
+        }
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+        .nav-link.active {
+            color: #10B981;
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-ivory font-sans text-obsidian antialiased selection:bg-emerald selection:text-white">
+
+    <!-- GLOBAL HEADER -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="logo font-serif text-2xl font-bold text-white z-[102]" aria-label="Nilep Home">Nilep</a>
+            
+            <nav class="hidden lg:flex items-center gap-10">
+                <div class="flex gap-8 text-sm font-medium">
+                    <a href="/" class="nav-link text-white/80 hover:text-white" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link text-white/80 hover:text-white" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link text-white/80 hover:text-white" data-path="/solutions/">Solutions</a>
+                    <a href="/contact/" class="nav-link text-white/80 hover:text-white" data-path="/contact/">Contact</a>
+                </div>
+                <a href="/contact/" class="cta-btn-header bg-emerald hover:bg-emerald/90 text-obsidian font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition-colors">Get in Touch</a>
+            </nav>
+
+            <button class="menu-toggle lg:hidden text-white hover:text-emerald transition-colors z-[102]" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Overlay Navigation Screen -->
+        <div class="mobile-overlay fixed inset-0 bg-obsidian z-[101] flex flex-col items-center justify-center" id="mobileOverlay">
+            <button class="absolute top-6 right-6 text-white hover:text-emerald transition-colors" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center space-y-6 text-center">
+                <a href="/" class="mobile-nav-link text-white text-2xl font-serif hover:text-emerald transition-colors" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white text-2xl font-serif hover:text-emerald transition-colors" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white text-2xl font-serif hover:text-emerald transition-colors" data-path="/solutions/">Solutions</a>
+                <a href="/contact/" class="mobile-nav-link text-white text-2xl font-serif hover:text-emerald transition-colors" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="bg-emerald hover:bg-emerald/90 text-obsidian font-semibold px-8 py-3.5 rounded mt-6 transition-colors">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="bg-obsidian relative pt-[180px] pb-24 px-6 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none hero-radial-gradient"></div>
+            
+            <div class="max-w-[1280px] mx-auto relative z-10 fade-in-up">
+                <div class="mb-4">
+                    <span class="text-emerald text-xs font-semibold tracking-[2px] uppercase">Track Record</span>
+                </div>
+                <h1 class="text-white font-serif text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.1] max-w-[880px] tracking-tight">
+                    Brands That Trust Us.
+                </h1>
+            </div>
+        </section>
+
+        <!-- PARTNER GRID -->
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <p class="text-obsidian/70 text-lg sm:text-xl max-w-[720px] leading-[1.8] mb-16 font-light">
+                    Nilep has worked with and alongside leading brands across food and beverage, consumer goods, technology, and agribusiness in emerging markets.
+                </p>
+
+                <!-- Responsive Grid: 6 cols desktop, 4 cols tablet, 3 cols mobile -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-items-center">
+                    
+                    <!-- Logo 1: Ridagri -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-xl border border-gray-border h-28 hover:border-emerald/40 transition-all duration-300">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><path d='M20,15 C28,15 35,22 35,30 C35,38 28,45 20,45 Z' fill='%231A6B3C'/><path d='M28,20 C33,20 38,25 38,30 C38,35 33,40 28,40 Z' fill='%23D4A843'/><text x='52' y='38' font-family='sans-serif' font-weight='800' font-size='24' fill='%230A0A0A' letter-spacing='-1'>RIDAGRI</text></svg>" 
+                             alt="Ridagri" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 2: Budweiser -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-xl border border-gray-border h-28 hover:border-emerald/40 transition-all duration-300">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><path d='M15,40 L20,20 L27,32 L35,20 L40,40 Z' fill='%23C8102E' stroke='%23C8102E' stroke-width='2'/><circle cx='27' cy='15' r='2' fill='%23D4A843'/><text x='52' y='38' font-family='serif' font-style='italic' font-weight='bold' font-size='24' fill='%23C8102E'>Budweiser</text></svg>" 
+                             alt="Budweiser" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 3: NR -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-xl border border-gray-border h-28 hover:border-emerald/40 transition-all duration-300">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><text x='15' y='40' font-family='serif' font-weight='bold' font-size='38' fill='%230A0A0A' letter-spacing='-2'>N</text><text x='48' y='40' font-family='serif' font-weight='light' font-size='38' fill='%231A6B3C' letter-spacing='-2'>R</text><line x1='80' y1='15' x2='80' y2='45' stroke='%23E8E2D6' stroke-width='2'/><text x='92' y='36' font-family='sans-serif' font-size='12' font-weight='bold' fill='%232C2C2C' letter-spacing='1'>NATURAL RESOURCES</text></svg>" 
+                             alt="NR" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 4: DEBP -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-xl border border-gray-border h-28 hover:border-emerald/40 transition-all duration-300">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><rect x='15' y='18' width='24' height='24' rx='4' fill='%230F2042'/><text x='22' y='35' font-family='sans-serif' font-weight='bold' font-size='16' fill='%23FFFFFF'>D</text><text x='48' y='38' font-family='sans-serif' font-weight='bold' font-size='24' fill='%230F2042' letter-spacing='1'>DEBP</text></svg>" 
+                             alt="DEBP" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 5: Hen -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-xl border border-gray-border h-28 hover:border-emerald/40 transition-all duration-300">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><path d='M15,35 Q22,12 35,22 Q38,30 32,38 Z' fill='%23E4002B'/><text x='48' y='38' font-family='sans-serif' font-weight='900' font-size='26' fill='%230A0A0A'>HEN</text></svg>" 
+                             alt="Hen" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 6: IP -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-xl border border-gray-border h-28 hover:border-emerald/40 transition-all duration-300">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><rect x='15' y='15' width='30' height='30' rx='15' fill='none' stroke='%23005A9C' stroke-width='4'/><text x='22' y='36' font-family='sans-serif' font-weight='bold' font-size='22' fill='%23005A9C'>IP</text><text x='55' y='37' font-family='sans-serif' font-weight='bold' font-size='20' fill='%232C2C2C' letter-spacing='-0.5'>INTERNATIONAL</text></svg>" 
+                             alt="IP" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 7: Indomie -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-xl border border-gray-border h-28 hover:border-emerald/40 transition-all duration-300">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><path d='M15,42 C15,22 45,22 45,42 Z' fill='none' stroke='%23E4002B' stroke-width='4'/><text x='18' y='37' font-family='sans-serif' font-weight='bold' font-style='italic' font-size='22' fill='%23005A9C'>Indomie</text></svg>" 
+                             alt="Indomie" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 8: Origin -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-xl border border-gray-border h-28 hover:border-emerald/40 transition-all duration-300">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><circle cx='28' cy='30' r='14' fill='%231A6B3C'/><path d='M24,24 L32,36 L20,36 Z' fill='%23FFFFFF'/><text x='50' y='38' font-family='sans-serif' font-weight='700' font-size='24' fill='%231A6B3C' letter-spacing='-0.5'>origin</text></svg>" 
+                             alt="Origin" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 9: IM -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-xl border border-gray-border h-28 hover:border-emerald/40 transition-all duration-300">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><rect x='15' y='15' width='30' height='30' fill='%23000000'/><text x='20' y='37' font-family='sans-serif' font-weight='bold' font-size='22' fill='%23FFFFFF'>IM</text><text x='55' y='36' font-family='sans-serif' font-weight='500' font-size='18' fill='%23000000'>MARKETS</text></svg>" 
+                             alt="IM" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 10: Malta -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white-pure rounded-lg border border-gray-border h-24">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><path d='M15,30 L25,15 L35,30 L25,45 Z' fill='%23FFC72C'/><text x='45' y='38' font-family='serif' font-weight='bold' font-size='24' fill='%238B4513'>Malta</text></svg>" 
+                             alt="Malta" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 11: Bruhm -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-lg border border-gray-border h-24">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><text x='15' y='39' font-family='sans-serif' font-weight='900' font-size='28' fill='%230A0A0A' letter-spacing='-1'>bruhm</text><circle cx='115' cy='25' r='4' fill='%23E4002B'/></svg>" 
+                             alt="Bruhm" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 12: Smirnoff -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-lg border border-gray-border h-24">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><path d='M15,20 L35,20 L25,40 Z' fill='%23DA291C'/><text x='42' y='38' font-family='serif' font-weight='bold' font-size='22' fill='%23DA291C' letter-spacing='1'>SMIRNOFF</text></svg>" 
+                             alt="Smirnoff" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 13: Lush -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-lg border border-gray-border h-24">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><text x='15' y='41' font-family='serif' font-style='italic' font-weight='900' font-size='32' fill='%230A0A0A'>LUSH</text></svg>" 
+                             alt="Lush" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 14: Ridlabs -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-lg border border-gray-border h-24">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><rect x='15' y='18' width='24' height='24' fill='%231A6B3C'/><circle cx='27' cy='30' r='6' fill='%23FFFFFF'/><text x='48' y='38' font-family='sans-serif' font-weight='700' font-size='22' fill='%231A6B3C'>ridlabs</text></svg>" 
+                             alt="Ridlabs" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 15: VOTF -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-lg border border-gray-border h-24">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><path d='M15,15 L25,45 L35,15' fill='none' stroke='%230A0A0A' stroke-width='4'/><text x='45' y='38' font-family='sans-serif' font-weight='900' font-size='26' fill='%230A0A0A' letter-spacing='2'>VOTF</text></svg>" 
+                             alt="VOTF" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 16: Paystack -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-lg border border-gray-border h-24">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><circle cx='25' cy='30' r='12' fill='%233cb4e7'/><circle cx='31' cy='30' r='8' fill='%23011b33'/><text x='50' y='38' font-family='sans-serif' font-weight='bold' font-size='24' fill='%23011b33'>paystack</text></svg>" 
+                             alt="Paystack" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                    <!-- Logo 17: Corre -->
+                    <div class="w-full flex justify-center items-center p-4 bg-white rounded-lg border border-gray-border h-24">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'><path d='M15,20 L30,12 L45,20 L45,35 Q30,45 15,35 Z' fill='%23D4A843'/><text x='55' y='38' font-family='sans-serif' font-weight='bold' font-size='24' fill='%230A0A0A' letter-spacing='-0.5'>corre</text></svg>" 
+                             alt="Corre" 
+                             class="max-h-12 max-w-full object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CLOSING CTA -->
+        <section class="bg-emerald custom-section-padding px-6 text-center">
+            <div class="max-w-[1280px] mx-auto flex flex-col items-center">
+                <h2 class="text-obsidian font-serif text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 leading-tight tracking-tight">
+                    Work With Us.
+                </h2>
+                <a href="/contact/" class="inline-flex bg-obsidian hover:bg-obsidian/90 text-white font-semibold rounded px-8 py-4 transition-colors">
+                    Contact Us
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-obsidian pt-16 pb-12 px-6 border-t border-dark-border">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-dark-border">
+                
+                <!-- Column 1 - Brand -->
+                <div class="flex flex-col gap-4">
+                    <a href="/" class="font-serif text-white text-2xl font-bold">Nilep</a>
+                    <p class="text-white/70 text-[15px] leading-[1.7]">
+                        Nilep is a diversified group with solutions for various sectors in emerging markets.
+                    </p>
+                    <div class="flex flex-col gap-3 mt-2 text-white/60 text-[14px]">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            <span>Victoria Island, Lagos, Nigeria</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            <a href="mailto:info@nilep.xyz" class="hover:text-emerald transition-colors">info@nilep.xyz</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            <a href="tel:+2349123694650" class="hover:text-emerald transition-colors">+234-912-369-4650</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 - Explore -->
+                <div>
+                    <h4 class="text-emerald text-[11px] font-semibold tracking-[2px] uppercase mb-5">Explore</h4>
+                    <ul class="flex flex-col gap-3 text-white/80 text-[15px]">
+                        <li><a href="/" class="hover:text-emerald transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-emerald transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-emerald transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-emerald transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-emerald transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-emerald transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-emerald transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-emerald transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 - Solutions -->
+                <div>
+                    <h4 class="text-emerald text-[11px] font-semibold tracking-[2px] uppercase mb-5">Solutions</h4>
+                    <ul class="flex flex-col gap-3 text-white/80 text-[15px]">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-emerald transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-emerald transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-emerald transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-emerald transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-emerald transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-emerald transition-colors">Palm Oil Syndicate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 gap-4 text-[13px] text-white/40">
+                <p>&copy; 2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-2 text-[12px]">
+                    <a href="/privacy-policy/" class="hover:text-emerald transition-colors">Privacy Policy</a>
+                    <span class="text-white/20">|</span>
+                    <a href="/terms/" class="hover:text-emerald transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE DEVICE MECHANICS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('globalHeader');
+            const handleScroll = () => {
+                if (window.scrollY > 80) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const openOverlay = () => {
+                mobileOverlay.classList.add('open');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeOverlay = () => {
+                mobileOverlay.classList.remove('open');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            menuToggle.addEventListener('click', openOverlay);
+            closeMenu.addEventListener('click', closeOverlay);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeOverlay);
+            });
+
+            // Clean active states for non-primary navigational routing
+            const desktopLinks = document.querySelectorAll('.nav-link');
+            desktopLinks.forEach(el => el.classList.remove('active'));
+        });
+    </script>
+</body>
+</html>

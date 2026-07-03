@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Nilep — Get in Touch With Our Team | Lagos, Nigeria</title>
+    <meta name="description" content="Reach out to Nilep's team in Victoria Island, Lagos. Whether you are an investor, business, or farmer, we are ready to connect. info@nilep.xyz. +234-912-369-4650.">
+    <link class="canonical" href="https://nilep.xyz/contact/">
+    
+    <!-- Google Fonts: Inter & Fraunces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0B0F0D',
+                        ivory: '#FAF9F6',
+                        emerald: '#10B981',
+                        gold: '#D4A843',
+                        'gray-border': '#E5E7EB',
+                        'dark-border': '#222624',
+                    },
+                    fontFamily: {
+                        serif: ['Fraunces', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema.org LocalBusiness JSON-LD Metadata -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Nilep",
+      "url": "https://nilep.xyz/contact/",
+      "logo": "https://nilep.xyz/assets/images/logos/nilep-logo-black.svg",
+      "image": "https://placehold.co/600x400/0A0A0A/F5F0E8?text=Nilep+Lagos+Headquarters",
+      "description": "Nilep is a diversified group operating across marketing, agribusiness, technology, and investment in emerging markets.",
+      "telephone": "+234-912-369-4650",
+      "email": "info@nilep.xyz",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Victoria Island",
+        "addressLocality": "Lagos",
+        "addressRegion": "Lagos State",
+        "addressCountry": "Nigeria"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "6.4281",
+        "longitude": "3.4219"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    }
+    </script>
+
+    <style>
+        .custom-section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        .hero-radial-gradient {
+            background: radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.05) 0%, transparent 60%);
+        }
+        header.scrolled {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            background-color: rgba(11, 15, 13, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .mobile-overlay {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .mobile-overlay.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #10B981;
+            transition: width 0.3s ease;
+        }
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+        .nav-link.active {
+            color: #10B981;
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-ivory font-sans text-obsidian antialiased selection:bg-emerald selection:text-white">
+
+    <!-- GLOBAL HEADER -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="logo font-serif text-2xl font-bold text-white tracking-tight z-[102]">Nilep</a>
+            
+            <nav class="hidden lg:flex items-center gap-10">
+                <div class="flex gap-8 text-sm font-medium">
+                     <a href="/" class="nav-link text-white/80 hover:text-white" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link text-white/80 hover:text-white" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link text-white/80 hover:text-white" data-path="/solutions/">Solutions</a>
+                    <a href="/contact/" class="nav-link text-white/80 hover:text-white" data-path="/contact/">Contact</a>
+                </div>
+                <a href="/contact/" class="cta-btn-header bg-emerald hover:bg-emerald/90 text-obsidian font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition-colors">Get in Touch</a>
+            </nav>
+
+            <button class="menu-toggle lg:hidden text-white hover:text-emerald transition-colors z-[102]" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Overlay Navigation Screen -->
+        <div class="mobile-overlay fixed inset-0 bg-obsidian z-[101] flex flex-col items-center justify-center" id="mobileOverlay">
+            <button class="absolute top-6 right-6 text-white hover:text-emerald transition-colors" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center space-y-6 text-center">
+                <a href="/" class="mobile-nav-link text-white text-2xl font-serif hover:text-emerald transition-colors" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white text-2xl font-serif hover:text-emerald transition-colors" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white text-2xl font-serif hover:text-emerald transition-colors" data-path="/solutions/">Solutions</a>
+                <a href="/contact/" class="mobile-nav-link text-white text-2xl font-serif hover:text-emerald transition-colors" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="bg-emerald hover:bg-emerald/90 text-obsidian font-semibold px-8 py-3.5 rounded mt-6 transition-colors">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="bg-obsidian relative pt-[180px] pb-24 px-6 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full pointer-events-none hero-radial-gradient"></div>
+            
+            <div class="max-w-[1280px] mx-auto relative z-10 fade-in-up">
+                <div class="mb-2">
+                    <span class="text-emerald text-xs font-semibold tracking-[2px] uppercase block mb-2">Don't Be Shy,</span>
+                </div>
+                <h1 class="text-white font-serif font-bold leading-[1.05] mb-4 text-[40px] md:text-[56px] lg:text-[80px] tracking-tight">
+                    Say Hello.
+                </h1>
+                <h2 class="text-white/60 font-serif text-[32px] font-normal mb-5">
+                    Contact Us.
+                </h2>
+                <p class="text-white/70 text-[17px] max-w-[520px] leading-[1.7] mb-8 font-light">
+                    Get in touch with us. We respond to all enquiries within 1 to 2 business days.
+                </p>
+                <div class="flex flex-col gap-2.5 text-white/75 text-[16px] leading-[2] font-light">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <span>Victoria Island, Lagos, Nigeria</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <svg class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <a href="mailto:info@nilep.xyz" class="text-emerald hover:underline">info@nilep.xyz</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <svg class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        <span>+234-912-369-4650</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM AND DETAILS -->
+        <section class="bg-ivory custom-section-padding px-6">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                    
+                    <!-- LEFT COLUMN (60% width equivalent) -->
+                    <div class="lg:col-span-7">
+                        <h2 class="text-obsidian font-serif text-[36px] font-bold mb-8 leading-tight tracking-tight">
+                            Send Us a Message.
+                        </h2>
+                        
+                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you/" class="w-full">
+                            <!-- Hidden Netlify tracking field -->
+                            <input type="hidden" name="form-name" value="contact">
+                            
+                            <!-- Honeypot Field -->
+                            <p class="hidden">
+                                <label>Do not fill this out if you are human <input name="bot-field" /></label>
+                            </p>
+
+                            <!-- Field 1: Name -->
+                            <div class="form-group mb-6">
+                                <label for="form-name" class="block text-obsidian text-[14px] font-semibold mb-2">Full Name</label>
+                                <input type="text" id="form-name" name="name" required placeholder="Your full name"
+                                       class="w-full border border-gray-border rounded-lg px-4 py-3.5 text-base text-obsidian bg-white outline-none transition-all duration-200 focus:border-emerald focus:ring-2 focus:ring-emerald/10">
+                            </div>
+
+                            <!-- Field 2: Email -->
+                            <div class="form-group mb-6">
+                                <label for="form-email" class="block text-obsidian text-[14px] font-semibold mb-2">Email Address</label>
+                                <input type="email" id="form-email" name="email" required placeholder="your@email.com"
+                                       class="w-full border border-gray-border rounded-lg px-4 py-3.5 text-base text-obsidian bg-white outline-none transition-all duration-200 focus:border-emerald focus:ring-2 focus:ring-emerald/10">
+                            </div>
+
+                            <!-- Field 3: Phone (Optional) -->
+                            <div class="form-group mb-6">
+                                <label for="form-phone" class="block text-obsidian text-[14px] font-semibold mb-2">Phone Number</label>
+                                <input type="tel" id="form-phone" name="phone" placeholder="+234 000 000 0000"
+                                       class="w-full border border-gray-border rounded-lg px-4 py-3.5 text-base text-obsidian bg-white outline-none transition-all duration-200 focus:border-emerald focus:ring-2 focus:ring-emerald/10">
+                            </div>
+
+                            <!-- Field 4: Organisation (Optional) -->
+                            <div class="form-group mb-6">
+                                <label for="form-organisation" class="block text-obsidian text-[14px] font-semibold mb-2">Organisation or Company</label>
+                                <input type="text" id="form-organisation" name="organisation" placeholder="Your company or organisation"
+                                       class="w-full border border-gray-border rounded-lg px-4 py-3.5 text-base text-obsidian bg-white outline-none transition-all duration-200 focus:border-emerald focus:ring-2 focus:ring-emerald/10">
+                            </div>
+
+                            <!-- Field 5: Role -->
+                            <div class="form-group mb-6">
+                                <label for="form-role" class="block text-obsidian text-[14px] font-semibold mb-2">I am a...</label>
+                                <div class="relative">
+                                    <select id="form-role" name="role" required
+                                            class="w-full border border-gray-border rounded-lg px-4 py-3.5 text-base text-obsidian bg-white outline-none appearance-none transition-all duration-200 focus:border-emerald focus:ring-2 focus:ring-emerald/10">
+                                        <option value="">Please select</option>
+                                        <option value="investor">Investor</option>
+                                        <option value="business">Business</option>
+                                        <option value="farmer">Farmer</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-obsidian/60">
+                                        <svg class="fill-current h-4 w-4" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Field 6: Subject -->
+                            <div class="form-group mb-6">
+                                <label for="form-subject" class="block text-obsidian text-[14px] font-semibold mb-2">Subject</label>
+                                <input type="text" id="form-subject" name="subject" required placeholder="What is your enquiry about?"
+                                       class="w-full border border-gray-border rounded-lg px-4 py-3.5 text-base text-obsidian bg-white outline-none transition-all duration-200 focus:border-emerald focus:ring-2 focus:ring-emerald/10">
+                            </div>
+
+                            <!-- Field 7: Message -->
+                            <div class="form-group mb-8">
+                                <label for="form-message" class="block text-obsidian text-[14px] font-semibold mb-2">Message</label>
+                                <textarea id="form-message" name="message" required rows="5" placeholder="Tell us about yourself and how we can help."
+                                          class="w-full border border-gray-border rounded-lg px-4 py-3.5 text-base text-obsidian bg-white outline-none resize-y transition-all duration-200 focus:border-emerald focus:ring-2 focus:ring-emerald/10"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" 
+                                    class="w-full lg:w-auto bg-emerald hover:bg-emerald/90 text-obsidian font-semibold py-4 px-10 rounded-lg text-base cursor-pointer transition-all duration-300 hover:translate-y-[-1px]">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- RIGHT COLUMN (40% width equivalent) -->
+                    <div class="lg:col-span-5 flex flex-col justify-between">
+                        <div>
+                            <!-- Details Card -->
+                            <div class="bg-white p-8 rounded-xl border border-gray-border">
+                                <h3 class="text-obsidian font-serif text-xl font-bold mb-6">
+                                    Our Details
+                                </h3>
+                                
+                                <div class="flex flex-col gap-6">
+                                    <!-- Row 1 -->
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-10 h-10 rounded bg-emerald/10 flex items-center justify-center text-emerald shrink-0">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                        </div>
+                                        <div>
+                                            <p class="text-obsidian/50 text-xs font-semibold uppercase tracking-wider mb-0.5">Location</p>
+                                            <p class="text-obsidian text-[15px] font-medium">Victoria Island, Lagos, Nigeria</p>
+                                        </div>
+                                    </div>
+                                    <!-- Row 2 -->
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-10 h-10 rounded bg-emerald/10 flex items-center justify-center text-emerald shrink-0">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                        </div>
+                                        <div>
+                                            <p class="text-obsidian/50 text-xs font-semibold uppercase tracking-wider mb-0.5">Email</p>
+                                            <a href="mailto:info@nilep.xyz" class="text-emerald font-semibold text-[15px] hover:underline">info@nilep.xyz</a>
+                                        </div>
+                                    </div>
+                                    <!-- Row 3 -->
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-10 h-10 rounded bg-emerald/10 flex items-center justify-center text-emerald shrink-0">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                                        </div>
+                                        <div>
+                                            <p class="text-obsidian/50 text-xs font-semibold uppercase tracking-wider mb-0.5">Phone</p>
+                                            <p class="text-obsidian text-[15px] font-medium">+234-912-369-4650</p>
+                                        </div>
+                                    </div>
+                                    <!-- Row 4 -->
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-10 h-10 rounded bg-emerald/10 flex items-center justify-center text-emerald shrink-0">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v6l2 2m6-4a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                        </div>
+                                        <div>
+                                            <p class="text-obsidian/50 text-xs font-semibold uppercase tracking-wider mb-0.5">Hours</p>
+                                            <p class="text-obsidian text-[15px] font-medium">Mon to Fri, 9am to 5pm WAT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL NOTE -->
+        <section class="bg-obsidian py-8 px-6 text-center border-t border-dark-border">
+            <p class="text-white/60 text-sm font-light">
+                Follow us on social media, coming soon.
+            </p>
+        </section>
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-obsidian pt-16 pb-12 px-6 border-t border-dark-border">
+        <div class="max-w-[1280px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-dark-border">
+                
+                <!-- Column 1 - Brand -->
+                <div class="flex flex-col gap-4">
+                    <a href="/" class="font-serif text-white text-2xl font-bold">Nilep</a>
+                    <p class="text-white/70 text-[15px] leading-[1.7]">
+                        Nilep is a diversified group with solutions for various sectors in emerging markets.
+                    </p>
+                    <div class="flex flex-col gap-3 mt-2 text-white/60 text-[14px]">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            <span>Victoria Island, Lagos, Nigeria</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            <a href="mailto:info@nilep.xyz" class="hover:text-emerald transition-colors">info@nilep.xyz</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-emerald" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            <a href="tel:+2349123694650" class="hover:text-emerald transition-colors">+234-912-369-4650</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 - Explore -->
+                <div>
+                    <h4 class="text-emerald text-[11px] font-semibold tracking-[2px] uppercase mb-5">Explore</h4>
+                    <ul class="flex flex-col gap-3 text-white/80 text-[15px]">
+                        <li><a href="/" class="hover:text-emerald transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-emerald transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-emerald transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-emerald transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-emerald transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-emerald transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-emerald transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-emerald transition-colors">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 - Solutions -->
+                <div>
+                    <h4 class="text-emerald text-[11px] font-semibold tracking-[2px] uppercase mb-5">Solutions</h4>
+                    <ul class="flex flex-col gap-3 text-white/80 text-[15px]">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-emerald transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-emerald transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-emerald transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-emerald transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-emerald transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-emerald transition-colors font-semibold text-white">Palm Oil Syndicate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 gap-4 text-[13px] text-white/40">
+                <p>&copy; 2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-2 text-[12px]">
+                    <a href="/privacy-policy/" class="hover:text-emerald transition-colors">Privacy Policy</a>
+                    <span class="text-white/20">|</span>
+                    <a href="/terms/" class="hover:text-emerald transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Reusable sticky global header scroll logic
+            const header = document.getElementById('globalHeader');
+            const handleScroll = () => {
+                if (window.scrollY > 80) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            };
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Trigger instantly on layout paint
+
+            // Full-screen overlay setup for tablets and mobile devices
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const openOverlay = () => {
+                mobileOverlay.classList.add('open');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeOverlay = () => {
+                mobileOverlay.classList.remove('open');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            menuToggle.addEventListener('click', openOverlay);
+            closeMenu.addEventListener('click', closeOverlay);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeOverlay);
+            });
+        });
+    </script>
+</body>
+</html>

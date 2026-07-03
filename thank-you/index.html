@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Nilep</title>
+    <meta name="description" content="Your message has been successfully received by Nilep.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://nilep.xyz/thank-you/">
+    
+    <!-- Google Fonts: Inter & Fraunces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#0B0F0D',
+                        ivory: '#FAF9F6',
+                        emerald: '#10B981',
+                        gold: '#D4A843',
+                        'gray-border': '#E5E7EB',
+                        'dark-border': '#222624',
+                    },
+                    fontFamily: {
+                        serif: ['Fraunces', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-ivory font-sans text-obsidian antialiased selection:bg-emerald selection:text-white">
+
+    <!-- Standalone Centered Page Shell -->
+    <main class="min-h-screen w-full flex flex-col items-center justify-center text-center p-6 sm:p-12 relative overflow-hidden">
+        <!-- Growth Radial overlay in top-left -->
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.03]" 
+             style="background: radial-gradient(circle at 0% 0%, #10B981 0%, transparent 60%);">
+        </div>
+
+        <div class="flex flex-col items-center justify-center max-w-[600px] w-full relative z-10 fade-in-up">
+            
+            <!-- Nilep Logo -->
+            <a href="/" class="font-serif text-3xl sm:text-4xl font-bold text-obsidian tracking-tight block transition-transform duration-300 hover:scale-[1.03]" aria-label="Nilep Home">
+                Nilep
+            </a>
+
+            <!-- Heading -->
+            <h1 class="text-obsidian font-serif text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mt-12 mb-6 tracking-tight">
+                Thank You.
+            </h1>
+
+            <!-- Description Copy -->
+            <p class="text-obsidian/70 text-base sm:text-lg max-w-[480px] leading-[1.7] mb-10 font-light">
+                Your message has been received. A member of the Nilep team will be in touch within 1 to 2 business days.
+            </p>
+
+            <!-- Back to Home Action Button -->
+            <a href="/" class="inline-flex items-center justify-center bg-emerald hover:bg-emerald/90 text-obsidian font-semibold text-sm uppercase tracking-wider px-8 py-4 rounded-md shadow-sm transition-all duration-300 hover:translate-y-[-2px]">
+                Return to Home
+            </a>
+
+        </div>
+    </main>
+
+</body>
+</html>
