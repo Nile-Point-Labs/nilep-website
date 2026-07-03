@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,177 @@
     <meta name="description" content="Explore Nilep's structured investment products in agricultural and agribusiness assets across Africa and emerging markets. Defined returns, professional management, physical asset backing.">
     <link rel="canonical" href="https://nilep.xyz/invest/">
     
-    <!-- Google Fonts: Inter (UI/Body) & Fraunces (Editorial Headings) -->
+    <!-- Google Fonts: Inter & Fraunces -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS Engine -->
+    <!-- Tailwind CSS Engine with Custom Config -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: {
+                            DEFAULT: '#0B0F0D', // Premium deep slate/charcoal green-black
+                            light: '#131A16',
+                            card: '#161F1B'
+                        },
+                        ivory: {
+                            DEFAULT: '#FAF9F6', // Pure organic warm white
+                            dark: '#F0EEEA',
+                            card: '#FFFFFF'
+                        },
+                        'green-brand': {
+                            DEFAULT: '#10B981', // Glowing vibrant emerald
+                            hover: '#059669',
+                            dark: '#064E3B',
+                            light: '#D1FAE5',
+                            glow: '#10B98133'
+                        },
+                        gold: {
+                            DEFAULT: '#D4A843', // Elegant gold for premium financial highlights
+                            hover: '#C29532',
+                            light: '#F8F4EA'
+                        },
+                        'secondary-custom': '#52605B', // Highly readable dark slate sage
+                        border: '#BAC7C1'
+                    },
+                    fontFamily: {
+                        serif: ['Fraunces', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 8s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/css">
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAF9F6;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Header */
+        .scrolled-header {
+            background-color: rgba(11, 15, 13, 0.85) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Ambient Glow Components */
+        .glowing-spot {
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, rgba(11, 15, 13, 0) 70%);
+            filter: blur(40px);
+        }
+
+        .glowing-spot-gold {
+            background: radial-gradient(circle, rgba(212, 168, 67, 0.1) 0%, rgba(11, 15, 13, 0) 70%);
+            filter: blur(40px);
+        }
+
+        /* Menu Link Underline Animations */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #10B981;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0F0D;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2A3631;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #10B981;
+        }
+
+        /* Custom spacing logic for hero sections */
+        .custom-section-padding {
+            padding-top: clamp(4.5rem, 9vw, 8.5rem);
+            padding-bottom: clamp(4.5rem, 9vw, 8.5rem);
+        }
+
+        /* Visual entrance reveals */
+        .reveal {
+            opacity: 0;
+            transform: translateY(15px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Custom Premium Range Input Styling */
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 6px;
+            background: #2A3631;
+            border-radius: 9999px;
+            outline: none;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #D4A843;
+            cursor: pointer;
+            border: 2px solid #161F1B;
+            transition: transform 0.1s ease, background-color 0.2s ease;
+        }
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+            background: #10B981;
+        }
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #D4A843;
+            cursor: pointer;
+            border: 2px solid #161F1B;
+            transition: transform 0.1s ease, background-color 0.2s ease;
+        }
+        input[type="range"]::-moz-range-thumb:hover {
+            transform: scale(1.15);
+            background: #10B981;
+        }
+    </style>
 
     <script type="application/ld+json">
     {
@@ -39,111 +201,136 @@
       "feesAndCommissionsSpecification": "Transparent terms with clear return structures per investment product cycle."
     }
     </script>
-
 </head>
-<body>
+<body class="text-secondary-custom">
 
-    <header class="global-header" id="globalHeader">
-        <div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between">
-            <a href="/" class="logo font-serif text-2xl font-bold text-white z-[102]">Nilep</a>
+    <!-- GLOBAL HEADER -->
+    <header class="fixed top-0 left-0 w-full z-[100] transition-all duration-300 py-5" id="globalHeader">
+        <div class="max-w-[1280px] mx-auto px-6 lg:px-12 flex items-center justify-between">
+            <a href="/" class="font-serif text-3xl font-extrabold tracking-tight text-white z-[102] transition-transform hover:scale-105">
+                Nilep<span class="text-green-brand">.</span>
+            </a>
             
-            <nav class="hidden lg:flex items-center gap-8">
-                <div class="flex gap-8">
-                    <a href="/" class="nav-link" data-path="/">Home</a>
-                    <a href="/about/" class="nav-link" data-path="/about/">About</a>
-                    <a href="/solutions/" class="nav-link" data-path="/solutions/">Solutions</a>
-                    <a href="/invest/" class="nav-link" data-path="/invest/">Invest</a>
-                    <a href="/contact/" class="nav-link" data-path="/contact/">Contact</a>
+            <nav class="hidden lg:flex items-center gap-10">
+                <div class="flex gap-10">
+                    <a href="/" class="nav-link text-white/80 hover:text-white font-medium text-sm tracking-wide transition-colors" data-path="/">Home</a>
+                    <a href="/about/" class="nav-link text-white/80 hover:text-white font-medium text-sm tracking-wide transition-colors" data-path="/about/">About</a>
+                    <a href="/solutions/" class="nav-link text-white/80 hover:text-white font-medium text-sm tracking-wide transition-colors" data-path="/solutions/">Solutions</a>
+                    <a href="/invest/" class="nav-link text-white/80 hover:text-white font-medium text-sm tracking-wide transition-colors" data-path="/invest/">Invest</a>
+                    <a href="/contact/" class="nav-link text-white/80 hover:text-white font-medium text-sm tracking-wide transition-colors" data-path="/contact/">Contact</a>
                 </div>
-                <a href="/contact/" class="cta-btn-header">Get in Touch</a>
+                <a href="/contact/" class="bg-green-brand hover:bg-green-brand/90 text-obsidian font-bold text-sm px-6 py-2.5 rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] transform hover:-translate-y-0.5">
+                    Get in Touch
+                </a>
             </nav>
 
-            <button class="menu-toggle lg:hidden text-white z-[102]" id="menuToggle" aria-label="Open Menu">
-                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            <button class="menu-toggle lg:hidden text-white z-[102] p-2 hover:text-green-brand transition-colors focus:outline-none" id="menuToggle" aria-label="Open Menu">
+                <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
                 </svg>
             </button>
         </div>
 
         <!-- Mobile Overlay Screen -->
-        <div class="mobile-overlay" id="mobileOverlay">
-            <button class="absolute top-6 right-6 text-white z-[102]" id="closeMenu" aria-label="Close Menu">
-                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        <div class="fixed inset-0 bg-obsidian z-[101] flex flex-col items-center justify-center opacity-0 pointer-events-none transition-all duration-500" id="mobileOverlay">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 glowing-spot rounded-full"></div>
+            
+            <button class="absolute top-6 right-6 text-white hover:text-green-brand transition-colors z-[102]" id="closeMenu" aria-label="Close Menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
             </button>
-            <div class="flex flex-col items-center text-center">
-                <a href="/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/">Home</a>
-                <a href="/about/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/about/">About</a>
-                <a href="/solutions/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/solutions/">Solutions</a>
-                <a href="/invest/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/invest/">Invest</a>
-                <a href="/contact/" class="mobile-nav-link text-white text-[24px] leading-[2.5]" data-path="/contact/">Contact</a>
-                <a href="/contact/" class="cta-btn-header mt-12 w-fit px-8 py-3">Get in Touch</a>
+            <div class="flex flex-col items-center text-center gap-6 relative z-10">
+                <a href="/" class="mobile-nav-link text-white/75 hover:text-white text-3xl font-serif tracking-wide transition-colors" data-path="/">Home</a>
+                <a href="/about/" class="mobile-nav-link text-white/75 hover:text-white text-3xl font-serif tracking-wide transition-colors" data-path="/about/">About</a>
+                <a href="/solutions/" class="mobile-nav-link text-white/75 hover:text-white text-3xl font-serif tracking-wide transition-colors" data-path="/solutions/">Solutions</a>
+                <a href="/invest/" class="mobile-nav-link text-white/75 hover:text-white text-3xl font-serif tracking-wide transition-colors" data-path="/invest/">Invest</a>
+                <a href="/contact/" class="mobile-nav-link text-white/75 hover:text-white text-3xl font-serif tracking-wide transition-colors" data-path="/contact/">Contact</a>
+                <a href="/contact/" class="bg-green-brand hover:bg-green-brand/90 text-obsidian font-bold mt-8 w-fit px-8 py-3.5 rounded-full transition-all duration-300">Get in Touch</a>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="bg-[#0A0A0A] relative pt-[180px] pb-24 px-6 overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.05]" 
-                 style="background: radial-gradient(circle at 0% 0%, var(--color-green) 0%, transparent 60%);">
-            </div>
+    <main class="w-full">
+        <!-- HERO SECTION -->
+        <section class="bg-obsidian relative pt-[160px] pb-20 lg:pt-[220px] lg:pb-32 px-6 lg:px-12 overflow-hidden">
+            <div class="absolute top-0 left-0 w-[500px] h-[500px] pointer-events-none opacity-20 glowing-spot rounded-full"></div>
+            <div class="absolute -right-20 top-20 w-[600px] h-[600px] pointer-events-none opacity-10 glowing-spot rounded-full"></div>
+            <div class="absolute inset-0 opacity-5 mix-blend-overlay" style="background-image: radial-gradient(#10B981 1.5px, transparent 1.5px); background-size: 32px 32px;"></div>
             
             <div class="max-w-[1280px] mx-auto relative z-10">
-                <div class="mb-4">
-                    <span class="text-[#1A6B3C] text-xs font-semibold tracking-[2px] uppercase">Investment Opportunities</span>
+                <div class="mb-5 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-brand/10 border border-green-brand/20 animate-pulse-slow">
+                    <span class="w-2 h-2 rounded-full bg-green-brand"></span>
+                    <span class="text-green-brand text-xs font-bold tracking-[2.5px] uppercase">Investment Opportunities</span>
                 </div>
-                <h1 class="text-[#F5F0E8] text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] max-w-[900px] mb-6">
+                
+                <h1 class="text-ivory text-4xl sm:text-5xl lg:text-[68px] font-extrabold leading-[1.1] font-serif mb-8 tracking-tight max-w-[1000px]">
                     Invest in Emerging Markets With Confidence.
                 </h1>
-                <p class="text-[#E8E2D6] text-base sm:text-lg max-w-[680px] leading-relaxed">
+                
+                <p class="text-border/90 text-lg sm:text-xl max-w-[720px] leading-relaxed font-light">
                     Nilep connects investors to vetted, professionally managed private market assets in agricultural and agribusiness operations, with structured products, transparent terms, and physical asset backing.
                 </p>
             </div>
         </section>
 
-        <section class="bg-[#F5F0E8] py-24 px-6">
-            <div class="max-w-[1280px] mx-auto">
-                <h2 class="text-[#0A0A0A] text-3xl sm:text-4xl lg:text-[48px] font-bold mb-14 leading-tight">
+        <!-- WHY PARTNER WITH NILEP -->
+        <section class="bg-ivory custom-section-padding px-6 lg:px-12 relative overflow-hidden">
+            <div class="absolute -left-40 bottom-0 w-[500px] h-[500px] bg-ivory-dark/40 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="max-w-[1280px] mx-auto relative z-10">
+                <h2 class="text-obsidian text-3xl sm:text-4xl lg:text-[48px] font-extrabold leading-tight font-serif mb-16 reveal">
                     Why Partner With Nilep?
                 </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Card 1 -->
-                    <div class="bg-white p-9 rounded-lg border border-[#E8E2D6] card-interaction flex flex-col justify-between">
+                    <div class="bg-white p-8 rounded-2xl border border-border/30 hover:border-green-brand/50 transition-all duration-300 group hover:-translate-y-1.5 shadow-[0_10px_30px_rgba(0,0,0,0.01)] reveal flex flex-col justify-between">
                         <div>
-                            <h3 class="text-[#0A0A0A] text-xl font-semibold mb-3">Operational Depth</h3>
-                            <p class="text-[#2C2C2C] text-sm leading-relaxed">
+                            <div class="w-12 h-12 bg-green-brand/10 border border-green-brand/20 text-green-brand flex items-center justify-center rounded-xl mb-6 font-bold group-hover:scale-110 transition-transform">
+                                01
+                            </div>
+                            <h3 class="text-obsidian text-xl font-bold font-serif mb-4">Operational Depth</h3>
+                            <p class="text-secondary-custom text-[14px] leading-relaxed font-light">
                                 We supervise the asset management for interested investors. We do not hold funds, we simply connect capital to third-party operators. We oversee the farms, the supply chains, and the quality at every stage.
                             </p>
                         </div>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="bg-white p-9 rounded-lg border border-[#E8E2D6] card-interaction flex flex-col justify-between">
+                    <div class="bg-white p-8 rounded-2xl border border-border/30 hover:border-green-brand/50 transition-all duration-300 group hover:-translate-y-1.5 shadow-[0_10px_30px_rgba(0,0,0,0.01)] reveal flex flex-col justify-between" style="transition-delay: 100ms;">
                         <div>
-                            <h3 class="text-[#0A0A0A] text-xl font-semibold mb-3">Transparent Structures</h3>
-                            <p class="text-[#2C2C2C] text-sm leading-relaxed">
+                            <div class="w-12 h-12 bg-green-brand/10 border border-green-brand/20 text-green-brand flex items-center justify-center rounded-xl mb-6 font-bold group-hover:scale-110 transition-transform">
+                                02
+                            </div>
+                            <h3 class="text-obsidian text-xl font-bold font-serif mb-4">Transparent Structures</h3>
+                            <p class="text-secondary-custom text-[14px] leading-relaxed font-light">
                                 Every product is documented with clear terms including the period, stated return structure, and explicit conditions for capital and return delivery.
                             </p>
                         </div>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="bg-white p-9 rounded-lg border border-[#E8E2D6] card-interaction flex flex-col justify-between">
+                    <div class="bg-white p-8 rounded-2xl border border-border/30 hover:border-green-brand/50 transition-all duration-300 group hover:-translate-y-1.5 shadow-[0_10px_30px_rgba(0,0,0,0.01)] reveal flex flex-col justify-between" style="transition-delay: 200ms;">
                         <div>
-                            <h3 class="text-[#0A0A0A] text-xl font-semibold mb-3">Physical Asset Backing</h3>
-                            <p class="text-[#2C2C2C] text-sm leading-relaxed">
+                            <div class="w-12 h-12 bg-green-brand/10 border border-green-brand/20 text-green-brand flex items-center justify-center rounded-xl mb-6 font-bold group-hover:scale-110 transition-transform">
+                                03
+                            </div>
+                            <h3 class="text-obsidian text-xl font-bold font-serif mb-4">Physical Asset Backing</h3>
+                            <p class="text-secondary-custom text-[14px] leading-relaxed font-light">
                                 These products are backed by real agricultural operations including physical land, active milling facilities, and verified production infrastructure, these are not purely financial instruments.
                             </p>
                         </div>
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="bg-white p-9 rounded-lg border border-[#E8E2D6] card-interaction flex flex-col justify-between">
+                    <div class="bg-white p-8 rounded-2xl border border-border/30 hover:border-green-brand/50 transition-all duration-300 group hover:-translate-y-1.5 shadow-[0_10px_30px_rgba(0,0,0,0.01)] reveal flex flex-col justify-between" style="transition-delay: 300ms;">
                         <div>
-                            <h3 class="text-[#0A0A0A] text-xl font-semibold mb-3">Track Record</h3>
-                            <p class="text-[#2C2C2C] text-sm leading-relaxed">
+                            <div class="w-12 h-12 bg-green-brand/10 border border-green-brand/20 text-green-brand flex items-center justify-center rounded-xl mb-6 font-bold group-hover:scale-110 transition-transform">
+                                04
+                            </div>
+                            <h3 class="text-obsidian text-xl font-bold font-serif mb-4">Track Record</h3>
+                            <p class="text-secondary-custom text-[14px] leading-relaxed font-light">
                                 Five consecutive paid cycles in our palm oil syndicate. Real operational history, not projected performance.
                             </p>
                         </div>
@@ -152,116 +339,149 @@
             </div>
         </section>
 
-        <section class="bg-[#0A0A0A] py-24 px-6 relative">
-            <div class="max-w-[1280px] mx-auto">
+        <!-- ACTIVE PRODUCTS & CHART SIMULATOR -->
+        <section class="bg-obsidian-light custom-section-padding px-6 lg:px-12 relative overflow-hidden">
+            <div class="absolute right-0 top-1/4 w-[500px] h-[500px] opacity-10 glowing-spot rounded-full"></div>
+            <div class="absolute left-1/3 top-1/2 w-[400px] h-[400px] opacity-10 glowing-spot-gold rounded-full"></div>
+            
+            <div class="max-w-[1280px] mx-auto relative z-10">
                 <div class="mb-4">
-                    <span class="text-[#1A6B3C] text-xs font-semibold tracking-[2px] uppercase">Active Products</span>
+                    <span class="text-green-brand text-xs font-bold tracking-[2.5px] uppercase">Active Products</span>
                 </div>
-                <h2 class="text-[#F5F0E8] text-3xl sm:text-4xl lg:text-[48px] font-bold mb-14 leading-tight">
+                <h2 class="text-ivory text-3xl sm:text-4xl lg:text-[48px] font-extrabold leading-tight font-serif mb-16 reveal">
                     Current Investment Opportunities.
                 </h2>
 
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                    <!-- Active product description (Left Column) -->
-                    <div class="lg:col-span-5 bg-[#2C2C2C] p-8 md:p-12 rounded-lg border-l-4 border-[#D4A843] h-full flex flex-col justify-between">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+                    <!-- Active Product Info -->
+                    <div class="lg:col-span-5 bg-obsidian-card p-8 lg:p-12 rounded-2xl border-l-4 border-gold border-y border-r border-white/5 shadow-2xl flex flex-col justify-between reveal">
                         <div>
-                            <span class="block text-[#D4A843] text-xs uppercase font-bold tracking-[2px] mb-3">Agricultural Syndicate</span>
-                            <h3 class="text-[#F5F0E8] text-2xl md:text-3xl font-bold mb-4">Palm Oil Production Syndicate</h3>
-                            <p class="text-[#E8E2D6] text-base leading-relaxed mb-6">
+                            <span class="inline-block px-3 py-1.5 rounded-full bg-gold/10 border border-gold/20 text-gold text-[11px] uppercase tracking-[1.5px] font-bold mb-6">
+                                Agricultural Syndicate
+                            </span>
+                            <h3 class="text-ivory text-2xl sm:text-3xl font-extrabold font-serif mb-6 leading-tight">
+                                Palm Oil Production Syndicate
+                            </h3>
+                            <p class="text-border/80 text-base leading-relaxed font-light mb-8">
                                 High-yield agro-processing investment backed by verified weekly milling operations in Cross River State. Up to 15% ROI per quarterly cycle. Five cycles consecutively paid.
                             </p>
 
-                            <div class="flex flex-wrap gap-2 mb-8">
-                                <span class="bg-[#0A0A0A] border border-[#D4A843] text-[#D4A843] text-xs font-semibold px-4 py-2 rounded-full">Up to 15% ROI</span>
-                                <span class="bg-[#0A0A0A] border border-[#D4A843] text-[#D4A843] text-xs font-semibold px-4 py-2 rounded-full">3-Month Cycle</span>
-                                <span class="bg-[#0A0A0A] border border-[#D4A843] text-[#D4A843] text-xs font-semibold px-4 py-2 rounded-full">5 Cycles Paid</span>
+                            <div class="flex flex-wrap gap-2.5 mb-8">
+                                <span class="bg-obsidian border border-gold/30 text-gold text-xs font-semibold px-4 py-2 rounded-full shadow-inner">
+                                    Up to 15% ROI
+                                </span>
+                                <span class="bg-obsidian border border-gold/30 text-gold text-xs font-semibold px-4 py-2 rounded-full shadow-inner">
+                                    3-Month Cycle
+                                </span>
+                                <span class="bg-obsidian border border-gold/30 text-gold text-xs font-semibold px-4 py-2 rounded-full shadow-inner">
+                                    5 Cycles Paid
+                                </span>
                             </div>
                         </div>
 
                         <div>
-                            <a href="/invest/palm-oil-syndicate/" class="inline-flex bg-[#1A6B3C] hover:bg-[#145730] text-white font-semibold rounded px-6 py-3 transition-colors">
+                            <a href="/invest/palm-oil-syndicate/" class="inline-flex bg-green-brand hover:bg-green-brand/95 text-obsidian font-bold rounded-full px-8 py-3.5 transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.3)]">
                                 View Details
                             </a>
                         </div>
                     </div>
 
-                    <!-- Dynamic Canvas & Slider Tool (Right Column) -->
-                    <div class="lg:col-span-7 bg-[#151515] p-6 md:p-8 rounded-lg border border-[#2C2C2C]">
-                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
-                            <div>
-                                <h4 class="text-[#F5F0E8] text-lg font-bold">Interactive Return Projection</h4>
-                                <p class="text-[#E8E2D6] text-xs">Simulate returns across standard quarterly tenors</p>
-                            </div>
-                            <div class="flex items-center gap-2 bg-[#0A0A0A] p-1 rounded-md border border-[#2C2C2C]">
-                                <button id="payoutSimple" class="px-3 py-1 text-xs rounded font-semibold text-white bg-[#1A6B3C]">Payout</button>
-                                <button id="payoutComp" class="px-3 py-1 text-xs rounded font-semibold text-[#E8E2D6] hover:text-white">Reinvest</button>
-                            </div>
-                        </div>
-
-                        <!-- Canvas Visual Area -->
-                        <div class="relative w-full bg-[#0A0A0A] rounded-lg border border-[#2C2C2C] p-4 mb-6">
-                            <canvas id="yieldChart" class="w-full h-[240px] block"></canvas>
-                        </div>
-
-                        <!-- Inputs/Control Panel -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <label class="text-[#E8E2D6] text-xs uppercase font-semibold">Principal Investment</label>
-                                    <span id="principalVal" class="text-[#D4A843] text-sm font-bold">₦1,000,000</span>
-                                </div>
-                                <input id="principalRange" type="range" min="100000" max="10000000" step="50000" value="1000000" class="w-full">
-                            </div>
-
-                            <div class="bg-[#202020] p-4 rounded-lg border border-[#2C2C2C] flex justify-between items-center">
+                    <!-- Dynamic Simulator Tool -->
+                    <div class="lg:col-span-7 bg-obsidian-card p-6 sm:p-10 rounded-2xl border border-white/5 shadow-2xl flex flex-col justify-between reveal" style="transition-delay: 150ms;">
+                        <div>
+                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
                                 <div>
-                                    <span class="block text-xs text-[#E8E2D6] uppercase font-semibold">Total Projected Return</span>
-                                    <span class="text-xs text-[#1A6B3C] font-semibold" id="returnTypeLabel">Simple (15% per cycle)</span>
+                                    <h4 class="text-ivory text-lg font-bold font-serif mb-1">Interactive Return Projection</h4>
+                                    <p class="text-border/65 text-xs">Simulate returns across standard quarterly tenors</p>
                                 </div>
-                                <div class="text-right">
-                                    <span id="totalReturnVal" class="text-xl font-bold text-[#F5F0E8] block">₦1,600,000</span>
-                                    <span id="netGainVal" class="text-xs text-[#D4A843]">+₦600,000 Net</span>
+                                <div class="flex items-center gap-1 bg-obsidian p-1 rounded-full border border-white/5">
+                                    <button id="payoutSimple" class="px-4 py-1.5 text-xs rounded-full font-bold transition-all duration-300 text-obsidian bg-green-brand shadow-md">
+                                        Payout
+                                    </button>
+                                    <button id="payoutComp" class="px-4 py-1.5 text-xs rounded-full font-medium transition-all duration-300 text-border/70 hover:text-white">
+                                        Reinvest
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Canvas Area -->
+                            <div class="relative w-full bg-obsidian rounded-2xl border border-white/5 p-4 sm:p-6 mb-8 shadow-inner overflow-hidden">
+                                <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#10B981 1px, transparent 1px); background-size: 20px 20px;"></div>
+                                <canvas id="yieldChart" class="w-full h-[240px] block relative z-10"></canvas>
+                            </div>
+
+                            <!-- Inputs & Simulation Dashboard -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center">
+                                        <label class="text-border/80 text-xs font-bold tracking-wider uppercase">Principal Investment</label>
+                                        <span id="principalVal" class="text-gold text-base font-bold">₦1,000,000</span>
+                                    </div>
+                                    <input id="principalRange" type="range" min="100000" max="10000000" step="50000" value="1000000">
+                                </div>
+
+                                <div class="bg-obsidian p-5 rounded-2xl border border-white/5 flex justify-between items-center shadow-lg">
+                                    <div>
+                                        <span class="block text-xs text-border/70 font-semibold uppercase tracking-wide mb-1">Total Return</span>
+                                        <span class="text-xs text-green-brand font-bold" id="returnTypeLabel">Simple (15% per cycle)</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span id="totalReturnVal" class="text-2xl font-black text-ivory tracking-tight block">₦1,600,000</span>
+                                        <span id="netGainVal" class="text-xs text-gold font-bold">+₦600,000 Net</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-center mt-12">
-                    <p class="text-[#E8E2D6] text-sm">
-                        Additional investment products are in development. Contact us at <a href="mailto:info@nilep.xyz" class="text-[#1A6B3C] hover:underline font-semibold">info@nilep.xyz</a> to register your interest.
+                <div class="text-center mt-16 max-w-2xl mx-auto">
+                    <p class="text-border/80 text-sm font-light">
+                        Additional investment products are in development. Contact us at <a href="mailto:info@nilep.xyz" class="text-green-brand hover:text-green-brand/85 font-semibold transition-colors">info@nilep.xyz</a> to register your interest.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="bg-[#F5F0E8] py-24 px-6">
-            <div class="max-w-[1280px] mx-auto">
-                <h2 class="text-[#0A0A0A] text-3xl sm:text-4xl lg:text-[48px] font-bold mb-14 leading-tight">
+        <!-- TARGET SEGMENTS -->
+        <section class="bg-ivory custom-section-padding px-6 lg:px-12 relative overflow-hidden">
+            <div class="absolute left-1/2 top-1/2 w-[600px] h-[600px] bg-ivory-dark/30 rounded-full blur-3xl pointer-events-none transform -translate-x-1/2 -translate-y-1/2"></div>
+            
+            <div class="max-w-[1280px] mx-auto relative z-10">
+                <h2 class="text-obsidian text-3xl sm:text-4xl lg:text-[48px] font-extrabold leading-tight font-serif mb-16 reveal">
                     Who Nilep Opportunity Is For.
                 </h2>
 
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                    <!-- Column 1 -->
-                    <div>
-                        <h3 class="text-[#0A0A0A] text-xl font-bold mb-4">Individual Investors</h3>
-                        <p class="text-[#2C2C2C] text-base leading-relaxed">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <!-- Item 1 -->
+                    <div class="bg-white p-8 rounded-2xl border border-border/20 shadow-sm hover:border-green-brand/30 hover:shadow-md transition-all duration-300 reveal">
+                        <h3 class="text-obsidian text-xl font-bold font-serif mb-4 flex items-center gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-green-brand"></span>
+                            Individual Investors
+                        </h3>
+                        <p class="text-secondary-custom text-[15px] leading-relaxed font-light">
                             Entrepreneurs and professionals looking for private market exposure to African agricultural assets with defined returns and professional management.
                         </p>
                     </div>
 
-                    <!-- Column 2 -->
-                    <div>
-                        <h3 class="text-[#0A0A0A] text-xl font-bold mb-4">Diaspora Investors</h3>
-                        <p class="text-[#2C2C2C] text-base leading-relaxed">
+                    <!-- Item 2 -->
+                    <div class="bg-white p-8 rounded-2xl border border-border/20 shadow-sm hover:border-green-brand/30 hover:shadow-md transition-all duration-300 reveal" style="transition-delay: 100ms;">
+                        <h3 class="text-obsidian text-xl font-bold font-serif mb-4 flex items-center gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-green-brand"></span>
+                            Diaspora Investors
+                        </h3>
+                        <p class="text-secondary-custom text-[15px] leading-relaxed font-light">
                             Africans living abroad who want to invest back home through a credible, transparent, professionally managed platform with clear documentation and regular reporting.
                         </p>
                     </div>
 
-                    <!-- Column 3 -->
-                    <div>
-                        <h3 class="text-[#0A0A0A] text-xl font-bold mb-4">Institutional Investors</h3>
-                        <p class="text-[#2C2C2C] text-base leading-relaxed">
+                    <!-- Item 3 -->
+                    <div class="bg-white p-8 rounded-2xl border border-border/20 shadow-sm hover:border-green-brand/30 hover:shadow-md transition-all duration-300 reveal" style="transition-delay: 200ms;">
+                        <h3 class="text-obsidian text-xl font-bold font-serif mb-4 flex items-center gap-2.5">
+                            <span class="w-2 h-2 rounded-full bg-green-brand"></span>
+                            Institutional Investors
+                        </h3>
+                        <p class="text-secondary-custom text-[15px] leading-relaxed font-light">
                             Family offices, investment clubs, and institutions seeking diversified emerging market private asset exposure with operational accountability.
                         </p>
                     </div>
@@ -269,80 +489,107 @@
             </div>
         </section>
 
-        <section class="bg-[#1A6B3C] py-24 px-6 text-center">
-            <div class="max-w-[1280px] mx-auto flex flex-col items-center">
-                <h2 class="text-white text-3xl sm:text-4xl lg:text-[48px] font-bold mb-6 leading-tight">
+        <!-- CLOSING CTA -->
+        <section class="relative py-28 px-6 lg:px-12 bg-gradient-to-br from-green-brand to-green-dark text-center overflow-hidden">
+            <div class="absolute inset-0 opacity-15 mix-blend-overlay" style="background-image: radial-gradient(#ffffff 2px, transparent 2px); background-size: 40px 40px;"></div>
+            <div class="absolute -top-32 -left-32 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none animate-pulse-slow"></div>
+            <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none animate-pulse-slow"></div>
+
+            <div class="max-w-[1280px] mx-auto flex flex-col items-center relative z-10">
+                <h2 class="text-white text-4xl sm:text-5xl lg:text-[60px] font-extrabold mb-6 leading-tight font-serif tracking-tight max-w-3xl">
                     Ready to Explore Your Options?
                 </h2>
-                <p class="text-[#F5F0E8] text-base sm:text-lg max-w-[640px] leading-relaxed mb-10">
+                <p class="text-white/90 text-lg sm:text-xl max-w-2xl font-light mb-10 leading-relaxed">
                     Contact the Nilep team to discuss available products, investment terms, and how to get started.
                 </p>
-                <a href="/contact/" class="inline-flex bg-white hover:bg-[#F5F0E8] text-[#1A6B3C] font-semibold rounded px-8 py-4 transition-colors">
+                <a href="/contact/" class="inline-flex bg-white hover:bg-ivory text-green-dark font-extrabold rounded-full px-12 py-4.5 transition-all duration-300 hover:shadow-[0_10px_40px_rgba(0,0,0,0.15)] transform hover:-translate-y-1">
                     Contact Us
                 </a>
             </div>
         </section>
     </main>
 
-    <footer class="bg-[#0A0A0A] pt-16 pb-12 px-6">
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-obsidian pt-24 pb-12 px-6 lg:px-12 relative overflow-hidden border-t border-white/5">
+        <div class="absolute left-0 bottom-0 w-[400px] h-[400px] opacity-10 glowing-spot rounded-full"></div>
+        
         <div class="max-w-[1280px] mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-[#2C2C2C]">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
                 
-                <!-- Column 1 - Brand info -->
-                <div class="flex flex-col gap-4">
-                    <a href="/" class="font-serif text-white text-2xl font-bold">Nilep</a>
-                    <p class="text-[#F5F0E8] text-[15px] leading-[1.7]">
+                <!-- Column 1 - Brand Summary -->
+                <div class="lg:col-span-4 flex flex-col gap-6">
+                    <a href="/" class="font-serif text-white text-3xl font-extrabold tracking-tight">
+                        Nilep<span class="text-green-brand">.</span>
+                    </a>
+                    <p class="text-border/80 text-[15px] leading-relaxed font-light">
                         Nilep is a diversified group with solutions for various sectors in emerging markets.
                     </p>
-                    <div class="flex flex-col gap-3 mt-2 text-[#E8E2D6] text-[14px]">
-                        <div class="flex items-center gap-2">
-                            <span>📍</span> Victoria Island, Lagos, Nigeria
+                    <div class="flex flex-col gap-4 mt-2 text-border/90 text-[14px]">
+                        <!-- Elegant Inline vector indicators replace garbled glyphs -->
+                        <div class="flex items-start gap-3">
+                            <span class="text-green-brand mt-0.5">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </span>
+                            <span class="leading-relaxed">Victoria Island, Lagos, Nigeria</span>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <span>✉️</span> <a href="mailto:info@nilep.xyz" class="hover:text-[#1A6B3C] transition-colors">info@nilep.xyz</a>
+                        <div class="flex items-center gap-3">
+                            <span class="text-green-brand">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </span>
+                            <a href="mailto:info@nilep.xyz" class="hover:text-green-brand transition-colors">info@nilep.xyz</a>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <span>📞</span> <a href="tel:+2349123694650" class="hover:text-[#1A6B3C] transition-colors">+234-912-369-4650</a>
+                        <div class="flex items-center gap-3">
+                            <span class="text-green-brand">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </span>
+                            <a href="tel:+2349123694650" class="hover:text-green-brand transition-colors">+234-912-369-4650</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Column 2 - Links -->
-                <div>
-                    <h4 class="text-[#1A6B3C] text-[11px] font-semibold tracking-[2px] uppercase mb-5">Explore</h4>
-                    <ul class="flex flex-col gap-3 text-[#F5F0E8] text-[15px]">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about/">About</a></li>
-                        <li><a href="/solutions/">Solutions</a></li>
-                        <li><a href="/invest/">Invest</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/careers/">Careers</a></li>
-                        <li><a href="/contact/">Contact</a></li>
-                        <li><a href="/case-studies/">Case Studies</a></li>
+                <div class="lg:col-span-4 lg:pl-12">
+                    <h4 class="text-green-brand text-xs font-bold tracking-[2.5px] uppercase mb-6">Explore</h4>
+                    <ul class="grid grid-cols-2 gap-y-3.5 gap-x-4 text-ivory/80 text-[15px] font-light">
+                        <li><a href="/" class="hover:text-green-brand transition-colors">Home</a></li>
+                        <li><a href="/about/" class="hover:text-green-brand transition-colors">About</a></li>
+                        <li><a href="/solutions/" class="hover:text-green-brand transition-colors">Solutions</a></li>
+                        <li><a href="/invest/" class="hover:text-green-brand transition-colors">Invest</a></li>
+                        <li><a href="/blog/" class="hover:text-green-brand transition-colors">Blog</a></li>
+                        <li><a href="/careers/" class="hover:text-green-brand transition-colors">Careers</a></li>
+                        <li><a href="/contact/" class="hover:text-green-brand transition-colors">Contact</a></li>
+                        <li><a href="/case-studies/" class="hover:text-green-brand transition-colors">Case Studies</a></li>
                     </ul>
                 </div>
 
-                <!-- Column 3 - Solutions list -->
-                <div>
-                    <h4 class="text-[#1A6B3C] text-[11px] font-semibold tracking-[2px] uppercase mb-5">Solutions</h4>
-                    <ul class="flex flex-col gap-3 text-[#F5F0E8] text-[15px]">
-                        <li><a href="/solutions/marketing-and-ecommerce/">Marketing and E-Commerce</a></li>
-                        <li><a href="/solutions/agriculture-and-food-systems/">Agriculture and Food Systems</a></li>
-                        <li><a href="/solutions/ai-and-blockchain/">AI and Blockchain</a></li>
-                        <li><a href="/solutions/supply-chain-management/">Supply Chain Management</a></li>
-                        <li><a href="/solutions/virtual-farm-gate/">Virtual Farm Gate</a></li>
-                        <li><a href="/invest/palm-oil-syndicate/">Palm Oil Syndicate</a></li>
+                <!-- Column 3 - Solutions -->
+                <div class="lg:col-span-4 font-sans">
+                    <h4 class="text-green-brand text-xs font-bold tracking-[2.5px] uppercase mb-6">Solutions</h4>
+                    <ul class="flex flex-col gap-3.5 text-ivory/80 text-[15px] font-light">
+                        <li><a href="/solutions/marketing-and-ecommerce/" class="hover:text-green-brand transition-colors">Marketing and E-Commerce</a></li>
+                        <li><a href="/solutions/agriculture-and-food-systems/" class="hover:text-green-brand transition-colors">Agriculture and Food Systems</a></li>
+                        <li><a href="/solutions/ai-and-blockchain/" class="hover:text-green-brand transition-colors">AI and Blockchain</a></li>
+                        <li><a href="/solutions/supply-chain-management/" class="hover:text-green-brand transition-colors">Supply Chain Management</a></li>
+                        <li><a href="/solutions/virtual-farm-gate/" class="hover:text-green-brand transition-colors">Virtual Farm Gate</a></li>
+                        <li><a href="/invest/palm-oil-syndicate/" class="hover:text-green-brand transition-colors font-semibold text-white">Palm Oil Syndicate</a></li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Footer Bottom panel -->
-            <div class="flex flex-col md:flex-row justify-between items-center pt-6 gap-4 text-[13px] text-[#E8E2D6]">
-                <p>2026 Nilep. All Rights Reserved.</p>
-                <div class="flex items-center gap-2 text-[12px]">
-                    <a href="/privacy-policy/" class="hover:text-[#1A6B3C] transition-colors">Privacy Policy</a>
-                    <span class="text-[#E8E2D6]">|</span>
-                    <a href="/terms/" class="hover:text-[#1A6B3C] transition-colors">Terms of Use</a>
+            <!-- Footer Bottom bar -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 gap-4 text-[13px] text-border/70 font-light">
+                <p>&copy; 2026 Nilep. All Rights Reserved.</p>
+                <div class="flex items-center gap-4 text-[13px]">
+                    <a href="/privacy-policy/" class="hover:text-green-brand transition-colors">Privacy Policy</a>
+                    <span class="text-white/10">|</span>
+                    <a href="/terms/" class="hover:text-green-brand transition-colors">Terms of Use</a>
                 </div>
             </div>
         </div>
@@ -350,50 +597,82 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Reusable sticky header scroll logic
+            // Header Scroll transition with glassmorphism logic
             const header = document.getElementById('globalHeader');
             const handleScroll = () => {
-                if (window.scrollY > 80) {
-                    header.classList.add('scrolled');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled-header');
+                    header.classList.remove('py-5');
+                    header.classList.add('py-3.5');
                 } else {
-                    header.classList.remove('scrolled');
+                    header.classList.remove('scrolled-header');
+                    header.classList.add('py-5');
+                    header.classList.remove('py-3.5');
                 }
             };
             window.addEventListener('scroll', handleScroll);
-            handleScroll();
+            handleScroll(); // Initialize correctly on boot
 
-            // Mobile menu overlay
+            // Mobile Navigation Toggle Controller
             const menuToggle = document.getElementById('menuToggle');
             const closeMenu = document.getElementById('closeMenu');
             const mobileOverlay = document.getElementById('mobileOverlay');
             const mobileLinks = document.querySelectorAll('.mobile-nav-link');
 
-            const toggleMenu = (open) => {
-                mobileOverlay.classList.toggle('open', open);
-                document.body.classList.toggle('overflow-hidden', open);
+            const openMobileNav = () => {
+                mobileOverlay.classList.remove('opacity-0', 'pointer-events-none');
+                mobileOverlay.classList.add('opacity-100');
+                document.body.classList.add('overflow-hidden');
             };
 
-            menuToggle.addEventListener('click', () => toggleMenu(true));
-            closeMenu.addEventListener('click', () => toggleMenu(false));
-            mobileLinks.forEach(link => link.addEventListener('click', () => toggleMenu(false)));
+            const closeMobileNav = () => {
+                mobileOverlay.classList.add('opacity-0', 'pointer-events-none');
+                mobileOverlay.classList.remove('opacity-100');
+                document.body.classList.remove('overflow-hidden');
+            };
 
-            // Force visual navigation active highlighting
+            menuToggle.addEventListener('click', openMobileNav);
+            closeMenu.addEventListener('click', closeMobileNav);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', closeMobileNav);
+            });
+
+            // Set explicit visual highlight on current page segment
             const desktopLinks = document.querySelectorAll('.nav-link');
             const mobileLinksElem = document.querySelectorAll('.mobile-nav-link');
 
             desktopLinks.forEach(el => {
                 if (el.getAttribute('data-path') === '/invest/') {
                     el.classList.add('active');
+                    el.classList.add('text-green-brand');
                 } else {
                     el.classList.remove('active');
+                    el.classList.remove('text-green-brand');
                 }
             });
 
             mobileLinksElem.forEach(el => {
                 if (el.getAttribute('data-path') === '/invest/') {
-                    el.style.color = 'var(--color-green)';
-                    el.style.fontWeight = '600';
+                    el.style.color = '#10B981';
+                    el.style.fontWeight = '700';
                 }
+            });
+
+            // Dynamic IntersectionObserver for Premium Slide-Up Entrance Animations
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealOnScroll = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            revealElements.forEach(el => {
+                revealOnScroll.observe(el);
             });
 
             // --- CANVAS CHART GRAPHICS LOGIC ---
@@ -470,10 +749,10 @@
                 const chartHeight = height - paddingTop - paddingBottom;
 
                 // Draw clean horizontal background grids
-                ctx.strokeStyle = '#2C2C2C';
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
                 ctx.lineWidth = 1;
-                ctx.fillStyle = '#E8E2D6';
-                ctx.font = '10px sans-serif';
+                ctx.fillStyle = '#BAC7C1';
+                ctx.font = '500 10px Inter, sans-serif';
                 ctx.textAlign = 'right';
 
                 const gridLines = 4;
@@ -507,8 +786,8 @@
 
                 // Render golden gradient area fill under the calculated yield path
                 const areaGradient = ctx.createLinearGradient(0, paddingTop, 0, height - paddingBottom);
-                areaGradient.addColorStop(0, 'rgba(212, 168, 67, 0.25)');
-                areaGradient.addColorStop(1, 'rgba(212, 168, 67, 0.0)');
+                areaGradient.addColorStop(0, 'rgba(20, 185, 129, 0.15)');
+                areaGradient.addColorStop(1, 'rgba(20, 185, 129, 0.0)');
 
                 ctx.beginPath();
                 ctx.moveTo(pointsCoords[0].x, height - paddingBottom);
@@ -521,7 +800,7 @@
                 ctx.fill();
 
                 // Draw clean connect lines
-                ctx.strokeStyle = '#D4A843';
+                ctx.strokeStyle = '#10B981';
                 ctx.lineWidth = 3;
                 ctx.beginPath();
                 ctx.moveTo(pointsCoords[0].x, pointsCoords[0].y);
@@ -531,20 +810,20 @@
                 ctx.stroke();
 
                 // Draw detailed step node circles
-                ctx.fillStyle = '#0A0A0A';
+                ctx.fillStyle = '#0B0F0D';
                 for (let i = 0; i < pointsCoords.length; i++) {
                     ctx.beginPath();
                     ctx.arc(pointsCoords[i].x, pointsCoords[i].y, 5, 0, Math.PI * 2);
                     ctx.fill();
-                    ctx.strokeStyle = '#D4A843';
-                    ctx.lineWidth = 2;
+                    ctx.strokeStyle = '#10B981';
+                    ctx.lineWidth = 2.5;
                     ctx.stroke();
                 }
 
                 // Draw X Axis labels
                 const cycleLabels = ['Start', 'Cycle 1', 'Cycle 2', 'Cycle 3', 'Cycle 4'];
-                ctx.fillStyle = '#E8E2D6';
-                ctx.font = '10px sans-serif';
+                ctx.fillStyle = '#BAC7C1';
+                ctx.font = '500 10px Inter, sans-serif';
                 ctx.textAlign = 'center';
                 for (let i = 0; i < steps; i++) {
                     ctx.fillText(cycleLabels[i], pointsCoords[i].x, height - paddingBottom + 20);
@@ -556,20 +835,16 @@
 
             payoutSimple.addEventListener('click', () => {
                 compounding = false;
-                payoutSimple.classList.add('bg-[#1A6B3C]', 'text-white');
-                payoutSimple.classList.remove('text-[#E8E2D6]');
-                payoutComp.classList.remove('bg-[#1A6B3C]', 'text-white');
-                payoutComp.classList.add('text-[#E8E2D6]');
+                payoutSimple.className = "px-4 py-1.5 text-xs rounded-full font-bold transition-all duration-300 text-obsidian bg-green-brand shadow-md";
+                payoutComp.className = "px-4 py-1.5 text-xs rounded-full font-medium transition-all duration-300 text-border/70 hover:text-white";
                 returnTypeLabel.textContent = "Simple (15% per cycle)";
                 drawProjectionChart();
             });
 
             payoutComp.addEventListener('click', () => {
                 compounding = true;
-                payoutComp.classList.add('bg-[#1A6B3C]', 'text-white');
-                payoutComp.classList.remove('text-[#E8E2D6]');
-                payoutSimple.classList.remove('bg-[#1A6B3C]', 'text-white');
-                payoutSimple.classList.add('text-[#E8E2D6]');
+                payoutComp.className = "px-4 py-1.5 text-xs rounded-full font-bold transition-all duration-300 text-obsidian bg-green-brand shadow-md";
+                payoutSimple.className = "px-4 py-1.5 text-xs rounded-full font-medium transition-all duration-300 text-border/70 hover:text-white";
                 returnTypeLabel.textContent = "Compounded (reinvested)";
                 drawProjectionChart();
             });
