@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>Nilep Blog</title>
+    <link>https://nilep.xyz/blog/</link>
+    <description>Insights on investment, agribusiness, marketing, and emerging market opportunities from the Nilep team.</description>
+    <language>en-gb</language>
+    <copyright>© 2026 Nilep. All Rights Reserved.</copyright>
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nilep.xyz/sitemap.rss" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>How to Invest in Palm Oil in Africa — Returns, Risks, and What You Need to Know</title>
+      <link>https://nilep.xyz/blog/investment/how-to-invest-in-palm-oil/</link>
+      <guid isPermaLink="true">https://nilep.xyz/blog/investment/how-to-invest-in-palm-oil/</guid>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <category>Investment</category>
+      <description>Palm oil is one of the most widely consumed vegetable oils in the world. For investors looking at agricultural commodities with strong fundamentals, reliable demand, and significant upside in an African emerging market context, this guide covers what drives palm oil value, how to invest, the different investment models available, and the risks to understand.</description>
+    </item>
+
+    <item>
+      <title>What Is Private Market Investing? A Beginner's Guide for Emerging Market Investors</title>
+      <link>https://nilep.xyz/blog/investment/what-is-private-market-investing/</link>
+      <guid isPermaLink="true">https://nilep.xyz/blog/investment/what-is-private-market-investing/</guid>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <category>Investment</category>
+      <description>If you have ever wondered why some investors seem to access opportunities that never appear on the stock exchange — opportunities in growing businesses, productive farmland, and high-yield assets — the answer usually comes down to one thing: private market investing. This guide explains what it is, how it works, and how to get started.</description>
+    </item>
+
+    <item>
+      <title>What Is Performance Marketing and Why Do African Businesses Need It?</title>
+      <link>https://nilep.xyz/blog/marketing/what-is-performance-marketing/</link>
+      <guid isPermaLink="true">https://nilep.xyz/blog/marketing/what-is-performance-marketing/</guid>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <category>Marketing</category>
+      <description>Marketing budgets are precious. For startups and SMEs operating in African markets — where capital is hard-won and every investment needs to justify itself — spending on marketing without clear visibility of results is a risk most businesses cannot afford. Performance marketing exists to solve this problem.</description>
+    </item>
+
+    <item>
+      <title>What Is a Virtual Farm Gate and How Does It Work?</title>
+      <link>https://nilep.xyz/blog/agribusiness/what-is-a-virtual-farm-gate/</link>
+      <guid isPermaLink="true">https://nilep.xyz/blog/agribusiness/what-is-a-virtual-farm-gate/</guid>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <category>Agribusiness</category>
+      <description>Farmers across Africa face a persistent and costly problem: the gap between what they earn at the farm and what consumers pay at the market is enormous. A virtual farm gate is a technology-enabled solution — a digital marketplace that connects farmers directly to buyers, cutting out unnecessary intermediaries and ensuring more value flows back to the farmer.</description>
+    </item>
+
+  </channel>
+
+</rss>
