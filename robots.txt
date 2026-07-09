@@ -4,3 +4,4 @@ Allow: /
 Disallow: /thank-you/
 
 Sitemap: https://nilep.xyz/sitemap.xml
+Sitemap: https://nilep.xyz/sitemap.rss
